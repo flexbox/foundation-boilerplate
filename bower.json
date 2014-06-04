@@ -1,11 +1,11 @@
 {
-  "name": "slimmer",
+  "name": "foundation-boilerplate",
   "version": "0.0.1",
-  "homepage": "https://github.com/polymatt/slimmer",
+  "homepage": "https://github.com/flexbox/foundation-boilerplate",
   "authors": [
-    "polymatt <matt@polymathic.me>"
+    "flexbox <dleuliette@gmail.com>"
   ],
-  "description": "Slim/Sass/Coffee Starter template for Middleman",
+  "description": "A starter front-end template for building responsive web apps or sites with Foundation",
   "license": "MIT",
   "private": false,
   "ignore": [

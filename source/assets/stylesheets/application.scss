@@ -1,1 +1,13 @@
-@import "compass";
+@charset "UTF-8";
+
+@import
+  "foundation/scss/foundation/functions",
+  "settings";
+
+@import
+  "foundation/scss/normalize",
+  "foundation/scss/foundation";
+
+@import
+  "modules/global",
+  "modules/colors";

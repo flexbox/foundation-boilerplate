@@ -1,0 +1,36 @@
+.row
+  .small-12.medium-12.columns
+    h2#forms
+      | Forms
+.row
+  .small-6.medium-6.columns
+    h3
+      | Elements of a Form
+    p
+      | A form should be marked up using it's default HTML properties. The ones we make use of include (in hierarchical order):
+    ul
+      li form
+      li label
+      li input
+      li select
+      li textarea
+      li button
+    h3
+      | How to Use
+    p
+      | Make forms great and easy to use with the following rules :
+    ol
+      li Wrap checkboxes and radio buttons within labels for larger hit areas, and be sure to set the for, name, and id attributes for all applicable elements.
+      li
+        | Series of checkboxes and radio buttons below within a
+        = succeed "." do
+          code &lt;ul class=&quot;(inline) actions&quot;&gt;
+      li Before selecting any set of fields to use for a required input, explore other options (e.g., radio buttons over select lists).
+    h3
+      | Form Layouts
+    p
+      | We use a class of &ldquo;nice&rdquo; on most of forms within the application. Within the form, we use a class of &ldquo;input-text&rdquo; for any input field to add a shadow that creates a more clickable look and feel.
+  .small-6.medium-6.columns
+    h4 HTML
+
+    h4 Rendered HTML

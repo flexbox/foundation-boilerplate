@@ -1,0 +1,40 @@
+$color-list-box-size: rem-calc(30);
+
+.color-list {
+  @include inline-list();
+  li {
+    width: $color-list-box-size;
+    height: $color-list-box-size;
+
+    &.primary {
+      background-color: $primary-color;
+    }
+    &.secondary {
+      background-color: $secondary-color;
+    }
+    &.alert {
+      background-color: $alert-color;
+    }
+    &.success {
+      background-color: $success-color;
+    }
+    &.warning {
+      background-color: $warning-color;
+    }
+    &.info {
+      background-color: $info-color;
+    }
+    &.body-bg {
+      background-color: $body-bg;
+    }
+    &.body-font {
+      background-color: $body-font-color;
+    }
+    &.header-font {
+      background-color: $header-font-color;
+    }
+    &.subheader-font {
+      background-color: $subheader-font-color;
+    }
+  }
+}

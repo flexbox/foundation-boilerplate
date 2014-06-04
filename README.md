@@ -19,18 +19,14 @@ This application is lovely handcrafted with the help of [Middleman](http://middl
 
 1. Install Middleman
 
-  ```
-  $ gem install middleman
-  ```
+    $ gem install middleman
 
-2. Start the application
+2. Install Foundation with Bower
 
-  ```
-  $ middleman server
-  ```
+    $ bower install
 
-## Install foundation with Bower
+3. Start the application
 
-  ```
-  $ bower install
-  ```
+    $ middleman server
+
+
