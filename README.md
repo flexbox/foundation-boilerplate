@@ -1,7 +1,7 @@
 foundation-boilerplate
 ======================
 
-### A starter front-end template for the foundation framework.
+### A starter front-end template for the Foundation framework.
 
 This application is lovely handcrafted with the help of [Middleman](http://middlemanapp.com).
 
@@ -18,15 +18,14 @@ This application is lovely handcrafted with the help of [Middleman](http://middl
 ## Getting Started
 
 1. Install Middleman
-
-    $ gem install middleman
-
+```
+  $ gem install middleman
+```
 2. Install Foundation with Bower
-
-    $ bower install
-
+```
+  $ bower install
+```
 3. Start the application
-
-    $ middleman server
-
-
+```
+  $ middleman server
+```
