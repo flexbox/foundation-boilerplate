@@ -1,0 +1,20 @@
+doctype html
+
+html class="no-js" lang="en"
+  head
+    meta charset='utf-8'
+    meta content='IE=edge' http-equiv='X-UA-Compatible'
+
+    meta name='viewport' content='width=device-width, initial-scale=1.0'
+
+    title #{data.settings.title} | #{current_page.data.title}
+    link rel="shortcut icon" href="#{image_path('favicon.ico')}" type="image/x-icon"
+
+    = stylesheet_link_tag 'application'
+    = javascript_include_tag 'modernizr/modernizr.js'
+
+  body class='#{page_classes}'
+
+    = yield
+
+    = javascript_include_tag 'application'

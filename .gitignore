@@ -1,25 +1,17 @@
-*.rbc
-capybara-*.html
-.rspec
-/log
-/tmp
-/db/*.sqlite3
-/public/system
-/coverage/
-/spec/tmp
-**.orig
-rerun.txt
-pickle-email-*.html
-config/initializers/secret_token.rb
-config/secrets.yml
-
-## Environment normalisation:
+# Ignore bundler config
 /.bundle
-/vendor/bundle
 
-# these should all be checked in to normalise the environment:
-# Gemfile.lock, .ruby-version, .ruby-gemset
+# Ignore the build directory
+/build
 
-# unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
-.rvmrc
+# Ignore Sass' cache
+/.sass-cache
+
+# Ignore .DS_store file
 .DS_Store
+
+# Ignore NPM debug
+.npm-debug.log
+
+# Ignore Bower Folder
+/bower_components

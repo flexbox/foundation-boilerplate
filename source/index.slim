@@ -1,0 +1,218 @@
+---
+title: Homepage
+---
+
+p
+  | Boilerplate: Fill in the blanks for your project.
+.row
+  .small-12.medium-12.columns
+    h1#toc
+      | Table of contents
+.row
+  .small-12.medium-12.columns
+    nav
+      ol
+        li
+          a href="#grid"  Grid
+        li
+          a href="#css"  CSS
+        li
+          a href="#colors"  Colors
+        li
+          a href="#typography"  Typography
+        li
+          a href="#buttons"  Buttons
+        li
+          a href="#forms"  Forms
+        li
+          a href="#lists"  Lists
+        li
+          a href="#patterns"  Patterns
+.row
+  .small-12.medium-12.columns
+    h1#grid
+      | Grid
+.row
+  .small-6.medium-6.columns
+    h2
+      | The Problem
+    p
+      | You've got tons of content, each needing different sized vertical columns, and don't know how to quick and easily get it all done.
+    h2
+      | The Solution
+    p
+      | The awesome grid! The grid is built around three key elements: containers, rows, and columns. Containers create base padding for the page; rows create a max-width and contain the columns; and columns create the final structure. Everything on your page that you don't give a specific structural style to should be within a container, row and column.
+    h2
+      | How to Use
+    p
+      | Using this framework is easy. Here's how your code will look when you use a series of
+      code &lt;div&gt;
+      | tags to create vertical columns.
+    h2
+      | Nesting Support
+    p
+      | In the Grid you can nest columns down as far as you'd like. Just embed rows inside columns and go from there. Each embedded row can contain up to ___ columns.
+    p
+      | [ code ]
+  .small-6.medium-6.columns
+    p
+      | [ samples ]
+.row
+  .small-12.medium-12.columns
+    h1#css
+      | Maintaining CSS
+.row
+  .small-6.medium-6.columns
+    h2
+      | When to Use
+    p
+      | Stylesheet maintenance can become overwhelming on large applications. Here are a few tips and tricks to keeping your sanity in a CSS heavy world.
+    h2
+      | A Few Rules for Clean CSS
+    ul
+      li
+        strong Good Commenting.
+        | A stylesheet with clear comments that delineate each main section of code makes it a lot easier to find by scanning the page or using cmd/ctrl+F to search.
+      li
+        strong Don't repeat yourself.
+        | Child element declarations should not repeat styles unless they override what is already there.
+      li
+        strong Group elements.
+        | Keep parent/child elements near each other in the CSS. This not only helps you identify areas which can be pruned or cleaned up but also makes it easier on other users of the stylesheet.
+  .small-6.medium-6.columns
+    p
+      | [ samples ]
+.row
+  .small-12.medium-12.columns
+    h1#colors
+      | Colors
+.row
+  .small-6.medium-6.columns
+    h2
+      | When to Use
+    p
+      | By default, the middle range should be used before any other. We've labeled each color on the grid. Use the production code to match each color.
+  .small-6.medium-6.columns
+    pre
+      code $primary-color
+.row
+  .small-12.medium-12.columns
+    h1#typography
+      | Typography
+.row
+  .small-6.medium-6.columns
+    h2
+      | When to Use
+    p
+      | Headings are used to denote different sections of content, usually consisting of related paragraphs and other HTML elements. They range from h1 to h4 and should be styled in a clear hierarchy (i.e., largest to smallest).
+    h2
+      | When to Use Paragraphs
+    p
+      | Paragraphs are groups of sentences, each with a lead (first sentence) and transition (last sentence). They are block level elements, meaning they stack vertically when repeated. Use them as such.
+    h2
+      | Editing the CSS
+    p
+      | CSS for headings can be found in foundation.css while custom paragraph styles can be found in app.css.
+  .small-6.medium-6.columns
+    p
+      | [ sample ]
+.row
+  .small-12.medium-12.columns
+    h1#buttons
+      | Buttons
+.row
+  .small-6.medium-6.columns
+    h2
+      | When to Use
+    p
+      | Buttons are tied to an action of some kind, whether that button is on a cheese dispenser or launches the rocket that you're strapped to. On the Web, we follow similar conventions.
+    h2
+      | How to Use
+    p
+      | This solution is perfect when the button needs to submit a form of some kind.
+    p
+      | Note: Make sure to keep type=&ldquo;submit&rdquo; on the button tag. That's what tells Internet Explorer to submit the form. This doesn't matter for anchor tags.
+    h2
+      | Using the Anchor Tag
+    p
+      | When you need the button to take you somewhere (e.g. a sign up button), this is the perfect solution.
+    h2
+      | Editing the CSS
+    p
+      | CSS for buttons can be found in app.css.
+  .small-6.medium-6.columns
+    p
+      | [ samples ]
+.row
+  .small-12.medium-12.columns
+    h1#forms
+      | Forms
+.row
+  .small-6.medium-6.columns
+    h2
+      | Elements of a Form
+    p
+      | A form should be marked up using it's default HTML properties. The ones we make use of include (in hierarchical order):
+    ul
+      li form
+      li label
+      li input
+      li select
+      li textarea
+      li button
+    h2
+      | How to Use
+    p
+      | Make forms great and easy to use with the following rules :
+    ol
+      li Wrap checkboxes and radio buttons within labels for larger hit areas, and be sure to set the for, name, and id attributes for all applicable elements.
+      li
+        | Series of checkboxes and radio buttons below within a
+        = succeed "." do
+          code &lt;ul class=&quot;(inline) actions&quot;&gt;
+      li Before selecting any set of fields to use for a required input, explore other options (e.g., radio buttons over select lists).
+    h2
+      | Form Layouts
+    p
+      | We use a class of &ldquo;nice&rdquo; on most of forms within the application. Within the form, we use a class of &ldquo;input-text&rdquo; for any input field to add a shadow that creates a more clickable look and feel.
+  .small-6.medium-6.columns
+    p
+      | [ samples ]
+.row
+  .small-12.medium-12.columns
+    h1#lists
+      | Lists
+.row
+  .small-6.medium-6.columns
+    h2
+      | When to Use
+    p
+      | Lists are great for presenting a series of related phrases or sentences that need to be read faster (skimming).
+    h2
+      | Which to Use
+    p
+      | Our styles allow for a multitude of lists, including: ul for generic lists and ol for numbered lists.
+    h2
+      | How to Use
+    p
+      | Note the code snippets under each subheading on the right; look there for required classes and list markup.
+    h2
+      | Editing the CSS
+    p
+      | CSS for list styles can be found in foundation.css while custom list styles can be found in app.css.
+  .small-6.medium-6.columns
+    p
+      | [ samples ]
+.row
+  .small-12.medium-12.columns
+    h1#patterns
+      | Patterns
+.row
+  .small-6.medium-6.columns
+    h2
+      | When to Use
+    p
+      | Throughout the website there are patterns that work no matter which module they are part of. We'll outline the basics and let you know where to use them.
+  .small-6.medium-6.columns
+    p
+      | [ project-specific samples ]

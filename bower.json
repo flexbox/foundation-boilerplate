@@ -1,0 +1,21 @@
+{
+  "name": "slimmer",
+  "version": "0.0.1",
+  "homepage": "https://github.com/polymatt/slimmer",
+  "authors": [
+    "polymatt <matt@polymathic.me>"
+  ],
+  "description": "Slim/Sass/Coffee Starter template for Middleman",
+  "license": "MIT",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation": "~5.2.3"
+  }
+}
