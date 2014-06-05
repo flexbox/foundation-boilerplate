@@ -1,9 +1,7 @@
-compass_config do |config|
-  config.output_style = :compact
-end
-
 require 'slim'
+
 activate :livereload
+activate :gzip
 activate :directory_indexes
 
 set :js_dir, 'assets/javascripts'
@@ -25,7 +23,7 @@ configure :build do
   activate :minify_javascript
   activate :asset_hash
 
-  # activate :relative_assets
+  activate :relative_assets
   # set :relative_links, true
 
 end
