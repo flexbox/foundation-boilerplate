@@ -2,8 +2,6 @@
   .small-12.medium-12.columns
     h2#lists data-magellan-destination="lists"
       | Lists
-.row
-  .small-6.medium-6.columns
     h3
       | When to Use
     p
@@ -20,5 +18,15 @@
       | Editing the CSS
     p
       | CSS for list styles can be found in foundation.css while custom list styles can be found in app.css.
+.row
+  .small-6.medium-6.columns
+
   .small-6.medium-6.columns
     h4 HTML
+    ul.inline-list
+      li
+        = link_to 'inline-list element one', '#'
+      li
+        = link_to 'inline-list element two', '#'
+      li
+        = link_to 'inline-list element three', '#'

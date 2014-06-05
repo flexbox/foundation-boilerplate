@@ -1,8 +1,17 @@
-$color-list-box-size: rem-calc(30);
+$white: #ffffff;
+
+
+
+$color-list-box-size: rem-calc(100);
 
 .color-list {
-  @include inline-list();
+  background-color: $white;
+  list-style: none;
+  overflow: hidden;
+
   li {
+    list-style: none;
+    float: left;
     width: $color-list-box-size;
     height: $color-list-box-size;
 
