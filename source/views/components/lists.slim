@@ -20,13 +20,27 @@
       | CSS for list styles can be found in foundation.css while custom list styles can be found in app.css.
 .row
   .small-6.medium-6.columns
-
-  .small-6.medium-6.columns
     h4 HTML
+    markdown:
+      ~~~ html
+      <ul class="inline">
+        <li>
+          <a href="#">inline-list element one</a>
+        </li>
+        <li>
+          <a href="#">inline-list element two</a>
+        </li>
+        <li>
+          <a href="#">inline-list element three</a>
+        </li>
+      </ul>
+      ~~~
+  .small-6.medium-6.columns
+    h4 Rendered HTML
     ul.inline-list
       li
-        = link_to 'inline-list element one', '#'
+        = link_to 'Element one', '#'
       li
-        = link_to 'inline-list element two', '#'
+        = link_to 'Element two', '#'
       li
-        = link_to 'inline-list element three', '#'
+        = link_to 'Element three', '#'

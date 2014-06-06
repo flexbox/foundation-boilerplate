@@ -1,0 +1,20 @@
+.m-masterhead {
+  background: $black;
+
+  p {
+    color: $white-light;
+    text-shadow: 0px 2px #000000;
+  }
+}
+
+.m-masterhead--title {
+  color: $white;
+  text-shadow: 0px 2px #000000;
+  margin-top: rem-calc(50);
+  margin-bottom: rem-calc(50);
+}
+
+.m-masterhead--button {
+  margin-top: rem-calc(25);
+  margin-bottom: rem-calc(50);
+}

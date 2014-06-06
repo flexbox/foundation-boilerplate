@@ -8,31 +8,45 @@
       | By default, the middle range should be used before any other. We've labeled each color on the grid. Use the production code to match each color.
 
 .row
-  .small-6.medium-6.columns
+  .small-4.columns
     h4 SCSS
-    pre
-      code
-        |$primary-color<br>
-        |$secondary-color<br>
-        |$alert-color<br>
-        |$success-color<br>
-        |$warning-color<br>
-        |$info-color<br>
-    pre
-      code
-        |$body-bg<br>
-        |$body-font-color<br>
-        |$header-font-color<br>
-        |$subheader-font-color<br>
-  .small-6.medium-6.columns
+    markdown:
+      ~~~ SCSS
+      $primary-color
+      $secondary-color
+      ~~~
+  .small-8.columns
     h4 Rendered HTML
     ul.color-list
       li.primary
       li.secondary
+
+.row
+  .small-4.columns
+    markdown:
+      ~~~ SCSS
+      $alert-color
+      $success-color
+      $warning-color
+      $info-color
+      ~~~
+  .small-8.columns
+    ul.color-list
       li.alert
       li.success
       li.warning
       li.info
+
+.row
+  .small-4.columns
+    markdown:
+      ~~~ SCSS
+      $body-bg
+      $body-font-color
+      $header-font-color
+      $subheader-font-color
+      ~~~
+  .small-8.columns
     ul.color-list
       li.body-bg
       li.body-font

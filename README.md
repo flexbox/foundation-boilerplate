@@ -29,3 +29,7 @@ This application is lovely handcrafted with the help of [Middleman](http://middl
 ```
   $ middleman server
 ```
+
+## Demo
+
+To preview the boilerplate, check out [http://flexbox.github.io/foundation-boilerplate/](http://flexbox.github.io/foundation-boilerplate/).

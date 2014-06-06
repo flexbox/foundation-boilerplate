@@ -3,6 +3,7 @@ require 'slim'
 activate :livereload
 activate :gzip
 activate :directory_indexes
+activate :syntax
 
 set :js_dir, 'assets/javascripts'
 set :css_dir, 'assets/stylesheets'

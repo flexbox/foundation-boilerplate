@@ -1,11 +1,11 @@
 $white: #ffffff;
+$black: #333333;
 
-
+$white-light: scale-color($white, $lightness: -40%);
 
 $color-list-box-size: rem-calc(100);
 
 .color-list {
-  background-color: $white;
   list-style: none;
   overflow: hidden;
 
@@ -14,6 +14,7 @@ $color-list-box-size: rem-calc(100);
     float: left;
     width: $color-list-box-size;
     height: $color-list-box-size;
+    border: 5px solid $white;
 
     &.primary {
       background-color: $primary-color;

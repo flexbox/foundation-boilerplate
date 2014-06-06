@@ -1,5 +1,4 @@
 #= require "jquery"
-#= require "jquery.cookie"
 #= require "jquery-placeholder"
 #= require "fastclick"
 
