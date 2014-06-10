@@ -5,4 +5,5 @@
 #= require "foundation/js/foundation/foundation"
 #= require "foundation/js/foundation/foundation.magellan"
 
+#= require "color"
 #= require "initialize"
