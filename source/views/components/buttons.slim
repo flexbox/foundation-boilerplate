@@ -41,7 +41,12 @@
   .small-6.medium-6.columns
     h4 Rendered HTML
     = link_to '.button .tiny', '#', class: 'button tiny'
-    br
-    = link_to '.button .secondary', '#', class: 'button secondary'
-    br
+    .row
+      .small-4.columns
+        = link_to '.button .secondary', '#', class: 'button secondary'
+      .small-4.columns
+        = link_to '.button .alert', '#', class: 'button alert'
+      .small-4.columns
+        = link_to '.button .success', '#', class: 'button success'
+
     = link_to '.button .expand', '#', class: 'button expand'
