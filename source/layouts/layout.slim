@@ -1,20 +1,19 @@
 doctype html
-
 html class="no-js" lang="en"
   head
-    meta charset='utf-8'
-    meta content='IE=edge' http-equiv='X-UA-Compatible'
-
-    meta name='viewport' content='width=device-width, initial-scale=1.0'
+    meta charset="utf-8"
+    meta name="viewport" content="width=device-width"
+    meta http-equiv="X-UA-Compatible" content="IE=edge"
 
     title #{data.settings.title} | #{current_page.data.title}
-    link rel="shortcut icon" href="#{image_path('favicon.ico')}" type="image/x-icon"
+    meta name="description" content="#{current_page.data.description}"
+    meta name="robots" content="index,follow"
 
     = stylesheet_link_tag 'application'
     = javascript_include_tag 'modernizr/modernizr.js'
 
-  body class='#{page_classes}'
+  body class="#{page_classes}"
 
-    = yield
+    == yield
 
     = javascript_include_tag 'application'

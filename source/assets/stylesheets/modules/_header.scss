@@ -1,5 +1,8 @@
-.m-masterhead {
+.m-masterhead,
+.m-footer {
   background: $black;
+  position: relative;
+  z-index: 99;
 
   p {
     color: $white-light;
