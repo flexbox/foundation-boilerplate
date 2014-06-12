@@ -1,7 +1,9 @@
 $white: #ffffff;
 $black: #333333;
+$gray: #999999;
 
 $white-light: scale-color($white, $lightness: -40%);
+$gray-light: scale-color($gray, $lightness: 40%);
 
 $color-list-box-size: rem-calc(100);
 

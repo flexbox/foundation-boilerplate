@@ -15,16 +15,22 @@
     p
       | CSS for headings can be found in foundation.css while custom paragraph styles can be found in app.css.
 .row
-  .small-4.columns
+  .medium-4.columns
     h4 SCSS
     markdown:
       ~~~ scss
       $header-font-family
-      $body-font-family
-      ~~~
-  .small-8.columns
-    h4 Rendered HTML
+      $header-font-weight
 
+      $h1-font-size
+      $h2-font-size
+      $h3-font-size
+      $h4-font-size
+      $h5-font-size
+      $h6-font-size
+      ~~~
+  .medium-8.columns
+    h4 Rendered HTML
     h1.js-type
       'h1 Header one
       small with a baseline
@@ -44,9 +50,23 @@
       'h6 Header six
       small with a baseline
 
-    h1.subheader h1.subheader very large title
-    h2.subheader h2.subheader large title
-    h3.subheader h3.subheader medium title
-    h4.subheader h4.subheader moderate title
-    h5.subheader h5.subheader small  title
-    h6.subheader h6.subheader tiny title example
+.row
+  .medium-4.columns
+    h4 SCSS
+    markdown:
+      ~~~ scss
+      $body-font-family
+      $body-font-weight
+
+      $paragraph-font-size
+      ~~~
+  .medium-8.columns
+    h4 Rendered HTML
+    p.js-type.lead Uh listen, do you know where Riverside Drive is? Yeah, sure, okay.
+
+    p.js-type What's going on? Where have you been all week? I'm sure that in 1985, plutonium is available at every corner drug store, but in 1955, it's a little hard to come by. Marty, I'm sorry, but I'm afraid you're stuck here. Because, you might regret it later in life.
+
+    .js-type
+      blockquote
+        'Don't worry. As long as you hit that wire with the connecting hook at precisely 88 miles per hour, the instance the lightning strikes the tower, everything will be fine.
+        cite Doc

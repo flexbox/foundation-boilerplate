@@ -24,14 +24,22 @@
         = succeed "." do
           code &lt;ul class=&quot;(inline) actions&quot;&gt;
       li Before selecting any set of fields to use for a required input, explore other options (e.g., radio buttons over select lists).
-    h3
-      | Form Layouts
-    p
-      | We use a class of "nice" on most of forms within the application. Within the form, we use a class of &ldquo;input-text&rdquo; for any input field to add a shadow that creates a more clickable look and feel.
 
 .row
   .small-6.medium-6.columns
     h4 HTML
+    markdown:
+      ~~~ html
+      <form>
+        <div class="large-12 columns">
+          <label>
+            Input Label
+            <input placeholder="large-12.columns" type="text">
+          </label>
+        </div>
+      </form>
+      ~~~
+
   .small-6.medium-6.columns
     h4 Rendered HTML
     form
@@ -40,22 +48,6 @@
           label
             | Input Label
             input placeholder="large-12.columns" type="text"
-      .row
-        .large-4.columns
-          label
-            | Input Label
-            input placeholder="large-4.columns" type="text"
-        .large-4.columns
-          label
-            | Input Label
-            input placeholder="large-4.columns" type="text"
-        .large-4.columns
-          .row.collapse
-            label Input Label
-            .small-9.columns
-              input placeholder="small-9.columns" type="text"
-            .small-3.columns
-              span.postfix .com
       .row
         .large-12.columns
           label
@@ -69,15 +61,15 @@
         .large-6.columns
           label Choose Your Favorite
           input#pokemonRed name="pokemon" type="radio" value="Red"
-            label for="pokemonRed"  Red
-            input#pokemonBlue name="pokemon" type="radio" value="Blue"
-              label for="pokemonBlue"  Blue
+            label for="pokemonRed" Red
+          input#pokemonBlue name="pokemon" type="radio" value="Blue"
+            label for="pokemonBlue" Blue
         .large-6.columns
           label Check these out
           input#checkbox1 type="checkbox"
             label for="checkbox1"  Checkbox 1
-            input#checkbox2 type="checkbox"
-              label for="checkbox2"  Checkbox 2
+          input#checkbox2 type="checkbox"
+            label for="checkbox2"  Checkbox 2
       .row
         .large-12.columns
           label

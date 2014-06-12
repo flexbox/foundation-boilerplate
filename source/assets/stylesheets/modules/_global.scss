@@ -7,3 +7,11 @@
   padding-top: rem-calc(25);
   padding-bottom: rem-calc(25);
 }
+
+.no-margin {
+  margin-bottom: 0
+}
+
+p.m-extrator--content {
+  color: $gray-light;
+}
