@@ -5,19 +5,19 @@
     h3
       | When to Use
     p
-      | Lists are great for presenting a series of related phrases or sentences that need to be read faster (skimming).
+      | Lists are great for presenting a series of related phrases or sentences that need to be read faster.
     h3
       | Which to Use
     p
-      | Our styles allow for a multitude of lists, including: ul for generic lists and ol for numbered lists.
+      | Foundation styles allow for a multitude of lists, including: <code>ul</code> for generic lists and <code>ol</code> for numbered lists.
     h3
       | How to Use
     p
-      | Note the code snippets under each subheading on the right; look there for required classes and list markup.
+      | Note the code snippets under each subheading on the left; look there for required classes and list markup.
     h3
       | Editing the CSS
     p
-      | CSS for list styles can be found in foundation.css while custom list styles can be found in app.css.
+      | CSS for list styles can be found in <code>_settings.scss</code> and the variables are <code>$list-*</code>.
 .row
   .small-6.medium-6.columns
     h4 HTML
@@ -44,3 +44,15 @@
         = link_to 'Element two', '#'
       li
         = link_to 'Element three', '#'
+    ul
+      li Plutonium
+      ul
+        li Uranium
+        li Neptunium
+        li Américium
+      li Oxygen 
+      li Carbon
+    ol
+      li Black Mesa
+      li Aperture Science
+
