@@ -1,0 +1,99 @@
+header.m-masterhead
+  .alert-box.info.text-center
+    'Work in Progress! Not quite ready for prime-time
+
+  .row
+    .medium-6.columns
+      h6.subheader
+        'Foundation &bull; Boilerplate
+    .medium-6.columns
+      ul.inline-list.right
+        li
+          = link_to 'Source code', 'https://github.com/flexbox/foundation-boilerplate'
+        li
+          = link_to 'Docs', 'https://github.com/flexbox/foundation-boilerplate/blob/master/README.md'
+
+  .row.text-center
+    .medium-8.medium-centered.small-12.columns
+      h1.m-masterhead--title Forms
+      p
+        'Every application need a huge amount of forms. Here is lives examples.
+hr
+
+.row
+  .small-12.medium-12.columns
+    h2
+      | Signup Form
+
+.row
+  .large-6.columns
+    h4 HTML
+    markdown:
+      ~~~ html
+      <form class="panel panel-signup">
+        <p class="lead">Welcome to this awesome app! </p>
+          <div class="row collapse">
+            <div class="small-2 columns">
+              <span class="prefix">
+                <i class="fi-torso-female"></i>
+              </span>
+            </div>
+            <div class="small-10 columns">
+              <input placeholder="username" type="text">
+            </div>
+          </div>
+          <div class="row collapse">
+            <div class="small-2 columns">
+              <span class="prefix">
+                <i class="fi-mail"></i>
+              </span>
+            </div>
+            <div class="small-10 columns">
+              <input placeholder="email" type="text">
+            </div>
+          </div>
+          <div class="row collapse">
+              <div class="small-2 columns">
+              <span class="prefix">
+                <i class="fi-lock"></i>
+              </span>
+          </div>
+          <div class="small-10 columns">
+            <input placeholder="password" type="text">
+          </div>
+        </div>
+        <a class="button" href="#">Sign Up!</a>
+        <p>Already have an account? <a href="#">Login here »</a></p>
+      </form>
+      ~~~
+
+  .large-6.columns
+    h4 Rendered HTML
+    .panel.panel-signup
+      p.lead
+        'Welcome to this awesome app!
+      form
+        .row.collapse
+          .small-2.columns
+            span class="prefix"
+              i class="fi-torso-female"
+          .small-10.columns
+            input type="text" placeholder="username"
+        .row.collapse
+          .small-2.columns
+            span class="prefix"
+              i class="fi-mail"
+          .small-10.columns
+            input type="text" placeholder="email"
+        .row.collapse
+          .small-2.columns
+            span class="prefix"
+              i class="fi-lock"
+          .small-10.columns
+            input type="text" placeholder="password"
+
+      = link_to 'Sign Up!', '#', class: 'button'
+      p
+        'Already have an account?
+        = link_to 'Login here &raquo', '#'
+
