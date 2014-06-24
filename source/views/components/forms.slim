@@ -21,8 +21,8 @@
       li Wrap checkboxes and radio buttons within labels for larger hit areas, and be sure to set the for, name, and id attributes for all applicable elements.
       li
         | Series of checkboxes and radio buttons below within a
-        = succeed "." do
-          code &lt;ul class=&quot;(inline) actions&quot;&gt;
+        code
+          | <ul class="(inline) actions">
       li Before selecting any set of fields to use for a required input, explore other options (e.g., radio buttons over select lists).
 
 .row
@@ -53,10 +53,10 @@
           label
             | Select Box
             select
-              option value="husker"  Husker
-              option value="starbuck"  Starbuck
-              option value="hotdog"  Hot Dog
-              option value="apollo"  Apollo
+              option value="husker" Husker
+              option value="starbuck" Starbuck
+              option value="hotdog" Hot Dog
+              option value="apollo" Apollo
       .row
         .large-6.columns
           label Choose Your Favorite
@@ -75,4 +75,5 @@
           label
             | Textarea Label
             textarea placeholder="small-12.columns"
-
+    p.text-right
+      =link_to 'More advanced examples &rarr;', '/forms'
