@@ -1,3 +1,8 @@
+---
+title: Forms snippet for responsive websites
+description: Help designer and developers to code a strong set of guideline for forms
+---
+
 header.m-masterhead
   .alert-box.info.text-center
     'Work in Progress! Not quite ready for prime-time
@@ -22,7 +27,7 @@ hr
 .row
   .small-12.medium-12.columns
     h2
-      | Signup form
+      | Simple signup form
 
 .row
   .large-6.columns
@@ -48,7 +53,7 @@ hr
               </span>
             </div>
             <div class="small-10 columns">
-              <input placeholder="email" type="email">
+              <input placeholder="email" type="email" required>
             </div>
           </div>
           <div class="row collapse">
@@ -71,7 +76,7 @@ hr
     .panel.panel-signup.radius
       p.lead
         'Welcome to this awesome app!
-      form
+      form data-abide=""
         .row.collapse
           .small-2.columns
             span class="prefix"
@@ -83,15 +88,16 @@ hr
             span class="prefix"
               i class="fi-mail"
           .small-10.columns
-            input type="email" placeholder="email"
+            input type="email" placeholder="email" required=""
+            small class="error" A valid email address is required
         .row.collapse
           .small-2.columns
             span class="prefix"
               i class="fi-lock"
           .small-10.columns
-            input type="password" placeholder="password"
-
-      = link_to 'Sign Up!', '#', class: 'button'
+            input type="password" placeholder="password" required=""
+            small class="error" Enter your password
+        input type="submit" value="Sign Up!" class="button"
       p
         'Already have an account?
         = link_to 'Login here &rarr;', '#'
@@ -109,7 +115,7 @@ hr
     h4 Rendered HTML
     .panel.panel-signup.radius
       p.lead Find a Cool Restaurant!
-      form.row
+      form.row data-abide=""
         div class="large-3 small-12 columns"
           label Food Type:
           select
@@ -140,7 +146,7 @@ hr
         .large-3.small-6.columns
           label
             'Location:
-          select
+          select required=""
             option value="mile" Near me
             option value="2-mile" 2 miles
             option value="5-mile" 5 miles
@@ -150,7 +156,7 @@ hr
         .large-3.small-12.columns
           label
             '&nbsp;
-          =link_to 'Search', '#', class: 'button tiny expand'
+          input type="submit" value="Search" class="button tiny expand"
 
 hr
 .row
@@ -173,10 +179,79 @@ hr
             input type="text" placeholder="Albert Einstein"
           label
             'Your email:
-            input type="email" placeholder="Albert Einstein"
+            input type="email" placeholder="einstein@science.org"
 
         .large-8.small-12.columns
           label
             'Your message:
             textarea rows="5"
           =link_to 'Send', '#', class: 'button right'
+
+hr
+.row
+  .small-12.medium-12.columns
+    h2
+      | New account signup
+.row
+  .large-6.columns
+    h4 HTML
+
+  .large-6.columns
+    h4 Rendered HTML
+    form.panel
+      p.lead New to this awesome app? Sign up
+      fieldset
+        legend About you
+        .row
+          .small-4.columns
+            label.right.inline
+              'Name
+          .small-8.columns
+            input type="text" placeholder="Albert Einstein"
+        .row
+          .small-4.columns
+            label.right.inline
+              'Email
+          .small-8.columns
+            input type="email" placeholder="einstein@science.org"
+        .row
+          .small-4.columns
+            label.right.inline
+              'Confirm email
+          .small-8.columns
+            input type="email" data-equalto="password"
+        .row
+          .small-4.columns
+            label.right.inline
+              'Password
+          .small-8.columns
+            input type="password" placeholder="il0v3sc13nc3"
+      fieldset
+        legend Informations
+        .row
+          .small-4.columns
+            label.right.inline
+              'Adress
+          .small-8.columns
+            input type="text"
+        .row
+          .small-4.columns
+            label.right.inline
+              'City
+          .small-8.columns
+            input type="text"
+        .row
+          .small-4.columns
+            label.right.inline
+              'Postcode
+          .small-8.columns
+            input type="text" pattern="integer"
+        .row
+          .small-4.columns
+            label.right.inline
+              'Phone
+          .small-8.columns
+            input type="tel" pattern="integer"
+      input type="submit" value="Sign Up!" class="button large right"
+      hr
+

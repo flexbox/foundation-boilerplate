@@ -1,1 +1,3 @@
-$(document).foundation()
+$ ->
+  $(document).foundation()
+  return
