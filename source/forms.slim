@@ -198,7 +198,7 @@ hr
 
   .large-6.columns
     h4 Rendered HTML
-    form.panel
+    form.panel data-abide=""
       p.lead New to this awesome app? Sign up
       fieldset
         legend About you
@@ -210,22 +210,27 @@ hr
             input type="text" placeholder="Albert Einstein"
         .row
           .small-4.columns
-            label.right.inline
+            label.right.inline for="about-email"
               'Email
+              small required
           .small-8.columns
-            input type="email" placeholder="einstein@science.org"
+            input type="email" id="about-email" placeholder="einstein@science.org" pattern="email" required=""
+            small class="error" A valid email address is required
         .row
           .small-4.columns
-            label.right.inline
+            label.right.inline for="about-email-confirm"
               'Confirm email
+              small required
           .small-8.columns
-            input type="email" data-equalto="password"
+            input type="email" id="about-email-confirm" data-equalto="about-email" required=""
+            small class="error" Email confirmation not match
         .row
           .small-4.columns
-            label.right.inline
+            label.right.inline for="about-password"
               'Password
           .small-8.columns
-            input type="password" placeholder="il0v3sc13nc3"
+            input type="password" id="about-password" placeholder="il0v3sc13nc3" required=""
+            small class="error" You must have a password
       fieldset
         legend Informations
         .row

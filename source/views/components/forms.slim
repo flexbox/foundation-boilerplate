@@ -47,7 +47,7 @@
         .large-12.columns
           label
             | Input Label
-            input placeholder="large-12.columns" type="text"
+            input placeholder=".large-12.columns" type="text"
       .row
         .large-12.columns
           label
@@ -59,17 +59,20 @@
               option value="apollo" Apollo
       .row
         .large-6.columns
-          label Choose Your Favorite
+          p Choose Your Favorite
           input#pokemonRed name="pokemon" type="radio" value="Red"
             label for="pokemonRed" Red
           input#pokemonBlue name="pokemon" type="radio" value="Blue"
             label for="pokemonBlue" Blue
         .large-6.columns
-          label Check these out
-          input#checkbox1 type="checkbox"
-            label for="checkbox1"  Checkbox 1
-          input#checkbox2 type="checkbox"
-            label for="checkbox2"  Checkbox 2
+          p Check these out
+          ul.no-bullet
+            li
+              input#checkbox1 type="checkbox"
+              label for="checkbox1" Checkbox 1
+            li
+              input#checkbox2 type="checkbox"
+              label for="checkbox2"  Checkbox 2
       .row
         .large-12.columns
           label
