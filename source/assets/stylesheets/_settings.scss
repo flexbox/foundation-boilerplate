@@ -36,7 +36,7 @@ $row-width: rem-calc(1200);
 // Global
 
 // We use these to control various global styles
-$body-bg: #F5F5F5;
+$body-bg: #F9F9F9;
 // $body-font-color: #222;
 $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: $font-weight-normal;
@@ -51,12 +51,12 @@ $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $default-float: left;
 
 // We use these as default colors throughout
-// $primary-color: #008CBA;
-// $secondary-color: #e7e7e7;
-// $alert-color: #f04124;
-// $success-color: #43AC6A;
-// $warning-color: #f08a24;
-// $info-color: #a0d3e8;
+$primary-color:   #00BAD2;
+$secondary-color: #607D8B;
+$alert-color:     #E51C23;
+$success-color:   #259B24;
+$warning-color:   #FF5722;
+$info-color:      #03A9F4;
 
 // We use these to make sure border radius matches unless we want it different.
 // $global-radius: 3px;
@@ -118,7 +118,7 @@ $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $header-font-family: $body-font-family;
 // $header-font-weight: $font-weight-normal;
 // $header-font-style: normal;
-// $header-font-color: #222;
+$header-font-color: #222;
 // $header-line-height: 1.4;
 // $header-top-margin: .2rem;
 // $header-bottom-margin: .5rem;
@@ -134,7 +134,7 @@ $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 
 // These control how subheaders are styled.
 // $subheader-line-height: 1.4;
-// $subheader-font-color: scale-color($header-font-color, $lightness: 35%);
+$subheader-font-color: scale-color($header-font-color, $lightness: 54%);
 // $subheader-font-weight: $font-weight-normal;
 // $subheader-top-margin: .2rem;
 // $subheader-bottom-margin: .5rem;

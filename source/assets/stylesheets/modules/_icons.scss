@@ -1,0 +1,14 @@
+[class^="fi-"],
+[class*=" fi-"] {
+  margin: rem-calc(5);
+
+  &.small {
+    font-size: rem-calc(32);
+  }
+  &.medium {
+    font-size: rem-calc(64);
+  }
+  &.large {
+    font-size: rem-calc(96);
+  }
+}
