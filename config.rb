@@ -1,3 +1,7 @@
+# With alternative layout
+page "/typography.html", :layout => :pages
+page "/forms.html", :layout => :pages
+
 require 'slim'
 
 activate :livereload
