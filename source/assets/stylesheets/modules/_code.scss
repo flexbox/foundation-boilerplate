@@ -1,8 +1,8 @@
-.highlight table td { padding: 5px; }
-.highlight table pre { margin: 0; }
+$code-bg: $black;
+
 .highlight {
   color: #faf6e4;
-  background-color: #122b3b;
+  background-color: $code-bg;
 }
 .highlight .gl {
   color: #dee5e7;
@@ -166,7 +166,7 @@
 
 pre {
   color: #faf6e4;
-  background-color: #122b3b;
+  background-color: $code-bg;
   padding: rem-calc(15);
   line-height: rem-calc(20);
   font-family: 'Ubuntu Mono', 'Monaco', monospace;
