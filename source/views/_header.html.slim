@@ -9,9 +9,9 @@ header.m-masterhead
     .medium-6.columns
       ul.inline-list.right
         li
-          = link_to 'Source code', 'https://github.com/flexbox/foundation-boilerplate'
+          = link_to 'Source code', data.settings.site.source_code
         li
-          = link_to 'Docs', 'https://github.com/flexbox/foundation-boilerplate/blob/master/README.md'
+          = link_to 'Docs', "#{data.settings.site.source_code}blob/master/README.md"
 
   .row.text-center
     .medium-8.medium-centered.small-12.columns

@@ -3,6 +3,8 @@ page "/typography.html", :layout => :pages
 page "/forms.html", :layout => :pages
 
 require 'slim'
+# Avoid HTML minification for people who don't know slim
+Slim::Engine.default_options[:pretty] = true
 
 activate :livereload
 activate :gzip
@@ -21,8 +23,10 @@ after_configuration do
 
 end
 
-# Build-specific configuration
 configure :build do
+
+  activate :autoprefixer,
+    browsers: ['last 2 versions', 'ie 8', 'ie 9']
 
   activate :minify_css
   activate :minify_javascript

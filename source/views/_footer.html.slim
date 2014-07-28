@@ -6,24 +6,25 @@ footer.m-footer
 
   .row
     .medium-4.medium-centered.columns
-      = link_to 'Fork on GitHub', 'https://github.com/flexbox/foundation-boilerplate/', class: 'button secondary large expand'
+      = link_to 'Fork on GitHub', data.settings.site.source_code, class: 'button secondary large expand'
       p.lead
         'Or you can help me and
-        = link_to 'report an issue', 'https://github.com/flexbox/foundation-boilerplate/issues'
+        = link_to 'report an issue', "#{data.settings.site.source_code}issues"
 
   .row
     .medium-10.medium-centered.columns
       p.text-center
-        'Foundation Boilerplate is created, and maintained by
+        =' data.settings.site.title
+        'is created, and maintained by
         = link_to 'David Leuliette', 'http://davidl.fr', target: '_blank', rel: 'nofollow'
         |.
         br
         'Hand-coded with ♥ and a clever hacking of
-        =' link_to('Middleman', 'http://middlemanapp.com/')
+        =' link_to 'Middleman', 'http://middlemanapp.com/'
         'and
-        = link_to('Foundation', 'http://foundation.zurb.com/')
+        = link_to 'Foundation', 'http://foundation.zurb.com/'
         |.
         br
         'Hosted on
-        = link_to('GitHub', 'https://github.com/flexbox/')
+        = link_to 'GitHub', data.settings.site.source_code
         |.
