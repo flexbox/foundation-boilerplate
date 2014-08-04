@@ -1,6 +1,7 @@
 # With alternative layout
 page "/typography.html", :layout => :pages
 page "/forms.html", :layout => :pages
+page "/icons.html", :layout => :pages
 
 require 'slim'
 # Avoid HTML minification for people who don't know slim
