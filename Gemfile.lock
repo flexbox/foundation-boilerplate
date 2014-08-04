@@ -113,9 +113,9 @@ PLATFORMS
 
 DEPENDENCIES
   middleman (~> 3.2.1)
-  middleman-autoprefixer
+  middleman-autoprefixer (~> 1.1.3)
   middleman-gh-pages (~> 0.0.2)
   middleman-livereload (~> 3.1.0)
   middleman-sitemap (~> 0.0.13)
-  middleman-syntax
+  middleman-syntax (~> 2.0.0)
   slim (~> 2.0.0)

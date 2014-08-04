@@ -10,7 +10,7 @@ hr
 .row
   .small-12.medium-12.columns
     h2 File list
-    p Here is a nice example is you want a folder based menu
+    p Here is a nice example is you want a folder based menu.
 
     .row
       .large-6.columns
@@ -141,6 +141,81 @@ hr
       .large-6.columns
         h4 HTML
         markdown:
+          ~~~ html
+          <ul>
+            <li>
+              <i class="fi-torso"></i>Single
+            </li>
+            <hr class="folder">
+              <ul>
+                <li>
+                  <i class="fi-torso-business"></i>Business
+                  <ul>
+                    <li>
+                      <i class="fi-dollar"></i>Dollars
+                    </li>
+                    <li>
+                      <i class="fi-euro"></i>Euros
+                    </li>
+                    <li>
+                      <i class="fi-yen"></i>Yen
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <hr class="folder">
+                <li>
+                  <i class="fi-torsos"></i>Couple
+                </li>
+                <ul>
+                  <li>
+                    <i class="fi-laptop"></i>OS
+                    <ul>
+                      <li>
+                        <i class="fi-social-windows"></i>Windows
+                      </li>
+                      <li>
+                        <i class="fi-social-apple"></i>Apple
+                      </li>
+                    </ul>
+                  </li>
+                  <hr class="subfolder">
+                    <li>
+                      <i class="fi-megaphone"></i>Social Networks
+                      <ul>
+                        <li>
+                          <i class="fi-social-twitter"></i>Twitter
+                        </li>
+                        <li>
+                          <i class="fi-social-tumblr"></i>Tumblr
+                        </li>
+                        <li>
+                          <i class="fi-social-facebook"></i>Facebook
+                        </li>
+                      </ul>
+                    </li>
+
+                </ul>
+                <hr class="folder">
+                  <li>
+                    <i class="fi-torsos-all"></i>Group
+                    <ul>
+                      <li>
+                        <i class="fi-graph-trend"></i>Line Chart
+                      </li>
+                      <li>
+                        <i class="fi-graph-bar"></i>Bar Graph
+                      </li>
+                      <li>
+                        <i class="fi-graph-pie"></i>Pie Chart
+                      </li>
+                    </ul>
+                  </li>
+                  <hr class="folder">
+          </ul>
+          ~~~
+
+
 
       .large-6.columns
         h4 Rendered HTML
@@ -210,8 +285,11 @@ hr
                         | Pie Chart
                   hr.folder
 
-
-
-
+hr
+.row
+  .small-6.columns
+    p
+      = link_to '&larr; Back to homepage', data.settings.site.url
+  .small-6.columns
     p.text-right
       = link_to 'See the complete list &rarr;', 'http://zurb.com/playground/foundation-icon-fonts-3'

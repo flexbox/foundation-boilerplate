@@ -1,6 +1,6 @@
 {
   "name": "foundation-boilerplate",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/flexbox/foundation-boilerplate",
   "authors": [
     "flexbox <dleuliette@gmail.com>"
@@ -16,6 +16,6 @@
     "tests"
   ],
   "dependencies": {
-    "foundation": "~5.2.3"
+    "foundation": "~5.3.2"
   }
 }

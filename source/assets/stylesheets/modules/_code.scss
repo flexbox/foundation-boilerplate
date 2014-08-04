@@ -1,6 +1,7 @@
 $code-bg: $black;
 
-.highlight {
+code.highlight {
+  border: none;
   color: #faf6e4;
   background-color: $code-bg;
 }

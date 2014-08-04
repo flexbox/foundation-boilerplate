@@ -92,6 +92,76 @@ hr
 .row
   .large-6.columns
     h4 HTML
+    markdown:
+      ~~~ html
+      <div class="large-3 small-12 columns">
+        <label>Food Type:</label><select>
+          <option value="All">
+            All
+          </option>
+          <option value="Asian">
+            Asian
+          </option>
+          <option value="Mediterranean">
+            Mediterranean
+          </option>
+          <option value="French">
+            French
+          </option>
+          <option value="Vegetarian">
+            Vegetarian
+          </option>
+        </select>
+      </div>
+      <div class="large-3 small-6 columns">
+        <label>Price Range:</label><select>
+          <option value="0-5">
+            $0-$5
+          </option>
+          <option value="5-10">
+            $5-$10
+          </option>
+          <option value="10-15">
+            $10-$15
+          </option>
+          <option value="15-20">
+            $15-$20
+          </option>
+          <option value="20-25">
+            $20-$25
+          </option>
+          <option value="25-30">
+            $25-$30
+          </option>
+          <option value="more">
+            more than $30
+          </option>
+        </select>
+      </div>
+      <div class="large-3 small-6 columns">
+        <label>Location: </label><select required="">
+          <option value="mile">
+            Near me
+          </option>
+          <option value="2-mile">
+            2 miles
+          </option>
+          <option value="5-mile">
+            5 miles
+          </option>
+          <option value="25-mile">
+            25 miles
+          </option>
+          <option value="more-mile">
+            More
+          </option>
+        </select>
+      </div>
+      <div class="large-3 small-12 columns">
+        <label>&nbsp; </label><input class="button tiny expand" value="Search" type="submit">
+      </div>
+      ~~~
+
 
   .large-6.columns
     h4 Rendered HTML
