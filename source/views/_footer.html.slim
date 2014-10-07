@@ -28,3 +28,7 @@ footer.m-footer
         'Hosted on
         = link_to 'GitHub', data.settings.site.source_code
         |.
+      p.lead.text-center
+        'Last update
+        time datetime="#{DateTime.now.strftime('%d-%m-%Y')} "
+          = DateTime.now.strftime('%d-%m-%Y')

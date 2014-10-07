@@ -1,0 +1,50 @@
+// Foundation Boilerplate settings
+// foundation.zurb.com
+// Licensed under MIT Open Source
+
+// Grid
+
+$row-width: rem-calc(1480);
+
+
+
+// Global
+
+$white:    #FFFFFF;
+$aluminum: #999999;
+$snow:     #F9F9F9;
+$oil:      #333333;
+$jet:      #222222;
+
+$primary-color:   #00BAD2;
+$secondary-color: #607D8B;
+$alert-color:     #E51C23;
+$success-color:   #259B24;
+$warning-color:   #FF5722;
+$info-color:      #03A9F4;
+
+$body-bg: $snow;
+
+
+// Typography
+
+$header-font-color: $jet;
+$subheader-font-color: scale-color($header-font-color, $lightness: 54%);
+
+
+
+// Forms
+
+$input-include-glowing-effect: false;
+
+
+
+// Magellan
+
+$magellan-bg: $body-bg;
+
+
+
+// Panels
+
+$panel-bg: #ffffff;
