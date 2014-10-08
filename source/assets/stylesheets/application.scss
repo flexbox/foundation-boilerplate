@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+@import "google-font";
 @import "foundation/scss/foundation/functions";
 @import "custom-settings";
 
@@ -42,11 +43,12 @@
 @import "foundation/scss/foundation/components/offcanvas";
 @import "foundation/scss/foundation/components/visibility";
 
-@import "modules/colors-list";
-@import "modules/global";
+@import "components/colors-list";
+@import "components/global";
+@import "components/code";
+@import "components/icons";
+@import "components/file-list";
+@import "components/forms";
+@import "components/grid";
+
 @import "modules/header";
-@import "modules/code";
-@import "modules/icons";
-@import "modules/file-list";
-@import "modules/forms";
-@import "modules/grid";

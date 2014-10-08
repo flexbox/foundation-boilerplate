@@ -28,6 +28,8 @@ $body-bg: $snow;
 
 // Typography
 
+$font-family-monospace: 'Droid Sans Mono', 'Monaco', monospace;
+
 $header-font-color: $jet;
 $subheader-font-color: scale-color($header-font-color, $lightness: 54%);
 

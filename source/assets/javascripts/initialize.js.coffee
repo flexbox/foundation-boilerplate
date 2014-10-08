@@ -1,3 +1,2 @@
 $ ->
   $(document).foundation()
-  return
