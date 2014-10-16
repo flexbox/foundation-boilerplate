@@ -1,0 +1,20 @@
+$topbar-height: rem-calc(45);
+$admin-layout-padding: rem-calc(10);
+
+.row-full-page {
+  width: 100%;
+  max-width: 100%;
+}
+
+.m-admin--sidebar {
+  position: fixed;
+  height: 100%;
+  @include side-nav;
+  background-color: $smoke;
+  @include grid-column($columns: 2);
+}
+
+.m-admin--content {
+  padding-top: $topbar-height + $admin-layout-padding;
+  padding-left: $admin-layout-padding;
+}

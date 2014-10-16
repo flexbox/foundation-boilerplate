@@ -1,0 +1,49 @@
+---
+title: Simple foundation admin template
+description: A simple layout for backoffice with a sidebar and a topbar
+---
+
+.fixed
+  nav class="top-bar" data-topbar="" role="navigation"
+    ul class="title-area"
+      li.name
+        h1
+          = link_to 'Sticky Top Bar', '#'
+      li class="toggle-topbar menu-icon"
+        a href="#"
+          span Menu
+
+    section class="top-bar-section"
+      ul.right
+        li class="divider hide-for-small"
+        li
+          a href="#" Main Item
+
+
+
+
+.row.row-full-page.collapse
+  .medium-2.columns
+    ul.m-admin--sidebar
+      - 10.times do |i|
+        li
+          =link_to "Link #{i}", '#'
+
+  .medium-10.columns
+    .m-admin--content
+      table
+        thead
+          tr
+            th width="200" Table Header
+            th Table Header
+            th width="150" Table Header
+            th width="150" Table Header
+        tbody
+          - 500.times do |i|
+            tr
+              td
+                'Content
+                = i
+              td This is longer content Donec id elit non mi porta gravida at eget metus.
+              td Content Goes Here
+              td Content Goes Here
