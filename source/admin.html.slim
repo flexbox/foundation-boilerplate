@@ -3,33 +3,63 @@ title: Simple foundation admin template
 description: A simple layout for backoffice with a sidebar and a topbar
 ---
 
-.fixed
-  nav class="top-bar" data-topbar="" role="navigation"
-    ul class="title-area"
-      li.name
-        h1
-          = link_to 'Sticky Top Bar', '#'
-      li class="toggle-topbar menu-icon"
-        a href="#"
-          span Menu
-
-    section class="top-bar-section"
-      ul.right
-        li class="divider hide-for-small"
-        li
-          a href="#" Main Item
-
-
-
-
 .row.row-full-page.collapse
   .medium-2.columns
     ul.m-admin--sidebar
+      li
+        = link_to data.settings.site.title, '#'
+      li.divider
       - 10.times do |i|
         li
-          =link_to "Link #{i}", '#'
+          = link_to "Link #{i + 1}", '#'
 
   .medium-10.columns
+    .contain-to-grid.sticky
+      nav.top-bar data-topbar="" role="navigation" data-options="sticky_on: large; is_hover: false"
+        ul.title-area
+          li.name
+            h1
+              = link_to '#' do
+                i.fi-home
+          li class="toggle-topbar menu-icon"
+            = link_to '#' do
+              span Menu
+
+        section class="top-bar-section"
+          ul.left
+            li.has-form
+              div class="row collapse"
+                div class="large-8 small-9 columns"
+                  input placeholder="Find Stuff" type="text"
+                div class="large-4 small-3 columns"
+                  a href="#" class="button secondary expand" Search
+
+          ul.right
+            li.divider.hide-for-small
+            li
+              = link_to 'https://github.com/flexbox' do
+                i.fi-torso
+                'Flexbox
+            li.has-dropdown
+              = link_to '#', title: 'Create new...' do
+                i.fi-plus
+              ul.dropdown
+                li
+                  = link_to '#', title: 'Create new...' do
+                    i.fi-page
+                    'New page
+                li
+                  = link_to '#', title: 'Create new...' do
+                    i.fi-address-book
+                    'New adress
+
+            li
+              = link_to '#', title: 'Settings' do
+                i.fi-wrench
+            li
+              = link_to '#', title: 'Sign out' do
+                i.fi-power
+
     .m-admin--content
       table
         thead
@@ -39,11 +69,11 @@ description: A simple layout for backoffice with a sidebar and a topbar
             th width="150" Table Header
             th width="150" Table Header
         tbody
-          - 500.times do |i|
+          - 50.times do |i|
             tr
               td
                 'Content
-                = i
+                = i + 1
               td This is longer content Donec id elit non mi porta gravida at eget metus.
               td Content Goes Here
               td Content Goes Here
