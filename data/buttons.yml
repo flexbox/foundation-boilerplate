@@ -1,0 +1,12 @@
+-
+  size:
+    - custom_class: tiny
+    - custom_class: small
+    - custom_class: medium
+    - custom_class: large
+-
+  action:
+    - custom_class: primary
+    - custom_class: secondary
+    - custom_class: sucess
+    - custom_class: alert
