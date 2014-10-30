@@ -1,12 +1,16 @@
--
-  size:
-    - custom_class: tiny
-    - custom_class: small
-    - custom_class: medium
-    - custom_class: large
--
-  action:
-    - custom_class: primary
-    - custom_class: secondary
-    - custom_class: sucess
-    - custom_class: alert
+- entry: size
+  custom_class:
+  - data: tiny
+  - data: small
+  - data: medium
+  - data: large
+- entry: action
+  custom_class:
+  - data: primary
+  - data: secondary
+  - data: sucess
+  - data: alert
+- entry: radius
+  custom_class:
+  - data: radius
+  - data: round

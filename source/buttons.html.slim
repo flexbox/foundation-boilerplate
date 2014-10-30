@@ -5,10 +5,15 @@ page_title: Buttons
 page_baseline: Want to launch a rocket in space ?
 ---
 
-- data.buttons.each do |item|
-  - if item['custom_class'].present?
-    - item['custom_class'].each do |subitem|
-      li
-        = item.custom_class
-        = subitem.custom_class
+h1 wat
+ul
+  - data.buttons.each do |item|
+    li
+      = item.entry
+
+  / - if item['entry'].present?
+  /   - item['custom_class'].each do |subitem|
+  /     li
+  /       = item.custom_class
+  /       = subitem.custom_class
 
