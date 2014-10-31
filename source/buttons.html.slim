@@ -5,15 +5,31 @@ page_title: Buttons
 page_baseline: Want to launch a rocket in space ?
 ---
 
-h1 wat
-ul
-  - data.buttons.each do |item|
-    li
-      = item.entry
+.row
+  .large-12.columns
+    h2 Basic
+    hr
+    p Here is a list of all buttons markup style
+    ul.inline-list
+      li = link_to 'a href', '#', class: 'button'
+      li
+        input type="submit" class="button" value="input type submit"
+      li
+        button type="submit" class="button icon update "
+          'button type submit
 
-  / - if item['entry'].present?
-  /   - item['custom_class'].each do |subitem|
-  /     li
-  /       = item.custom_class
-  /       = subitem.custom_class
-
+    h2 Advanced
+    hr
+    - data.buttons.each do |item|
+      h3 = item.entry
+      ul.inline-list
+        - item['custom_class'].each do |subitem|
+          li
+            - unless item.entry == "disabled"
+              button class="button #{subitem.data}"
+                =' item.entry
+                = subitem.data
+            - else
+              button class="button #{subitem.data}" disabled=""
+                =' item.entry
+                = subitem.data

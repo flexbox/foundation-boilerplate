@@ -8,9 +8,19 @@
   custom_class:
   - data: primary
   - data: secondary
-  - data: sucess
+  - data: success
   - data: alert
+  - data: warning
+  - data: info
 - entry: radius
   custom_class:
   - data: radius
   - data: round
+- entry: disabled
+  custom_class:
+  - data: primary
+  - data: secondary
+  - data: success
+  - data: alert
+  - data: warning
+  - data: info
