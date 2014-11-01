@@ -1,0 +1,74 @@
+---
+title: Buttons sandbox with Foundation framework
+description:
+page_title: Buttons
+page_baseline: Want to launch a rocket in space ?
+---
+
+.row
+  .medium-10.medium-centered.columns
+    markdown:
+      >Buttons should only be used for actions while hyperlinks are for objects.
+      > <cite>David Leuliette</cite>
+
+      ## Basic
+      - - -
+      Here is a list of all HTML buttons markup style, `<a href>`, `<input>` & `<button>`
+    ul.inline-list
+      li = link_to 'a href', '#', class: 'button'
+      li
+        input type="submit" class="button" value="input type submit"
+      li
+        button type="submit" class="button"
+          'button type submit
+
+    markdown:
+      ## Advanced
+      - - -
+      There is a lot of options available to have custom buttons : sizes, colors & behavior.
+
+    - data.buttons.each do |item|
+      h3 = item.entry
+      ul.inline-list
+        - item['custom_class'].each do |subitem|
+          li
+            - unless item.entry == "disabled"
+              button class="button #{subitem.data}"
+                =' item.entry
+                = subitem.data
+            - else
+              button class="button #{subitem.data}" disabled=""
+                =' item.entry
+                = subitem.data
+
+    markdown:
+      ## Buttons with icons
+      - - -
+      Buttons can be hispter too.
+    ul.inline-list
+      li
+        button class="button icon update"
+          'button icon update
+      li
+        button class="button secondary icon favorite"
+          'button icon favorite
+      li
+        button class="button secondary icon show"
+          'button icon show
+      li
+        button class="button alert icon delete"
+          'button icon delete
+      li
+        button class="button success icon save"
+          'button icon save
+
+    markdown:
+      __Warning__ : icons only works with `<a href>` or `<button>` tags. Never _ever never_ use with `<input>`
+    ul.inline-list
+      li
+        = link_to 'a href', '#', class: 'button secondary icon favorite'
+      li
+        button class="button secondary icon favorite" type="submit"
+          'button type submit
+      li
+        input type="submit" class="button secondary icon favorite" value="input type submit"

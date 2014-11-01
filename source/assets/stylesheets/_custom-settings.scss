@@ -28,9 +28,17 @@ $body-bg: $snow;
 
 // Typography
 
+$font-family-sans-serif: 'Lato', Helvetica, Roboto, Arial, sans-serif;
 $font-family-monospace: 'Droid Sans Mono', 'Monaco', monospace;
 
+$font-weight-light:  300;
+$font-weight-normal: 400;
+$font-weight-bold:   700;
+
+$body-font-family: $font-family-sans-serif;
+
 $header-font-color: $jet;
+$header-font-weight: $font-weight-light;
 $subheader-font-color: scale-color($header-font-color, $lightness: 54%);
 
 

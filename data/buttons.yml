@@ -1,0 +1,26 @@
+- entry: size
+  custom_class:
+  - data: tiny
+  - data: small
+  - data: medium
+  - data: large
+- entry: action
+  custom_class:
+  - data: primary
+  - data: secondary
+  - data: success
+  - data: alert
+  - data: warning
+  - data: info
+- entry: radius
+  custom_class:
+  - data: radius
+  - data: round
+- entry: disabled
+  custom_class:
+  - data: primary
+  - data: secondary
+  - data: success
+  - data: alert
+  - data: warning
+  - data: info

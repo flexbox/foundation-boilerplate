@@ -1,0 +1,53 @@
+$button-icon-size: rem-calc(24);
+
+.fi {
+  font-family: "foundation-icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  text-decoration: inherit;
+}
+
+.button {
+  &.icon {
+    position: relative;
+    padding-left: $button-med * 2 + $button-icon-size;
+
+    &:before {
+      @extend .fi;
+      position: absolute;
+      font-size: $button-icon-size;
+      left: $button-med;
+      top: 25%;
+    }
+  }
+
+
+  &.update {
+    @extend .fi-pencil;
+  }
+
+  &.show {
+    @extend .fi-eye;
+  }
+
+  &.delete {
+    @extend .fi-trash;
+  }
+
+  &.save {
+    @extend .fi-check;
+  }
+
+  &.favorite {
+    @extend .fi-heart;
+  }
+
+  &.github {
+    @extend .fi-social-github;
+  }
+}
