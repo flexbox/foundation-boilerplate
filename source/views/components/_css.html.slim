@@ -2,12 +2,12 @@
   .small-12.medium-12.columns
     h2#css data-magellan-destination="css"
       | Maintaining CSS
-    h3
-      | When to Use
-    p
-      | Stylesheet maintenance can become overwhelming on large applications. Here are a few tips and tricks to keeping your sanity in a CSS heavy world.
-    h3
-      | A Few Rules for Clean CSS
+    markdown:
+      ### When to Use
+
+      Stylesheet maintenance can become overwhelming on large applications. Here are a few tips and tricks to keeping your sanity in a CSS heavy world.
+
+      ### A Few Rules for Clean CSS
     ul
       li
         strong Good Commenting.
@@ -30,7 +30,7 @@
       ~~~ scss
       @import
         "foundation/functions",
-        "settings";
+        "custom-settings";
 
       @import
         "foundation/normalize",

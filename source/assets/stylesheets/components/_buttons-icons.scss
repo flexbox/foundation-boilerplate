@@ -28,7 +28,11 @@ $button-icon-size: rem-calc(24);
 
 
   &.update {
-    @extend .fi-update;
+    @extend .fi-pencil;
+  }
+
+  &.show {
+    @extend .fi-eye;
   }
 
   &.delete {
@@ -36,6 +40,14 @@ $button-icon-size: rem-calc(24);
   }
 
   &.save {
-    @extend .fi-save;
+    @extend .fi-check;
+  }
+
+  &.favorite {
+    @extend .fi-heart;
+  }
+
+  &.github {
+    @extend .fi-social-github;
   }
 }
