@@ -1,0 +1,46 @@
+
+ ___  ___  _ _  _  ___  _
+| . \| . || | || || . \| |
+| | ||   || ' || || | || |_
+|___/|_|_||__/ |_||___/|___|
+
+    Handcrafted since 2014
+
+    Humans TXT: Wa are humans, not machines
+
+_______________________________________________________________________________
+
+TEAM
+
+This website is handcrafted by David Leuliette.
+Front-end developer
+http://davidl.fr/about.html
+
+_______________________________________________________________________________
+
+TECHNOLOGY
+
+Middleman
+http://middlemanapp.com/
+
+Foundation
+http://foundation.zurb.com/
+
+SASS
+http://sass-lang.com/
+
+Github
+https://github.com/
+
+_______________________________________________________________________________
+
+Typography
+
+Droid Serif (font)
+http://www.google.com/fonts/specimen/Droid+Serif
+
+Lato (font)
+http://www.google.com/fonts/specimen/Lato
+
+Foundation icons (icons)
+http://zurb.com/playground/foundation-icon-fonts-3
