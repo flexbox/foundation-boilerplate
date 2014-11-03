@@ -15,6 +15,7 @@ $aluminum: #999999;
 $snow:     #F9F9F9;
 $oil:      #333333;
 $jet:      #222222;
+$black:    #000000;
 
 $primary-color:   #00BAD2;
 $secondary-color: #607D8B;
@@ -24,6 +25,7 @@ $warning-color:   #FF5722;
 $info-color:      #03A9F4;
 
 $body-bg: $snow;
+
 
 
 // Typography
@@ -40,6 +42,8 @@ $body-font-family: $font-family-sans-serif;
 $header-font-color: $jet;
 $header-font-weight: $font-weight-light;
 $subheader-font-color: scale-color($header-font-color, $lightness: 54%);
+
+$text-shadow: rgba($black,.4) 0px 2px 0px;
 
 
 

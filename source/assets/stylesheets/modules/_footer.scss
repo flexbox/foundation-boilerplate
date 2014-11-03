@@ -1,0 +1,13 @@
+.m-footer {
+  background-color: $black;
+  p {
+    color: $white-light;
+  }
+}
+
+.m-footer--title {
+  @extend h2;
+  text-align: center;
+  color: $white;
+  margin: rem-calc(40 0);
+}

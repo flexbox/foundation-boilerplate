@@ -1,9 +1,9 @@
 # With alternative layout
-page "/typography.html", :layout => :pages
-page "/forms.html", :layout => :pages
-page "/icons.html", :layout => :pages
-page "/buttons.html", :layout => :pages
-page "/admin.html", :layout => :backoffice
+page "/type.html", layout: :pages
+page "/forms.html", layout: :pages
+page "/icons.html", layout: :pages
+page "/buttons.html", layout: :pages
+page "/admin.html", layout: :backoffice
 
 require 'slim'
 # Avoid HTML minification for people who don't know slim

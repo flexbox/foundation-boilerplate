@@ -1,13 +1,12 @@
-header.m-masterhead
+header.m-header
   .alert-box.info.text-center
     'Work in Progress! Not quite ready for prime-time
 
   .row
     .medium-6.columns
-      h6.subheader
-        = data.settings.site.title
+      = data.settings.site.title
     .medium-6.columns
-      ul.inline-list.right
+      ul.m-header--list
         li
           = link_to 'Source code', data.settings.site.source_code
         li
@@ -15,7 +14,7 @@ header.m-masterhead
 
   .row.text-center
     .medium-8.medium-centered.small-12.columns
-      h1.m-masterhead--title
+      h1.m-header--title
         = current_page.data.page_title
       p
         = current_page.data.page_baseline

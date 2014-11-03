@@ -1,12 +1,95 @@
 ---
 title: Text content example
 description: Content choregraphy
-page_title: Typography
-page_baseline: Example of huge text content for content choregraphy testing
+page_title: Typography Style Guide
+page_baseline: 95% of content on the web is text
 ---
 
 .row
   .medium-8.medium-centered.columns
+
+    .row
+      .small-12.medium-12.columns
+        markdown:
+          ## A note on using this style guide
+
+          ### When to use
+
+          Headings are used to denote different sections of content, usually consisting of related paragraphs and other HTML elements. They range from h2 to h4 and should be styled in a clear hierarchy (i.e., largest to smallest).
+
+          ### When to use paragraphs
+
+          Paragraphs are groups of sentences, each with a lead (first sentence) and transition (last sentence). They are block level elements, meaning they stack vertically when repeated. Use them as such.
+
+          ### Editing the CSS
+
+          SCSS variables for typography can be found in `_type.scss`.
+
+.m-section--inverse
+  .row
+    .medium-10.medium-centered.columns
+      p @extend
+      h2 THE STAR WARS NAMING
+
+.row
+  .medium-8.medium-centered.columns
+    .row
+      .medium-4.columns
+        h4 SCSS
+        markdown:
+          ~~~ scss
+          $header-font-family
+          $header-font-weight
+
+          $h1-font-size
+          $h2-font-size
+          $h3-font-size
+          $h4-font-size
+          $h5-font-size
+          $h6-font-size
+          ~~~
+      .medium-8.columns
+        h4 Rendered HTML
+        h1.js-type
+          'h1 Header one
+          small with a baseline
+        h2.js-type
+          'h2 Header two
+          small with a baseline
+        h3.js-type
+          'h3 Header three
+          small with a baseline
+        h4.js-type
+          'h4 Header four
+          small with a baseline
+        h5.js-type
+          'h5 Header five
+          small with a baseline
+        h6.js-type
+          'h6 Header six
+          small with a baseline
+
+    .row
+      .medium-4.columns
+        h4 SCSS
+        markdown:
+          ~~~ scss
+          $body-font-family
+          $body-font-weight
+
+          $paragraph-font-size
+          ~~~
+      .medium-8.columns
+        h4 Rendered HTML
+        p.js-type.lead Uh listen, do you know where Riverside Drive is? Yeah, sure, okay.
+
+        p.js-type What's going on? Where have you been all week? I'm sure that in 1985, plutonium is available at every corner drug store, but in 1955, it's a little hard to come by. Marty, I'm sorry, but I'm afraid you're stuck here. Because, you might regret it later in life.
+
+        .js-type
+          blockquote
+            'Don't worry. As long as you hit that wire with the connecting hook at precisely 88 miles per hour, the instance the lightning strikes the tower, everything will be fine.
+            cite Doc
+
     markdown:
       # The Cathedral and the Bazaar
 
