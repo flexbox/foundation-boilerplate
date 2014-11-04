@@ -1,13 +1,12 @@
 ---
 title: Text content example
 description: Content choregraphy
-page_title: Typography Style Guide
+page_title: Typography style guide
 page_baseline: 95% of content on the web is text
 ---
 
 .row
   .medium-8.medium-centered.columns
-
     .row
       .small-12.medium-12.columns
         markdown:
@@ -15,7 +14,19 @@ page_baseline: 95% of content on the web is text
 
           ### When to use
 
-          Headings are used to denote different sections of content, usually consisting of related paragraphs and other HTML elements. They range from h2 to h4 and should be styled in a clear hierarchy (i.e., largest to smallest).
+          Headings are used to denote different sections of content, usually consisting of related paragraphs and other HTML elements. They range from h1 to h6 and should be styled in a clear hierarchy (i.e., largest to smallest). Il you are looking for a good seo you must respect this :
+
+          - One `h1` per page
+          - Follow a logic hierarchy
+            - h1
+              - p
+              - h2
+                - h3
+                - p
+                - h3
+                - p
+              - h2
+              - p
 
           ### When to use paragraphs
 
@@ -23,13 +34,39 @@ page_baseline: 95% of content on the web is text
 
           ### Editing the CSS
 
-          SCSS variables for typography can be found in `_type.scss`.
+          SCSS variables for typography can be found :
 
+          ~~~ scss
+          /foundation/scss/foundation/components/_type.scss
+          ~~~
+
+          ### Follow naming convention
+
+          How can we split content and architecure for SEO ? Here is a solution, [adopt a good typography naming](http://stuffandnonsense.co.uk/blog/about/star-wars-styling).
 .m-section--inverse
   .row
     .medium-10.medium-centered.columns
       p @extend
-      h2 THE STAR WARS NAMING
+      h2 THE STAR WARS STYLING
+      markdown:
+        ~~~ scss
+        .emperor {
+          @extend h1;
+        }
+        .vador {
+          @extend h2;
+        }
+        .maul {
+          @extend h3;
+        }
+        .sith {
+          @extend h4;
+        }
+        .acolyte {
+          @extend h5;
+        }
+        ~~~
+
 
 .row
   .medium-8.medium-centered.columns
