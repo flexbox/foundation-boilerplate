@@ -16,6 +16,7 @@ $snow:     #F9F9F9;
 $oil:      #333333;
 $jet:      #222222;
 $black:    #000000;
+$pink:     #E91E63;
 
 $primary-color:   #00BAD2;
 $secondary-color: #607D8B;
@@ -43,6 +44,13 @@ $header-font-color: $jet;
 $header-font-weight: $font-weight-light;
 $subheader-font-color: scale-color($header-font-color, $lightness: 54%);
 
+$code-color: $pink;
+$code-font-family: $font-family-monospace;
+$code-font-weight: $font-weight-bold;
+$code-background-color: transparent;
+$code-border-size: 0px;
+$code-border-style: solid;
+$code-border-color: scale-color($code-background-color, $lightness: -10%);
 $code-padding: 0;
 
 $text-shadow: rgba($black,.4) 0px 2px 0px;

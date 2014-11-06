@@ -1,38 +1,22 @@
-$code-bg: $oil;
-$code-font-family: $font-family-monospace;
-
-$code-color: $secondary-color;
-$code-background-color: rgba($white,0.8);
-
-
-
-pre, code {
-  color: #faf6e4;
-  font-family: $code-font-family;
-}
-
-code {
-  color: $code-color;
-}
+$pre-bg: $oil;
 
 pre {
-  background-color: $code-bg;
+  background-color: $pre-bg;
   padding: rem-calc(15 10);
   line-height: rem-calc(20);
   margin-bottom: rem-calc(20);
   &:hover {
     cursor: $cursor-text-value;
   }
+  code {
+    font-weight: $font-weight-normal;
+  }
 }
-
-
-
-
 
 code.highlight {
   border: none;
   color: #faf6e4;
-  background-color: $code-bg;
+  background-color: $pre-bg;
 }
 .highlight .gl {
   color: #dee5e7;
@@ -46,10 +30,6 @@ code.highlight {
   color: #b2fd6d;
   font-style: italic;
 }
-// .highlight .err {
-//   color: #fefeec;
-//   background-color: #cc0000;
-// }
 .highlight .gr {
   color: #fefeec;
   background-color: #cc0000;
