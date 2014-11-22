@@ -3,6 +3,7 @@ page "/type.html", layout: :pages
 page "/forms.html", layout: :pages
 page "/icons.html", layout: :pages
 page "/buttons.html", layout: :pages
+page "/about.html", layout: :pages
 page "/admin.html", layout: :backoffice
 
 require 'slim'
