@@ -6,7 +6,65 @@ page_baseline: Want to launch a rocket in space ?
 ---
 
 .row
-  .medium-10.medium-centered.columns
+  .medium-8.medium-centered.columns
+    markdown:
+      ## A note on using buttons style guide
+      - - -
+
+      ### When to Use
+
+      Buttons are tied to an action of some kind, whether that button is on a cheese dispenser or launches the rocket that you're strapped to. On the Web, we follow similar conventions.
+
+      ### How to Use
+
+      This solution is perfect when the button needs to submit a form of some kind.
+
+      __Note:__ Make sure to keep `type="submit"` on the button tag. That's what tells Internet Explorer to submit the form. This doesn't matter for anchor tags.
+
+      ### Using the Anchor Tag
+
+      When you need the button to take you somewhere (e.g. a sign up button), this is the perfect solution.
+
+      ### Editing the CSS
+
+      SCSS variables for buttons can be found in `_settings.scss` file, try to search variables `$button-*`
+
+    .row
+      .small-6.medium-6.columns
+        h4 HTML
+        markdown:
+          ~~~ html
+          <!-- Size Classes -->
+          <a href="#" class="button [tiny small large]">Default Button</a>
+
+          <!-- Color Classes -->
+          <a href="#" class="button [secondary success alert]">Color Button</a>
+
+          <!-- Radius Classes -->
+          <a href="#" class="button [radius round]">Radius Button</a>
+
+          <!-- Disabled Class -->
+          <a href="#" class="button disabled">Disabled Button</a>
+
+          <!-- Expand Class -->
+          <a href="#" class="button expand">Expanded Button</a>
+          ~~~
+
+      .small-6.medium-6.columns
+        h4 Rendered HTML
+        = link_to '.button .tiny', '#', class: 'button tiny'
+        .row
+          .medium-4.columns
+            = link_to '.button .secondary', '#', class: 'button secondary'
+          .medium-4.columns
+            = link_to '.button .alert', '#', class: 'button alert'
+          .medium-4.columns
+            = link_to '.button .success', '#', class: 'button success'
+
+        = link_to '.button .expand', '#', class: 'button expand'
+
+
+
     markdown:
       >Buttons should only be used for actions while hyperlinks are for objects.
       > <cite>David Leuliette</cite>
@@ -63,7 +121,7 @@ page_baseline: Want to launch a rocket in space ?
           'button icon save
 
     markdown:
-      __Warning__ : icons only works with `<a href>` or `<button>` tags. Never _ever never_ use with `<input>`
+      __Warning__: icons only works with `<a href>` or `<button>` tags. Never _ever never_ use with `<input>`
     ul.inline-list
       li
         = link_to 'a href', '#', class: 'button secondary icon favorite'

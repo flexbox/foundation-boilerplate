@@ -3,16 +3,15 @@ title: Homepage
 description: Foundation Boilerplate is a front-end template for building fast, scalable, and responsive web apps or sites. Help designer to code a strong set of guideline
 ---
 
-header.m-masterhead
-  .alert-box.info.text-center
+header.m-header
+  .alert-box.warning.text-center
     'Work in Progress! Not quite ready for prime-time
 
   .row
     .medium-6.columns
-      h6.subheader
-        = data.settings.site.title
+
     .medium-6.columns
-      ul.inline-list.right
+      ul.m-header--list
         li
           = link_to 'Source code', 'https://github.com/flexbox/foundation-boilerplate'
         li
@@ -20,34 +19,25 @@ header.m-masterhead
 
   .row.text-center
     .medium-8.medium-centered.small-12.columns
-      h1.m-masterhead--title The web’s most popular responsive front-end template
+      h1.m-header--title The web’s most popular responsive front-end template
       p
-        'The most important starting points for any project is a set of guidelines. #{data.settings.site.title} helps designer & developpers to build <strong>fast</strong>, <strong>scalable</strong>, and <strong>responsive</strong> web sites. Use this boilerplate for your next project with the help of
-        = link_to 'Foundation framework', 'http://foundation.zurb.com/'
-        '.
+        'The most important starting points for any project is a set of guidelines. #{data.settings.site.title} helps designer & developpers to build <strong>fast</strong>, <strong>scalable</strong>, and <strong>responsive</strong> web sites. Use this boilerplate for your next project with the help of Foundation framework.
 
   .row
     .medium-3.medium-centered.columns
-      = link_to 'Download Boilerplate', 'https://github.com/flexbox/foundation-boilerplate/archive/gh-pages.zip', class: 'button large expand m-masterhead--button'
+      = link_to 'Download Boilerplate', 'https://github.com/flexbox/foundation-boilerplate/archive/gh-pages.zip', class: 'button large expand m-header--button icon download'
 
 
 .row.m-content
   .medium-2.columns
     = partial 'views/navigation'
   .medium-10.columns
-    = partial 'views/components/grid'
-    hr
-    = partial 'views/components/css'
     hr
     = partial 'views/components/colors'
-    hr
-    = partial 'views/components/typography'
     hr
     = partial 'views/components/icons'
     hr
     = partial 'views/components/lists'
-    hr
-    = partial 'views/components/buttons'
     hr
     = partial 'views/components/forms'
     hr

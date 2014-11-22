@@ -1,24 +1,41 @@
-footer.m-footer
+footer.m-footer role="contentinfo"
   .row
-    .medium-12.columns
-      h2.text-center.m-masterhead--title#download data-magellan-destination="download"
-        'You want to hack this Boilerplate ?
+    .medium-2.columns
+      nav.side-nav role="navigation"
+        li
+          'Navigation
+        li
+          = link_to 'Homepage', '/'
+        li
+          = link_to 'About', '/about'
+        li
+          'Components
+        li
+          = link_to 'Buttons', '/buttons'
+        li
+          = link_to 'Typography', '/type'
 
-  .row
-    .medium-4.medium-centered.columns.text-center
+    .medium-2.columns
+      nav.side-nav role="navigation"
+        li
+          'Templates
+        li
+          = link_to 'Admin', 'templates/admin'
+
+    .medium-8.columns
+      .m-footer--title
+        'You want to hack this Boilerplate ?
       = link_to 'Fork on GitHub', data.settings.site.source_code, class: 'button secondary large icon github'
       p.lead
         'Or you can help me and
-        = link_to 'report an issue', "#{data.settings.site.source_code}issues"
+        = link_to 'report an issue &rarr;', "#{data.settings.site.source_code}issues"
 
-  .row
-    .medium-10.medium-centered.columns
-      p.text-center
-        =' data.settings.site.title
-        'is created, and maintained by
-        = link_to 'David Leuliette', '/human.txt'
-        |.
-      p.lead.text-center
-        'Last update
-        time datetime="#{DateTime.now.strftime('%d-%m-%Y')} "
-          = DateTime.now.strftime('%d-%m-%Y')
+  hr
+  p.text-center
+    =' data.settings.site.title
+    'is created, and maintained by
+    = link_to 'David Leuliette', '/human.txt'
+    ', Last update
+    time datetime="#{DateTime.now.strftime('%d-%m-%Y')} "
+      = DateTime.now.strftime('%d-%m-%Y')
+      '.

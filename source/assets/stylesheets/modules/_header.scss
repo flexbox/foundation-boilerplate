@@ -1,23 +1,32 @@
-.m-masterhead,
-.m-footer {
-  background: $oil;
-  position: relative;
-  z-index: 99;
-
+.m-header {
+  background-color: $primary-color;
+  color: $white;
   p {
-    color: $white-light;
-    text-shadow: 0px 2px #000000;
+    color: $white;
+    text-shadow: $text-shadow;
   }
 }
 
-.m-masterhead--title {
+.m-header--title {
   color: $white;
-  text-shadow: 0px 2px #000000;
+  text-shadow: $text-shadow;
+  font-size: rem-calc(70);
   margin-top: rem-calc(50);
   margin-bottom: rem-calc(50);
 }
 
-.m-masterhead--button {
+.m-header--button {
   margin-top: rem-calc(25);
   margin-bottom: rem-calc(50);
+}
+
+.m-header--list {
+  float: right;
+  @include inline-list;
+  a {
+    color: $white;
+    &:hover {
+      color: $black;
+    }
+  }
 }

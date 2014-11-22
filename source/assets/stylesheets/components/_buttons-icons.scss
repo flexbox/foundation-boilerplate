@@ -47,6 +47,10 @@ $button-icon-size: rem-calc(24);
     @extend .fi-heart;
   }
 
+  &.download {
+    @extend .fi-download;
+  }
+
   &.github {
     @extend .fi-social-github;
   }
