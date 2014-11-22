@@ -1,140 +1,52 @@
 ---
 title: Icons content example
 description: Multiples examples with icons and Foundation boilerplate
-page_title: Icons
+page_title: Font icons
 page_baseline: These examples use <strong>Foundation icons 3</strong>, but feel free to try it with fontawesome, fontello or your own svg icons !
 ---
 
-hr
+.row
+  .medium-10.medium-centered.columns
+    .row
+      .small-12.medium-12.columns
+        markdown:
+          ## Icons
+          - - -
+
+          You can customize your icons to be any size, color, style in CSS.
+
+    .row
+      .small-4.columns
+        h4 HTML
+        markdown:
+          ~~~ html
+          <i class="fi-[icon] small"></i>
+          <i class="fi-[icon] medium"></i>
+          <i class="fi-[icon] large"></i>
+          ~~~
+
+      .small-8.columns
+        h4 Rendered HTML
+        .row
+          .small-4.columns
+            i.fi-html5.small
+            i.fi-html5.medium
+            i.fi-html5.large
+          .small-4.columns
+            i.fi-css3.small
+            i.fi-css3.medium
+            i.fi-css3.large
+          .small-4.columns
+            i.fi-layout.small
+            i.fi-layout.medium
+            i.fi-layout.large
+        p.text-right
+          = link_to 'See the complete list &rarr;', 'http://zurb.com/playground/foundation-icon-fonts-3'
+
 .row
   .small-12.medium-12.columns
     h2 File list
     p Here is a nice example is you want a folder based menu.
-
-    .row
-      .large-6.columns
-        h4 HTML
-        markdown:
-          ~~~ html
-          <ul>
-            <li><a href="#">
-              <i class="fi-folder"></i>Folder</a>
-            </li>
-            <hr class="folder">
-              <li><a href="#">
-                <i class="fi-folder"></i>Folder</a>
-                <ul>
-                  <li><a href="#">
-                    <i class="fi-folder"></i>Subfolder</a>
-                  </li>
-                  <ul>
-                    <li><a href="#">
-                      <i class="fi-page"></i>File</a>
-                    </li>
-                    <li><a href="#">
-                      <i class="fi-page"></i>File</a>
-                    </li>
-                  </ul>
-                  <hr class="subfolder">
-                    <li><a href="#">
-                      <i class="fi-page"></i>File</a>
-                    </li>
-
-                </ul>
-              </li>
-              <hr class="folder">
-                <li><a href="#">
-                  <i class="fi-folder"></i>Folder</a>
-                  <ul>
-                    <li><a href="#">
-                      <i class="fi-page"></i>File</a>
-                    </li>
-                    <li><a href="#">
-                      <i class="fi-page"></i>File</a>
-                    </li>
-                    <li><a href="#">
-                      <i class="fi-page"></i>File</a>
-                    </li>
-                  </ul>
-                </li>
-                <hr class="folder">
-                  <li><a href="#">
-                    <i class="fi-page"></i>File</a>
-                  </li>
-                  <li><a href="#">
-                    <i class="fi-page"></i>File</a>
-                  </li>
-                  <li><a href="#">
-                    <i class="fi-page"></i>File</a>
-                  </li>
-          </ul>
-          ~~~
-
-
-
-      .large-6.columns
-        h4 Rendered HTML
-        .file-list
-          ul
-            li
-              =link_to '#' do
-                i.fi-folder
-                | Folder
-            hr.folder
-              li
-                =link_to '#' do
-                  i.fi-folder
-                  | Folder
-                ul
-                  li
-                    =link_to '#' do
-                      i.fi-folder
-                      | Subfolder
-                  ul
-                    li
-                      =link_to '#' do
-                        i.fi-page
-                        | File
-                    li
-                      =link_to '#' do
-                        i.fi-page
-                        | File
-                  hr.subfolder
-                    li
-                      =link_to '#' do
-                        i.fi-page
-                        | File
-              hr.folder
-                li
-                  =link_to '#' do
-                    i.fi-folder
-                    | Folder
-                  ul
-                    li
-                      =link_to '#' do
-                        i.fi-page
-                        | File
-                    li
-                      =link_to '#' do
-                        i.fi-page
-                        | File
-                    li
-                      =link_to '#' do
-                        i.fi-page
-                        | File
-                hr.folder
-                  li
-                    =link_to '#' do
-                      i.fi-page
-                      | File
-                  li
-                    =link_to '#' do
-                      i.fi-page
-                      | File
-                  li
-                    =link_to '#' do
-                      i.fi-page
-                      | File
 
     .row
       .large-6.columns
@@ -283,12 +195,3 @@ hr
                         i.fi-graph-pie
                         | Pie Chart
                   hr.folder
-
-hr
-.row
-  .small-6.columns
-    p
-      = link_to '&larr; Back to homepage', data.settings.site.url
-  .small-6.columns
-    p.text-right
-      = link_to 'See the complete list &rarr;', 'http://zurb.com/playground/foundation-icon-fonts-3'
