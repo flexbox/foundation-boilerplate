@@ -1,19 +1,39 @@
-# With alternative layout
+activate :navtree do |options|
+  options.data_file = 'tree.yml'
+  options.source_dir = 'source' # The `source` directory we want to represent in our nav tree.
+  options.ignore_files = [
+    'sitemap.xml',
+    'robots.txt',
+    'human.txt',
+    'favicon_base.png',
+    'CNAME'
+  ]
+  options.ignore_dir = ['assets', 'views'] # An array of directories we want to ignore when building our tree.
+  options.home_title = 'Home' # The default link title of the home page (located at "/"), if otherwise not detected.
+  options.promote_files = ['index.html'] # Any files we might want to promote to the front of our navigation
+  options.ext_whitelist = [] # If you add extensions (like '.md') to this array, it builds a whitelist of filetypes for inclusion in the navtree.
+end
+
+activate :livereload
+activate :gzip
+activate :directory_indexes
+activate :syntax
+
+###
+# Page options, layouts, aliases and proxies
+###
+
 page "/type.html", layout: :pages
 page "/forms.html", layout: :pages
 page "/icons.html", layout: :pages
 page "/buttons.html", layout: :pages
 page "/about.html", layout: :pages
 page "/admin.html", layout: :backoffice
+page "/sitemap.xml", layout: false
 
 require 'slim'
 # Avoid HTML minification for people who don't know slim
 Slim::Engine.default_options[:pretty] = true
-
-activate :livereload
-activate :gzip
-activate :directory_indexes
-activate :syntax
 
 set :js_dir, 'assets/javascripts'
 set :css_dir, 'assets/stylesheets'
@@ -37,7 +57,7 @@ configure :build do
   activate :asset_hash
 
   activate :relative_assets
-  set :relative_links, true
+  set :relative_links, false
 
   activate :sitemap, :hostname => data.settings.site.url
 

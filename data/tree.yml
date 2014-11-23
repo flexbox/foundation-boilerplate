@@ -1,0 +1,10 @@
+---
+about.html.slim: /about.html.slim
+buttons.html.slim: /buttons.html.slim
+forms.html.slim: /forms.html.slim
+grid.html.slim: /grid.html.slim
+icons.html.slim: /icons.html.slim
+index.html.slim: /index.html.slim
+templates:
+  admin.html.slim: /templates/admin.html.slim
+type.html.slim: /type.html.slim

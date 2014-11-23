@@ -32,10 +32,18 @@ header.m-header
   .medium-2.columns
     = partial 'views/navigation'
   .medium-10.columns
+    h2#js-layout data-magellan-destination="layout"
+      'Wireframes layouts
     hr
+    p Here is a list of templates you can use for your next HTML prototype :
+
+    ul
+      = tree_to_html data.tree['templates']
+
+    h2#js-design data-magellan-destination="design"
+      'Design atmosphere
+    hr
+    p Here is a list of templates you can use for your next HTML prototype :
     = partial 'views/components/colors'
-    hr
-    = partial 'views/components/forms'
-    hr
 
 = partial 'views/footer'

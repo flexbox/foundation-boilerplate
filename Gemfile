@@ -6,5 +6,6 @@ gem 'middleman-livereload',   '~> 3.1.0'
 gem 'middleman-syntax',       '~> 2.0.0'
 gem 'middleman-sitemap',      '~> 0.0.13'
 gem 'middleman-autoprefixer', '~> 1.1.3'
+gem 'middleman-navtree'
 
 gem 'slim',                   '~> 2.0.0'

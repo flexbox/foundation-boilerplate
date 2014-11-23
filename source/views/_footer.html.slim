@@ -9,16 +9,20 @@ footer.m-footer role="contentinfo"
         li
           = link_to 'About', '/about'
         li
-          = link_to 'Icons', '/icons'
-        li
           'Components
         li
           = link_to 'Buttons', '/buttons'
         li
           = link_to 'Typography', '/type'
+        li
+          = link_to 'Forms', '/forms'
 
     .medium-2.columns
       nav.side-nav role="navigation"
+        li
+          'Misc
+        li
+          = link_to 'Icons', '/icons'
         li
           'Templates
         li
@@ -27,9 +31,11 @@ footer.m-footer role="contentinfo"
     .medium-8.columns
       .m-footer--title
         'You want to hack this Boilerplate ?
+      p
+        'If you have some ideas about crazy feature, amazing template, or simply want to test Sass files :
       = link_to 'Fork on GitHub', data.settings.site.source_code, class: 'button secondary large icon github'
       p.lead
-        'Or you can help me and
+        'Or you can help me to fix bugs and
         = link_to 'report an issue &rarr;', "#{data.settings.site.source_code}issues"
 
   hr
