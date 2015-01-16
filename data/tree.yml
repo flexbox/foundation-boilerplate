@@ -7,4 +7,5 @@ icons.html.slim: /icons.html.slim
 index.html.slim: /index.html.slim
 templates:
   admin.html.slim: /templates/admin.html.slim
+  homepage.html.slim: /templates/homepage.html.slim
 type.html.slim: /type.html.slim
