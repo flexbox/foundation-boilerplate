@@ -5,6 +5,7 @@ forms.html.slim: /forms.html.slim
 grid.html.slim: /grid.html.slim
 icons.html.slim: /icons.html.slim
 index.html.slim: /index.html.slim
+inputs.html.slim: /inputs.html.slim
 templates:
   admin.html.slim: /templates/admin.html.slim
   homepage.html.slim: /templates/homepage.html.slim

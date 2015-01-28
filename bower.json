@@ -16,6 +16,6 @@
     "tests"
   ],
   "dependencies": {
-    "foundation": "~5.4.6"
+    "foundation": "~5.5.0"
   }
 }

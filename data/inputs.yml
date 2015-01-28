@@ -1,0 +1,20 @@
+- type: color
+- type: date
+- type: datetime
+- type: datetime-local
+- type: email
+- type: file
+  accept:
+    - attribute: "audio/*"
+    - attribute: "video/*"
+    - attribute: "image/*"
+- type: month
+- type: number
+- type: password
+- type: range
+- type: search
+- type: tel
+- type: text
+- type: time
+- type: url
+- type: week

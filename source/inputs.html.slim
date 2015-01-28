@@ -1,0 +1,43 @@
+---
+title: Inputs sandbox with Foundation framework
+description:
+page_title: Input
+page_baseline: Collect data from the user the smart way
+---
+
+.row
+  .medium-8.medium-centered.columns
+    markdown:
+      ## A note on using input type styleguide
+      - - -
+
+      With HTML5 & smartphones `form` & `input type` are fun ! This page is a sandbox to quickly test behavior and style.
+
+      ### Differents values
+
+    form
+      ul.small-block-grid-2
+        - data.inputs.each do |input|
+          li
+            label
+              |&lt;input type="
+              = input.type
+              |"&gt;
+              input type="#{input.type}"
+
+    markdown:
+      ### Upload files
+
+      You can specify the type of upload especially effective for smartphones usecases.
+
+    form
+      ul.small-block-grid-2
+        - data.inputs.each do |input|
+          - if input.type == "file"
+            - input['accept'].each do |subitem|
+              li
+                label
+                  |&lt;input type="
+                  = input.type
+                  |" attribute="#{subitem.attribute}"&gt;
+                  input type="#{input.type}" attribute="#{subitem.attribute}"
