@@ -1,0 +1,153 @@
+---
+title: Cross-platform select attribute with only minimal CSSS
+description:
+page_title: Select
+page_baseline: Style an HTML select element with CSS no JavaScript needed
+---
+
+.row
+  .medium-8.medium-centered.columns
+    markdown:
+      ## A note on using CSS to style select
+      - - -
+
+      __Note:__ From an original idea of [Todd Parker](http://jsbin.com/telegu/1) - [Filament Group Inc](http://www.filamentgroup.com/).
+
+      ### How it works
+
+      This styles a native select consistently cross-platform with only minimal CSS. The native select is then styled so it is essentially invisible (no appearance, border, bg) leaving only the select's text visible. There is a wrapper around the select that has the majority of the button styles (gradient, shadow, border, etc.). We then add the custom arrow via a pseudo element to the right.
+
+      ### How to Use
+
+      This solution is perfect when the button needs to submit a form of some kind.
+
+      ### Editing the CSS
+
+      SCSS variables for buttons can be found in `_select.scss` file.
+
+
+.m-section--inverse
+  .row
+    .medium-10.medium-centered.columns
+      p HTML
+      markdown:
+        ~~~ html
+        <label class="wrapper">
+          This label wraps the select
+          <div class="custom-select">
+            <select>
+              <option> Apples </option>
+              <option> Bananas </option>
+              <option> Grapes </option>
+              <option> Oranges </option>
+            </select>
+          </div>
+        </label>
+        ~~~
+
+.row
+  .medium-8.medium-centered.columns
+
+    label
+      'Native select
+    select
+      option
+        'Apples
+      option
+        'Bananas
+      option
+        'Grapes
+      option
+        'Oranges
+      option selected=""
+        'A very long option name to test wrapping
+
+    label
+      'Native disabled select
+    select disabled="disabled"
+      option
+        'Apples
+      option
+        'Bananas
+      option
+        'Grapes
+      option
+        'Oranges
+      option selected=""
+        'A very long option name to test wrapping
+
+    label class="wrapper"
+      'This label wraps the select
+      div class="custom-select"
+        select
+          option Apples
+          option Bananas
+          option Grapes
+          option Oranges
+          option A very long option name to test wrapping
+
+    label class="wrapper"
+      'This label wraps the disabled select
+      div class="custom-select disabled"
+        select disabled="disabled"
+          option Apples
+          option Bananas
+          option Grapes
+          option Oranges
+          option A very long option name to test wrapping
+
+    label class="wrapper" for="states"
+      'This label is stacked above the select
+    div class="custom-select"
+      select
+        option value="AL" Alabama
+        option value="AK" Alaska
+        option value="AZ" Arizona
+        option value="AR" Arkansas
+        option value="CA" California
+        option value="CO" Colorado
+        option value="CT" Connecticut
+        option value="DE" Delaware
+        option value="FL" Florida
+        option value="GA" Georgia
+        option value="HI" Hawaii
+        option value="ID" Idaho
+        option value="IL" Illinois
+        option value="IN" Indiana
+        option value="IA" Iowa
+        option value="KS" Kansas
+        option value="KY" Kentucky
+        option value="LA" Louisiana
+        option value="ME" Maine
+        option value="MD" Maryland
+        option value="MA" Massachusetts
+        option value="MI" Michigan
+        option value="MN" Minnesota
+        option value="MS" Mississippi
+        option value="MO" Missouri
+        option value="MT" Montana
+        option value="NE" Nebraska
+        option value="NV" Nevada
+        option value="NH" New Hampshire
+        option value="NJ" New Jersey
+        option value="NM" New Mexico
+        option value="NY" New York
+        option value="NC" North Carolina
+        option value="ND" North Dakota
+        option value="OH" Ohio
+        option value="OK" Oklahoma
+        option value="OR" Oregon
+        option value="PA" Pennsylvania
+        option value="RI" Rhode Island
+        option value="SC" South Carolina
+        option value="SD" South Dakota
+        option value="TN" Tennessee
+        option value="TX" Texas
+        option value="UT" Utah
+        option value="VT" Vermont
+        option value="VA" Virginia
+        option value="WA" Washington
+        option value="WV" West Virginia
+        option value="WI" Wisconsin
+        option value="WY" Wyoming
+    hr
