@@ -26,13 +26,13 @@ _If you want support, please use [foundation forum](http://foundation.zurb.com/f
 
 You need to have ruby an bower installed on your system.
 
-  $ bundle install
-  $ bower install
+    $ bundle install
+    $ bower install
 
 Launch the server on your machine.
 
-  $ middleman server
+    $ middleman server
 
 ## Demo
 
-→ [http://flexbox.github.io/foundation-boilerplate/](http://flexbox.github.io/foundation-boilerplate/).
+→ [http://flexbox.github.io/foundation-boilerplate/](http://flexbox.github.io/foundation-boilerplate/)
