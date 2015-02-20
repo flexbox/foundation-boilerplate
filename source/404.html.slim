@@ -1,0 +1,22 @@
+---
+title: Page not found
+---
+
+header.m-header role="banner"
+  .row.text-center
+    .medium-8.medium-centered.small-12.columns
+      h1.m-header--title
+        '404
+      p
+        'There is nothing here
+
+.row
+  .medium-6.medium-centered.columns
+    hr
+    form action="http://www.google.com/search" method="get"
+      label for="q" Find code, or page on #{data.settings.site.title}:
+      input name="q" id="q" placeholder="Ex : Typography" type="search" autofocus=""
+      input name="sitesearch" value="#{data.settings.site.url}" type="hidden"
+      button type="submit"
+        'Search
+    = link_to data.settings.site.url, '&larr; Back to homepage'
