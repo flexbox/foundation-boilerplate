@@ -3,6 +3,7 @@
 about.html.slim: /about.html.slim
 buttons.html.slim: /buttons.html.slim
 forms.html.slim: /forms.html.slim
+grid-uneven.html.slim: /grid-uneven.html.slim
 grid.html.slim: /grid.html.slim
 icons.html.slim: /icons.html.slim
 index.html.slim: /index.html.slim

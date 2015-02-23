@@ -16,7 +16,6 @@ end
 
 activate :livereload
 activate :gzip
-activate :directory_indexes
 activate :syntax
 
 ###

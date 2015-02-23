@@ -1,10 +1,15 @@
-.m-display {
-  background: none repeat scroll 0% 0% #EEE;
-  font-size: 11px;
+.m-grid--display {
+  background-color: #EEE;
+  font-size: rem-calc(12);
   margin-bottom: 10px;
   line-height: 2rem;
   border: 1px solid #C6C6C6;
   margin-left: 0px !important;
   margin-right: 0px !important;
   margin-bottom: rem-calc(20) !important;
+}
+
+.m-grid--avatar {
+  border-radius: 100%;
+  margin-bottom: rem-calc(40);
 }
