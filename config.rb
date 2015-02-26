@@ -29,6 +29,7 @@ page "/buttons.html", layout: :pages
 page "/inputs.html", layout: :pages
 page "/select.html", layout: :pages
 page "/about.html", layout: :pages
+page "/grid-uneven.html", layout: :pages
 
 page "/admin.html", layout: :backoffice
 page "/sitemap.xml", layout: false

@@ -1,31 +1,83 @@
 ---
 title: Responsive grid example
-description: Here's how to center an uneven number of items in your team layout with Foundation.
+description: Here’s how to center an uneven number of items in your team layout with Foundation.
 page_title: Center uneven layout
 page_baseline: Grid system by example.
 ---
 
+.row
+  .medium-8.medium-centered.columns
+    markdown:
+      ## Grid
+      - - -
+      Here’s how to center an uneven number of items with the grid system.
 
-div class="row"
-  div class="small-6 small-centered columns"
+.row
+  .small-6.small-centered.columns
     div
-      div class="small-4 columns"
-        = image_tag 'http://placekitten.com/g/300/300', class: 'm-grid--avatar'
-      div class="small-4 columns"
-        = image_tag 'http://placekitten.com/g/300/300', class: 'm-grid--avatar'
-      div class="small-4 columns"
-        = image_tag 'http://placekitten.com/g/300/300', class: 'm-grid--avatar'
-
-    div
-      div class="small-4 columns"
-        = image_tag 'http://placekitten.com/g/300/300', class: 'm-grid--avatar'
-      div class="small-4 columns"
-        = image_tag 'http://placekitten.com/g/300/300', class: 'm-grid--avatar'
-      div class="small-4 columns"
-        = image_tag 'http://placekitten.com/g/300/300', class: 'm-grid--avatar'
+      .small-4.columns
+        = image_tag 'http://placekitten.com/g/300/300', alt: 'Crazy avatar of a cat', class: 'm-grid--avatar'
+      .small-4.columns
+        = image_tag 'http://placekitten.com/g/500/500', alt: 'Crazy avatar of a cat', class: 'm-grid--avatar'
+      .small-4.columns
+        = image_tag 'http://placekitten.com/g/600/600', alt: 'Crazy avatar of a cat', class: 'm-grid--avatar'
 
     div
-      div class="small-4 push-2 columns"
-        = image_tag 'http://placekitten.com/g/300/300', class: 'm-grid--avatar'
-      div class="small-4 pull-2 columns"
-        = image_tag 'http://placekitten.com/g/300/300', class: 'm-grid--avatar'
+      .small-4.columns
+        = image_tag 'http://placekitten.com/g/300/300', alt: 'Crazy avatar of a cat', class: 'm-grid--avatar'
+      .small-4.columns
+        = image_tag 'http://placekitten.com/g/800/800', alt: 'Crazy avatar of a cat', class: 'm-grid--avatar'
+      .small-4.columns
+        = image_tag 'http://placekitten.com/g/600/600', alt: 'Crazy avatar of a cat', class: 'm-grid--avatar'
+
+    div
+      .small-4.small-push-2.columns
+        = image_tag 'http://placekitten.com/g/500/500', alt: 'Crazy avatar of a cat', class: 'm-grid--avatar'
+      .small-4.small-pull-2.columns
+        = image_tag 'http://placekitten.com/g/300/300', alt: 'Crazy avatar of a cat', class: 'm-grid--avatar'
+
+.m-section--inverse
+  .row
+    .medium-10.medium-centered.columns
+
+      h4 HTML
+      markdown:
+        ~~~ html
+        <div class="small-6 small-centered columns">
+          <div>
+            <div class="small-4 columns">
+              (...)
+            </div>
+            <div class="small-4 columns">
+              (...)
+            </div>
+            <div class="small-4 columns">
+              (...)
+            </div>
+          </div>
+          <div>
+            <div class="small-4 columns">
+              (...)
+            </div>
+            <div class="small-4 columns">
+              (...)
+            </div>
+            <div class="small-4 columns">
+              (...)
+            </div>
+          </div>
+          <div>
+            <div class="small-4 small-push-2 columns">
+              (...)
+            </div>
+            <div class="small-4 small-pull-2 columns">
+              (...)
+            </div>
+          </div>
+        </div>
+
+        ~~~
+
+.row
+  .medium-8.medium-centered.columns
+    p The push/pull are why we needed a base-12 grid: While the layout appears to have three columns, it really needs to nudge the last two a little ways in. The result is a symmetrical layout that doesn't seem to have left anyone out.

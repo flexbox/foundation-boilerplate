@@ -5,51 +5,54 @@ page_title: Responsive grid
 page_baseline: Grid system by example.
 ---
 
-.row.m-content
-  .small-12.medium-12.columns
-    h2#grid data-magellan-destination="grid"
-      | Grid
-    h3
-      | The Problem
-    p
-      | You've got tons of content, each needing different sized vertical columns, and don't know how to quick and easily get it all done.
-    h3
-      | The Solution
-    p
-      | The awesome grid! The grid is built around three key elements: containers, rows, and columns.
-    ol
-      li Containers create base padding for the page;
-      li rows create a max-width and contain the columns;
-      li and columns create the final structure.
-    p
-      | <strong>Everything on your page</strong> that you don't give a specific structural style to should be within a container, row and column.
-    h3
-      | How to Use
-    p
-      ' Using this framework is easy. Here's how your code will look when you use a series of <code>div</code>
-
-      | tags to create vertical columns.
-    h3
-      | Nesting Support
-    p
-      | In the Grid you can nest columns down as far as you'd like. Just embed rows inside columns and go from there. Each embedded row can contain up to number <code>$total-columns</code> defined in <code>_settings.scss</code>.
 .row
-  .small-6.medium-6.columns
-    h4 HTML
+  .medium-8.medium-centered.columns
     markdown:
-      ~~~ html
-      <div class="row">
-        <div class="small-2 large-4 columns">...</div>
-        <div class="small-4 large-4 columns">...</div>
-        <div class="small-6 large-4 columns">...</div>
-      </div>
-      <div class="row">
-        <div class="large-6 columns">...</div>
-        <div class="large-6 columns">...</div>
-      </div>
-      ~~~
+      ## Grid
+      - - -
 
-  .small-6.medium-6.columns
+      ### The Problem
+
+      You’ve got tons of content, each needing different sized vertical columns, and don’t know how to quick and easily get it all done.
+
+      ### The Solution
+
+      The awesome grid! The grid is built around three key elements: containers, rows, and columns.
+
+        1. Containers create base padding for the page;
+        2. rows create a max-width and contain the columns;
+        3. and columns create the final structure.
+
+      _Everything on your page_ that you don’t give a specific structural style to should be within a container, row and column.
+
+      ### How to Use
+
+      Using this framework is easy. Here’s how your code will look when you use a series of `div` tags to create vertical columns.
+
+      ### Nesting Support
+
+      In the Grid you can nest columns down as far as you’d like. Just embed rows inside columns and go from there. Each embedded row can contain up to number `$total-columns` defined in `_settings.scss`.
+
+.m-section--inverse
+  .row
+    .medium-10.medium-centered.columns
+
+      h4 HTML
+      markdown:
+        ~~~ html
+        <div class="row">
+          <div class="small-2 large-4 columns">...</div>
+          <div class="small-4 large-4 columns">...</div>
+          <div class="small-6 large-4 columns">...</div>
+        </div>
+        <div class="row">
+          <div class="large-6 columns">...</div>
+          <div class="large-6 columns">...</div>
+        </div>
+        ~~~
+
+.row
+  .medium-8.medium-centered.columns
     h4 Rendered HTML
     div class="row m-grid--display"
       div class="small-2 large-4 columns"
