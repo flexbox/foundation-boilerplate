@@ -1,6 +1,7 @@
 .m-header {
   background-color: $primary-color;
   color: $white;
+  padding: rem-calc(10 0 25);
   p {
     color: $white;
     text-shadow: $text-shadow;
@@ -11,22 +12,4 @@
   color: $white;
   text-shadow: $text-shadow;
   font-size: rem-calc(70);
-  margin-top: rem-calc(50);
-  margin-bottom: rem-calc(50);
-}
-
-.m-header--button {
-  margin-top: rem-calc(25);
-  margin-bottom: rem-calc(50);
-}
-
-.m-header--list {
-  float: right;
-  @include inline-list;
-  a {
-    color: $white;
-    &:hover {
-      color: $black;
-    }
-  }
 }

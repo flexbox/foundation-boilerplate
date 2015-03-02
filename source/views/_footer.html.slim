@@ -1,38 +1,38 @@
 footer.m-footer role="contentinfo"
   .row
-    .medium-2.columns
-      nav.side-nav role="navigation"
+    nav.medium-2.columns
+      ul.side-nav role="navigation"
         li
           'Navigation
         li
-          = link_to 'Homepage', '/'
+          = link_to 'Homepage', 'index.html'
         li
-          = link_to 'About', 'about'
+          = link_to 'About', 'about.html'
         li
           'Components
         li
-          = link_to 'Buttons', 'buttons'
+          = link_to 'Buttons', 'buttons.html'
         li
-          = link_to 'Typography', 'type'
+          = link_to 'Typography', 'type.html'
         li
-          = link_to 'Forms', 'forms'
+          = link_to 'Forms', 'forms.html'
         li
-          = link_to 'Inputs', 'inputs'
+          = link_to 'Inputs', 'inputs.html'
         li
-          = link_to 'Select', 'select'
+          = link_to 'Select', 'select.html'
 
-    .medium-2.columns
-      nav.side-nav role="navigation"
+    nav.medium-2.columns
+      ul.side-nav role="navigation"
         li
           'Misc
         li
-          = link_to 'Icons', 'icons'
+          = link_to 'Icons', 'icons.html'
         li
           'Templates
         li
-          = link_to 'Admin', 'templates/admin'
+          = link_to 'Admin', 'templates/admin.html'
         li
-          = link_to 'Homepage', 'templates/homepage'
+          = link_to 'Homepage', 'templates/homepage.html'
 
     .medium-8.columns
       .m-footer--title
@@ -43,6 +43,15 @@ footer.m-footer role="contentinfo"
       p.lead
         'Or you can help me to fix bugs and
         = link_to 'report an issue &rarr;', "#{data.settings.site.source_code}issues"
+
+      ul.inline-list
+        li
+          = link_to 'Source code', data.settings.site.source_code
+        li
+          = link_to 'Docs', "#{data.settings.site.source_code}blob/master/README.md"
+        li
+          = link_to 'About', 'about.html'
+
 
   hr
   p.text-center
