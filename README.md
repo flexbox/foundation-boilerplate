@@ -68,4 +68,4 @@ Have a fix or want to add a feature? [Pull Requests](https://github.com/flexbox/
 
 ## License
 
-foundation-boilerplate is free software, and may be redistributed under the terms specified in the [license](LICENSE.md).
+This project is free software, and may be redistributed under [GNU/GPL license](LICENSE.md).

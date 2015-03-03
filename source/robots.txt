@@ -1,0 +1,3 @@
+User-Agent: *
+
+Sitemap: http://flexbox.github.io/foundation-boilerplate/sitemap.xml
