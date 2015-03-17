@@ -12,7 +12,7 @@ $footer-border: $jet;
   hr {
     border-color: $footer-border;
   }
- .side-nav {
+  .side-nav {
     min-height: rem-calc(250);
     @media #{$small}{
       border-right: 1px solid $footer-border;

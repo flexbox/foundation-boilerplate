@@ -3,6 +3,7 @@ title: Buttons sandbox
 description:
 page_title: Buttons
 page_baseline: Want to launch a rocket in space ?
+layout: boilerplate
 ---
 
 .row
@@ -29,39 +30,42 @@ page_baseline: Want to launch a rocket in space ?
 
       SCSS variables for buttons can be found in `_settings.scss` file, try to search variables `$button-*`
 
-    .row
-      .small-6.medium-6.columns
-        h4 HTML
-        markdown:
-          ~~~ html
-          <!-- Size Classes -->
-          <a href="#" class="button [tiny small large]">Default Button</a>
 
-          <!-- Color Classes -->
-          <a href="#" class="button [secondary success alert]">Color Button</a>
+.m-section--inverse
+  .row
+    .medium-10.medium-centered.columns
+      p HTML
+      markdown:
+        ~~~ html
+        <!-- Size Classes -->
+        <a href="#" class="button [tiny small large]">Default Button</a>
 
-          <!-- Radius Classes -->
-          <a href="#" class="button [radius round]">Radius Button</a>
+        <!-- Color Classes -->
+        <a href="#" class="button [secondary success alert]">Color Button</a>
 
-          <!-- Disabled Class -->
-          <a href="#" class="button disabled">Disabled Button</a>
+        <!-- Radius Classes -->
+        <a href="#" class="button [radius round]">Radius Button</a>
 
-          <!-- Expand Class -->
-          <a href="#" class="button expand">Expanded Button</a>
-          ~~~
+        <!-- Disabled Class -->
+        <a href="#" class="button disabled">Disabled Button</a>
 
-      .small-6.medium-6.columns
-        h4 Rendered HTML
-        = link_to '.button .tiny', '#', class: 'button tiny'
-        .row
-          .medium-4.columns
-            = link_to '.button .secondary', '#', class: 'button secondary'
-          .medium-4.columns
-            = link_to '.button .alert', '#', class: 'button alert'
-          .medium-4.columns
-            = link_to '.button .success', '#', class: 'button success'
+        <!-- Expand Class -->
+        <a href="#" class="button expand">Expanded Button</a>
+        ~~~
 
-        = link_to '.button .expand', '#', class: 'button expand'
+.row
+  .medium-8.medium-centered.columns
+    h4 Rendered HTML
+    = link_to '.button .tiny', '#', class: 'button tiny'
+    ul.inline-list
+      li
+        = link_to '.button .secondary', '#', class: 'button secondary'
+      li
+        = link_to '.button .alert', '#', class: 'button alert'
+      li
+        = link_to '.button .success', '#', class: 'button success'
+
+    = link_to '.button .expand', '#', class: 'button expand'
 
 
 

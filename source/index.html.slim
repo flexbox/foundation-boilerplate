@@ -7,16 +7,6 @@ header.m-header
   .alert-box.warning.text-center
     'Work in Progress! Not quite ready for prime-time
 
-  .row
-    .medium-6.columns
-
-    .medium-6.columns
-      ul.m-header--list
-        li
-          = link_to 'Source code', 'https://github.com/flexbox/foundation-boilerplate'
-        li
-          = link_to 'Docs', 'https://github.com/flexbox/foundation-boilerplate/blob/master/README.md'
-
   .row.text-center
     .medium-8.medium-centered.small-12.columns
       h1.m-header--title The web’s most popular responsive front-end template
@@ -38,7 +28,7 @@ header.m-header
     p Here is a list of templates you can use for your next HTML prototype :
 
     ul
-      = tree_to_html data.tree['templates']
+      = tree_to_html data.tree
 
     h2#js-design data-magellan-destination="design"
       'Design atmosphere

@@ -1,7 +1,8 @@
 .m-header {
   background-color: $primary-color;
   color: $white;
-  padding: rem-calc(10 0 25);
+  padding: rem-calc(15 0 25);
+  margin-bottom: rem-calc(15);
   p {
     color: $white;
     text-shadow: $text-shadow;

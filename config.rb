@@ -22,16 +22,6 @@ activate :syntax
 # Page options, layouts, aliases and proxies
 ###
 
-page "/type.html", layout: :pages
-page "/forms.html", layout: :pages
-page "/icons.html", layout: :pages
-page "/buttons.html", layout: :pages
-page "/inputs.html", layout: :pages
-page "/select.html", layout: :pages
-page "/about.html", layout: :pages
-page "/grid-uneven.html", layout: :pages
-
-page "/admin.html", layout: :backoffice
 page "/sitemap.xml", layout: false
 
 require 'slim'
@@ -63,5 +53,9 @@ configure :build do
   set :relative_links, true
 
   activate :sitemap, hostname: data.settings.site.url
+
+  activate :robots,
+    rules: [{:user_agent => '*', :allow => %w(/)}],
+    sitemap: data.settings.site.url+'sitemap.xml'
 
 end
