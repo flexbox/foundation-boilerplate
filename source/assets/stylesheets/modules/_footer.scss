@@ -2,9 +2,9 @@ $footer-border: $jet;
 
 .m-footer {
   background-color: $black;
-  padding: rem-calc(40 0);
+  padding: rem-calc(80 40 40);
+  margin-top: rem-calc(40);
   position: relative;
-  z-index: 90;
   color: $aluminum;
   p {
     color: $white-light;
@@ -18,10 +18,4 @@ $footer-border: $jet;
       border-right: 1px solid $footer-border;
     }
   }
-}
-
-.m-footer--title {
-  @extend h2;
-  color: $white;
-  margin: rem-calc(0 0 40 0);
 }

@@ -4,9 +4,6 @@ description: Foundation Boilerplate is a front-end template for building fast, s
 ---
 
 header.m-header
-  .alert-box.warning.text-center
-    'Work in Progress! Not quite ready for prime-time
-
   .row.text-center
     .medium-8.medium-centered.small-12.columns
       h1.m-header--title The web’s most popular responsive front-end template
@@ -22,18 +19,16 @@ header.m-header
   .medium-2.columns
     = partial 'views/navigation'
   .medium-10.columns
-    h2#js-layout data-magellan-destination="layout"
-      'Wireframes layouts
-    hr
-    p Here is a list of templates you can use for your next HTML prototype :
-
-    ul
-      = tree_to_html data.tree
-
     h2#js-design data-magellan-destination="design"
       'Design atmosphere
     hr
     p Here is a list of templates you can use for your next HTML prototype :
     = partial 'views/components/colors'
+
+    h2
+      'You want to hack this Boilerplate ?
+    p
+      'If you have some ideas about crazy feature, amazing template, or simply want to test Sass files :
+    = link_to 'Fork on GitHub', data.settings.site.source_code, class: 'button secondary large icon github'
 
 = partial 'views/footer'

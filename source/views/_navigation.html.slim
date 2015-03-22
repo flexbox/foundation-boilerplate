@@ -3,11 +3,13 @@
     | Table of contents
   nav
     ul.side-nav
-      li data-magellan-arrival="layout"
-        = link_to 'Layout', '#js-layout'
-      li data-magellan-arrival="design"
-        = link_to 'Design', '#js-design'
+      = tree_to_html data.tree
       li.divider
-      li data-magellan-arrival="download"
+      li
         = link_to 'Download', 'https://github.com/flexbox/foundation-boilerplate/archive/gh-pages.zip', class: 'button icon download'
 
+    ul.side-nav
+      li
+        = link_to 'GitHub', data.settings.site.source_code
+      li
+        = link_to 'Docs', "#{data.settings.site.source_code}blob/master/README.md"
