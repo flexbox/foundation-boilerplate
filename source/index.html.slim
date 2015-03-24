@@ -1,34 +1,38 @@
 ---
 title: Homepage
-description: Foundation Boilerplate is a front-end template for building fast, scalable, and responsive web apps or sites. Help designer to code a strong set of guideline
+description: Use this boilerplate for your next project with the help of Foundation framework
 ---
 
 header.m-header
-  .row.text-center
-    .medium-8.medium-centered.small-12.columns
-      h1.m-header--title The web’s most popular responsive front-end template
-      p
-        'The most important starting points for any project is a set of guidelines. #{data.settings.site.title} helps designer & developpers to build <strong>fast</strong>, <strong>scalable</strong>, and <strong>responsive</strong> web sites. Use this boilerplate for your next project with the help of Foundation framework.
-
   .row
-    .medium-3.medium-centered.columns
-      = link_to 'Download Boilerplate', 'https://github.com/flexbox/foundation-boilerplate/archive/gh-pages.zip', class: 'button large expand m-header--button icon download'
+    .small-12.columns
+      h1.m-header--title = data.settings.site.title
+      p.lead
+        'The most important starting points for any project is a set of guidelines.
+      = link_to 'Installation →', 'https://github.com/flexbox/foundation-boilerplate#getting-started', class: 'button large'
 
+.row
+  .medium-12.columns
+    p #{data.settings.site.title} helps designer & developpers to build <strong>fast</strong>, <strong>scalable</strong>, and <strong>responsive</strong> web sites.
 
-.row.m-content
-  .medium-2.columns
-    = partial 'views/navigation'
-  .medium-10.columns
-    h2#js-design data-magellan-destination="design"
-      'Design atmosphere
-    hr
-    p Here is a list of templates you can use for your next HTML prototype :
-    = partial 'views/components/colors'
-
-    h2
-      'You want to hack this Boilerplate ?
-    p
-      'If you have some ideas about crazy feature, amazing template, or simply want to test Sass files :
-    = link_to 'Fork on GitHub', data.settings.site.source_code, class: 'button secondary large icon github'
+    ul.small-block-grid-1.medium-block-grid-3
+      li
+        h2 Build with Foundation
+        p This project is not affiliated with zurb, but i love my job and i want help people to make awesome HTML and CSS.
+      li
+        h2 Open source
+        p Available for use under the GNU/GPL license and built with open source projects like SCSS, Middleman, and more.
+      li
+        h2 Build tools
+        p Includes a small Gruntfile for compiling our SCSS, Autoprefixer for vendor prefixes, and Parker for CSS stats.
+    .text-center
+      hr
+      h2 I am ready to work
+      p
+      = link_to 'Fork on GitHub', 'grid.html', class: 'button large icon book'
+      hr
+      h2 You want to hack this Boilerplate ?
+      p If you have some ideas about crazy feature, amazing template, or simply want to test Sass files :
+      = link_to 'Fork on GitHub', data.settings.site.source_code, class: 'button secondary icon github'
 
 = partial 'views/footer'

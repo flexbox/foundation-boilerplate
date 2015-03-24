@@ -66,6 +66,12 @@ If you have problems, please create a [GitHub Issue](https://github.com/flexbox/
 
 Have a fix or want to add a feature? [Pull Requests](https://github.com/flexbox/foundation-boilerplate/pulls) are welcome!
 
+## Author
+
+| [![twitter/_flexbox](https://gravatar.com/avatar/66ecc55f1bc2e5863eb516ee6f20794e?s=70)](https://twitter.com/_flexbox "Follow @_flexbox on Twitter") |
+|---|
+| [David Leuliette](http://davidl.fr/) |
+
 ## License
 
 This project is free software, and may be redistributed under [GNU/GPL license](LICENSE.md).

@@ -54,4 +54,7 @@ $button-icon-size: rem-calc(24);
   &.github {
     @extend .fi-social-github;
   }
+  &.book {
+    @extend .fi-book;
+  }
 }

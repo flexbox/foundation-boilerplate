@@ -1,4 +1,8 @@
 = wrap_layout :layout do
   = partial 'views/header'
-  == yield
+  .row.row-full-width
+    .medium-2.columns
+      = partial 'views/navigation'
+    .medium-10.columns
+      == yield
   = partial 'views/footer'
