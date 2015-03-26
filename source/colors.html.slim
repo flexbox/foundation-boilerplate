@@ -1,8 +1,8 @@
 ---
 title: Colors
-description: Buttons sandbox with sizes, colors and icons
-page_title: Buttons
-page_baseline: Want to launch a rocket in space ?
+description: Color pallette for you responsive website
+page_title: Colors
+page_baseline: The look and feel of our product
 layout: boilerplate
 ---
 
@@ -12,6 +12,52 @@ layout: boilerplate
       ## Design atmosphere
       - - -
 
-      Here is a list of templates you can use for your next HTML prototype :
+      ### UI Color Palette
 
-    = partial 'views/components/colors'
+      By default, the middle range should be used before any other. We've labeled each color on the grid. Use the production code to match each color.
+
+
+.layout-section--inverse
+  .row
+    .medium-10.medium-centered.columns
+      p You can customise this variables
+      h2 SCSS
+      markdown:
+        ~~~ scss
+        $primary-color
+        $secondary-color
+
+        $alert-color
+        $success-color
+        $warning-color
+        $info-color
+
+        $body-bg
+        $body-font-color
+        $header-font-color
+        $subheader-font-color
+        ~~~
+
+.row
+  .medium-10.medium-centered.columns
+    h2 Rendered HTML
+
+    h3 Application colors
+    ul.color-list
+      li.primary
+      li.secondary
+
+    h3 Alerts colors
+    ul.color-list
+      li.alert
+      li.success
+      li.warning
+      li.info
+
+    h3 Typography colors
+    ul.color-list
+      li.body-bg
+      li.body-font
+      li.header-font
+      li.subheader-font
+

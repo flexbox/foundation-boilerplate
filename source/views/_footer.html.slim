@@ -1,4 +1,4 @@
-footer.m-footer role="contentinfo"
+footer.layout--footer role="contentinfo"
   .row
     .medium-6.columns
       p
@@ -7,8 +7,7 @@ footer.m-footer role="contentinfo"
         time datetime="#{DateTime.now.strftime('%d-%m-%Y')} "
           = DateTime.now.strftime('%d-%m-%Y')
           '.
-
-      p
+        br
         'Licenced under GNU/GPL and available on
         = link_to 'GitHub', data.settings.site.source_code
         '.

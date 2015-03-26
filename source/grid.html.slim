@@ -26,15 +26,33 @@ layout: boilerplate
 
       _Everything on your page_ that you don’t give a specific structural style to should be within a container, row and column.
 
+    .row
+      .small-6.small-centered.columns
+        div
+          .small-4.columns
+            = image_tag 'http://placekitten.com/g/300/300', alt: 'Crazy avatar of a cat', class: 'm-grid--avatar'
+          .small-4.columns
+            = image_tag 'http://placekitten.com/g/500/500', alt: 'Crazy avatar of a cat', class: 'm-grid--avatar'
+          .small-4.columns
+            = image_tag 'http://placekitten.com/g/600/600', alt: 'Crazy avatar of a cat', class: 'm-grid--avatar'
+
+        div
+          .large-6.columns
+            = image_tag 'http://placekitten.com/g/300/300', alt: 'Crazy avatar of a cat', class: 'm-grid--avatar'
+          .large-6.columns
+            = image_tag 'http://placekitten.com/g/800/800', alt: 'Crazy avatar of a cat', class: 'm-grid--avatar'
+
+    markdown:
+
       ### How to Use
 
       Using this framework is easy. Here’s how your code will look when you use a series of `div` tags to create vertical columns.
 
       ### Nesting Support
 
-      In the Grid you can nest columns down as far as you’d like. Just embed rows inside columns and go from there. Each embedded row can contain up to number `$total-columns` defined in `_settings.scss`.
+      In the Grid you can nest columns down as far as you’d like. Just embed rows inside columns and go from there. Each embedded row can contain up to number `$total-columns` defined in `_custom-settings.scss`.
 
-.m-section--inverse
+.layout-section--inverse
   .row
     .medium-10.medium-centered.columns
 
@@ -42,30 +60,12 @@ layout: boilerplate
       markdown:
         ~~~ html
         <div class="row">
-          <div class="small-2 large-4 columns">...</div>
-          <div class="small-4 large-4 columns">...</div>
-          <div class="small-6 large-4 columns">...</div>
+          <div class="small-4 columns">...</div>
+          <div class="small-4 columns">...</div>
+          <div class="small-4 columns">...</div>
         </div>
         <div class="row">
           <div class="large-6 columns">...</div>
           <div class="large-6 columns">...</div>
         </div>
         ~~~
-
-.row
-  .medium-8.medium-centered.columns
-    h4 Rendered HTML
-    div class="row m-grid--display"
-      div class="small-2 large-4 columns"
-        span class="show-for-small" 2
-        span class="hide-for-small" 4
-      div class="small-4 large-4 columns"
-        '4
-      div class="small-6 large-4 columns"
-        span class="show-for-small" 6
-        span class="hide-for-small" 4
-    div class="row m-grid--display"
-      div class="large-6 columns"
-        span 6
-      div class="large-6 columns"
-        span 6

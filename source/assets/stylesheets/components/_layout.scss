@@ -1,4 +1,4 @@
-.m-section--inverse {
+.layout-section--inverse {
   background-color: $oil;
   color: $white;
   margin: rem-calc(40 0);
@@ -7,4 +7,15 @@
 
 .row-full-width {
   max-width: 100%
+}
+
+.layout--side-nav {
+  padding: rem-calc(20);
+}
+
+.layout--footer {
+  border-top: 1px solid $hr-border-color;
+  padding: rem-calc(40);
+  margin-top: rem-calc(40);
+  color: $aluminum;
 }
