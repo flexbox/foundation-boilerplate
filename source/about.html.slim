@@ -9,8 +9,7 @@ layout: boilerplate
 .row
   .medium-8.medium-centered.columns
     markdown:
-      ## How to maintain a clever CSS architecture ?
-      - - -
+      ## Maintain a clever CSS architecture
 
       ### When to Use
 
@@ -54,5 +53,10 @@ layout: boilerplate
         @import "components/my-buttons";
         ~~~
 
-p.text-center
-  'You can quickly add / modify variables in <code>_custom-settings.scss</code> and have all the updates if you have decided to use bower.
+.row
+  .medium-8.medium-centered.columns
+      p You can quickly add / modify variables in <code>_custom-settings.scss</code> and have all the updates if you have decided to use bower.
+      hr
+      h2 You want to hack this Boilerplate ?
+      p If you have some ideas about crazy feature, amazing template, or simply want to test Sass files
+      = link_to 'Fork on GitHub', data.settings.site.source_code, class: 'button secondary icon github'

@@ -2,58 +2,34 @@
 title: Forms
 description: Help designer and developers to code a strong set of guideline for forms with the Foundation framework
 page_title: Forms
-page_baseline: Every application need a huge amount of forms. Here is lives examples.
+page_baseline: Every application need a huge amount of forms
 layout: boilerplate
 ---
 
 .row
   .medium-8.medium-centered.columns
-    h2
-      | Forms
-    h3
-      | Elements of a Form
-    p
-      | A form should be marked up using it's default HTML properties. The ones we make use of include (in hierarchical order):
-    ul
-      li form
-      li label
-      li input
-      li select
-      li textarea
-      li button
-    h3
-      | How to Use
-    p
-      | Make forms great and easy to use with the following rules:
-    ol
-      li Wrap checkboxes and radio buttons within labels for larger hit areas, and be sure to set the for, name, and id attributes for all applicable elements.
-      li
-        | Series of checkboxes and radio buttons below within a
-
-        markdown:
-          ~~~ html
-            <ul class="(inline) actions">
-          ~~~
-
-      li Before selecting any set of fields to use for a required input, explore other options (e.g., radio buttons over select lists).
-
-.row
-  .small-6.medium-6.columns
-    h4 HTML
     markdown:
-      ~~~ html
-      <form>
-        <div class="large-12 columns">
-          <label>
-            Input Label
-            <input placeholder="large-12.columns" type="text">
-          </label>
-        </div>
-      </form>
-      ~~~
+      ## Forms
 
-  .small-6.medium-6.columns
-    h4 Rendered HTML
+      ### Elements of a Form
+
+      A form should be marked up using it's default HTML properties. The ones we make use of include (in hierarchical order)
+
+      - form
+      - label
+      - input
+      - select
+      - textarea
+      - button
+
+      ### How to Use
+
+      Make forms great and easy to use with the following rules:
+
+      - Wrap checkboxes and radio buttons within `label`s for larger hit areas, and be sure to set the `for`, `name`, and `id` attributes for all applicable elements.
+      - Series of checkboxes and radio buttons below within a `ul`.
+      - Before selecting any set of fields to use for a required `input`, explore other options (e.g., radio buttons over select lists).
+
     form
       .row
         .large-12.columns
@@ -73,9 +49,9 @@ layout: boilerplate
         .large-6.columns
           p Choose Your Favorite
           input#pokemonRed name="pokemon" type="radio" value="Red"
-            label for="pokemonRed" Red
+          label for="pokemonRed" Red
           input#pokemonBlue name="pokemon" type="radio" value="Blue"
-            label for="pokemonBlue" Blue
+          label for="pokemonBlue" Blue
         .large-6.columns
           p Check these out
           ul.no-bullet
@@ -91,56 +67,26 @@ layout: boilerplate
             | Textarea Label
             textarea placeholder="small-12.columns"
 
+.layout-section--inverse
+  .row
+    .medium-10.medium-centered.columns
+      markdown:
+        ~~~ html
+        <form>
+          <div class="large-12 columns">
+            <label for="awesome-input">
+              Input Label
+            </label>
+            <input type="text" id="awesome-input" name="awesome-input">
+          </div>
+        </form>
+        ~~~
+
 hr
 .row
-  .small-12.medium-12.columns
-    h2
-      | Simple signup form
+  .small-12.medium-8.medium-centered.columns
+    h2 Simple signup form
 
-.row
-  .large-6.columns
-    h4 HTML
-    markdown:
-      ~~~ html
-      <form class="panel panel-signup">
-        <p class="lead">Welcome to this awesome app! </p>
-          <div class="row collapse">
-            <div class="small-2 columns">
-              <span class="prefix">
-                <i class="fi-torso-female"></i>
-              </span>
-            </div>
-            <div class="small-10 columns">
-              <input placeholder="username" type="text">
-            </div>
-          </div>
-          <div class="row collapse">
-            <div class="small-2 columns">
-              <span class="prefix">
-                <i class="fi-mail"></i>
-              </span>
-            </div>
-            <div class="small-10 columns">
-              <input placeholder="email" type="email" required>
-            </div>
-          </div>
-          <div class="row collapse">
-              <div class="small-2 columns">
-              <span class="prefix">
-                <i class="fi-lock"></i>
-              </span>
-          </div>
-          <div class="small-10 columns">
-            <input placeholder="password" type="password">
-          </div>
-        </div>
-        <a class="button" href="#">Sign Up!</a>
-        <p>Already have an account? <a href="#">Login here »</a></p>
-      </form>
-      ~~~
-
-  .large-6.columns
-    h4 Rendered HTML
     .panel.panel-signup.radius
       p.lead
         'Welcome to this awesome app!
@@ -171,86 +117,9 @@ hr
         = link_to 'Login here &rarr;', '#'
 hr
 .row
-  .small-12.medium-12.columns
-    h2
-      | Mobile first search form
+  .small-12.medium-8.medium-centered.columns
+    h2 Mobile first search form
 
-.row
-  .large-6.columns
-    h4 HTML
-    markdown:
-      ~~~ html
-      <div class="large-3 small-12 columns">
-        <label>Food Type:</label><select>
-          <option value="All">
-            All
-          </option>
-          <option value="Asian">
-            Asian
-          </option>
-          <option value="Mediterranean">
-            Mediterranean
-          </option>
-          <option value="French">
-            French
-          </option>
-          <option value="Vegetarian">
-            Vegetarian
-          </option>
-        </select>
-      </div>
-      <div class="large-3 small-6 columns">
-        <label>Price Range:</label><select>
-          <option value="0-5">
-            $0-$5
-          </option>
-          <option value="5-10">
-            $5-$10
-          </option>
-          <option value="10-15">
-            $10-$15
-          </option>
-          <option value="15-20">
-            $15-$20
-          </option>
-          <option value="20-25">
-            $20-$25
-          </option>
-          <option value="25-30">
-            $25-$30
-          </option>
-          <option value="more">
-            more than $30
-          </option>
-        </select>
-      </div>
-      <div class="large-3 small-6 columns">
-        <label>Location: </label><select required="">
-          <option value="mile">
-            Near me
-          </option>
-          <option value="2-mile">
-            2 miles
-          </option>
-          <option value="5-mile">
-            5 miles
-          </option>
-          <option value="25-mile">
-            25 miles
-          </option>
-          <option value="more-mile">
-            More
-          </option>
-        </select>
-      </div>
-      <div class="large-3 small-12 columns">
-        <label>&nbsp; </label><input class="button tiny expand" value="Search" type="submit">
-      </div>
-      ~~~
-
-
-  .large-6.columns
-    h4 Rendered HTML
     .panel.panel-signup.radius
       p.lead Find a Cool Restaurant!
       form.row data-abide=""
@@ -298,16 +167,8 @@ hr
 
 hr
 .row
-  .small-12.medium-12.columns
-    h2
-      | Simple contact form
-
-.row
-  .large-6.columns
-    h4 HTML
-
-  .large-6.columns
-    h4 Rendered HTML
+  .small-12.medium-8.medium-centered.columns
+    h2 Simple contact form
     .panel.radius
       p.lead Contact me
       form.row
@@ -323,21 +184,13 @@ hr
           label
             'Your message:
             textarea rows="5"
-          =link_to 'Send', '#', class: 'button right'
+          = link_to 'Send', '#', class: 'button right'
 
 hr
 .row
-  .small-12.medium-12.columns
-    h2
-      | New account signup
-.row
-  .large-6.columns
-    h4 HTML
-
-  .large-6.columns
-    h4 Rendered HTML
-    form.panel data-abide=""
-      p.lead New to this awesome app? Sign up
+  .small-12.medium-8.medium-centered.columns
+    h2 Dashboard
+    form.panel.clearfix data-abide=""
       fieldset
         legend About you
         .row
@@ -395,5 +248,4 @@ hr
               'Phone
           .small-8.columns
             input type="tel" pattern="integer"
-      input type="submit" value="Sign Up!" class="button large right"
-      hr
+      input type="submit" value="Save" class="button large right success"

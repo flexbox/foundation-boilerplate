@@ -2,12 +2,17 @@
   p.acolyte Table of contents
   nav
     ul.side-nav
-      = tree_to_html data.tree
-      li
-        = link_to 'Download', 'https://github.com/flexbox/foundation-boilerplate/archive/gh-pages.zip', class: 'button icon download'
-
+      = tree_to_html(data.tree, 1)
+  p.acolyte Templates
+  nav
+    ul.side-nav
+      = tree_to_html(data.tree['templates'])
+  p.acolyte Docs
+  nav
     ul.side-nav
       li
         = link_to 'GitHub', data.settings.site.source_code
       li
-        = link_to 'Docs', "#{data.settings.site.source_code}blob/master/README.md"
+        = link_to 'Readme', "#{data.settings.site.source_code}blob/master/README.md"
+      li
+        = link_to 'Download', 'https://github.com/flexbox/foundation-boilerplate/archive/gh-pages.zip', class: 'button small icon download'

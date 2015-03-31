@@ -10,7 +10,6 @@ layout: boilerplate
   .medium-8.medium-centered.columns
     markdown:
       ## A note on using buttons style guide
-      - - -
 
       ### When to Use
 
@@ -30,6 +29,19 @@ layout: boilerplate
 
       SCSS variables for buttons can be found in `_settings.scss` file, try to search variables `$button-*`
 
+      >Buttons should only be used for actions while hyperlinks are for objects.
+      > <cite>David Leuliette</cite>
+
+    = link_to '.button .tiny', '#', class: 'button tiny'
+    ul.inline-list
+      li
+        = link_to '.button .secondary', '#', class: 'button secondary'
+      li
+        = link_to '.button .alert', '#', class: 'button alert'
+      li
+        = link_to '.button .success', '#', class: 'button success'
+
+    = link_to '.button .expand', '#', class: 'button expand'
 
 .layout-section--inverse
   .row
@@ -55,24 +67,7 @@ layout: boilerplate
 
 .row
   .medium-8.medium-centered.columns
-    h4 Rendered HTML
-    = link_to '.button .tiny', '#', class: 'button tiny'
-    ul.inline-list
-      li
-        = link_to '.button .secondary', '#', class: 'button secondary'
-      li
-        = link_to '.button .alert', '#', class: 'button alert'
-      li
-        = link_to '.button .success', '#', class: 'button success'
-
-    = link_to '.button .expand', '#', class: 'button expand'
-
-
-
     markdown:
-      >Buttons should only be used for actions while hyperlinks are for objects.
-      > <cite>David Leuliette</cite>
-
       ## Basic
       - - -
       Here is a list of all HTML buttons markup style, `<a href>`, `<input>` & `<button>`
