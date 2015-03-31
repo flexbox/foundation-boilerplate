@@ -11,6 +11,10 @@
 
 .layout--side-nav {
   padding: rem-calc(20);
+  ul li ul {
+    margin: 0;
+    list-style-type: none;
+  }
 }
 
 .layout--footer {
