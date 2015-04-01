@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'Redacted';
+  src: url("../fonts/redacted-regular.eot");
+  src: url("../fonts/redacted-regular.woff2") format("woff2"),
+       url("../fonts/redacted-regular.woff") format("woff"),
+       url("../fonts/redacted-regular.otf") format("opentype"),
+       url("../fonts/redacted-regular.svg#filename") format("svg");
+}
+
+@font-face {
+  font-family: 'Redacted Script';
+  src: url("../fonts/redacted-script-regular.eot");
+  src: url("../fonts/redacted-script-regular.woff2") format("woff2"),
+       url("../fonts/redacted-script-regular.woff") format("woff"),
+       url("../fonts/redacted-script-regular.otf") format("opentype"),
+       url("../fonts/redacted-script-regular.svg#filename") format("svg");
+}
+
+.fp {
+  font-family: "Redacted";
+}
+
+.fp-script {
+  font-family: "Redacted Script";
+}

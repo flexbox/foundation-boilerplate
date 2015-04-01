@@ -6,23 +6,32 @@ page_classes: m-homepage
 
 .m-homepage
   .row
-    .small-2.columns
-      .m-grid--display
     .small-4.columns
-    .small-4.columns
-      .m-grid--display
+      = image_tag 'http://placehold.it/200x100'
+
+    .small-8.columns
+      ul.m-homepage--menu
+        li = link_to 'Homepage', '#'
+        li = link_to 'Services', '#'
+        li = link_to 'Team', '#'
+        li = link_to 'News', '#'
+        li = link_to 'Contact', '#'
 
   .row
-    .large-12.columns
-      .m-grid--display
-        - 20.times
-          br
+    .large-12.columns.text-center
+      - 10.times
+        br
+      h1 Your awesome HTML prototype
+      p And a cool baseline
+      - 10.times
+        br
 
   .row
     - 3.times do
       .large-4.columns
-        .m-grid--display
+        p Oh. What did your mother ever see in that kid? And Jack Benny is secretary of the Treasury. this has gotta be a dream. Yeah, it's in the back.
 
   .row
     .large-12.columns
-      .m-grid--display
+      hr
+      p &copy; my aweome prototype page

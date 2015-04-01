@@ -37,5 +37,8 @@ http://www.google.com/fonts/specimen/Droid+Serif
 Lato (font)
 http://www.google.com/fonts/specimen/Lato
 
+Redacted (font)
+https://github.com/christiannaths/Redacted-Font
+
 Foundation icons (icons)
 http://zurb.com/playground/foundation-icon-fonts-3

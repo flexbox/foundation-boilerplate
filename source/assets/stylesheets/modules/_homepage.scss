@@ -1,5 +1,21 @@
 .m-homepage {
+  @extend .fp-script;
+
+  h1,h2,h3,h4,h5,h6 {
+    @extend .fp;
+  }
+
   .m-grid--display {
-    min-height: rem-calc(200);
+    min-height: rem-calc(50);
   }
 }
+
+.m-homepage--menu {
+  @include inline-list;
+  float: right;
+  margin-bottom: 0;
+  a {
+    padding: rem-calc(30);
+  }
+}
+
