@@ -1,5 +1,4 @@
 ---
-404.html.slim: /404.html.slim
 about.html.slim: /about.html.slim
 buttons.html.slim: /buttons.html.slim
 colors.html.slim: /colors.html.slim
@@ -7,7 +6,6 @@ forms.html.slim: /forms.html.slim
 grid-uneven.html.slim: /grid-uneven.html.slim
 grid.html.slim: /grid.html.slim
 icons.html.slim: /icons.html.slim
-index.html.slim: /index.html.slim
 inputs.html.slim: /inputs.html.slim
 templates:
   admin.html.slim: /templates/admin.html.slim

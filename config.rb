@@ -7,8 +7,8 @@ activate :navtree do |options|
     'human.txt',
     'favicon_base.png',
     'CNAME',
-    'index.html',
-    '404.html'
+    'index.html.slim',
+    '404.html.slim'
   ]
   options.ignore_dir = ['assets', 'views'] # An array of directories we want to ignore when building our tree.
   options.home_title = 'Home' # The default link title of the home page (located at "/"), if otherwise not detected.
