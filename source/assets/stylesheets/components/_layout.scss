@@ -1,3 +1,9 @@
+.row-full-width {
+  max-width: 100%;
+}
+
+
+
 .layout-section--inverse {
   background-color: $oil;
   color: $white;
@@ -5,8 +11,13 @@
   padding: rem-calc(40 0);
 }
 
-.row-full-width {
-  max-width: 100%
+.layout-section {
+  margin: rem-calc(40 0);
+  padding: rem-calc(40 0);
+}
+
+.layout--feature-list {
+  padding: $panel-padding;
 }
 
 .layout--side-nav {
@@ -23,9 +34,12 @@
   }
 }
 
+
+
 .layout--footer {
   border-top: 1px solid $hr-border-color;
   padding: rem-calc(40);
   margin-top: rem-calc(40);
   color: $aluminum;
+  font-size: rem-calc(14);
 }

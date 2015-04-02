@@ -7,27 +7,38 @@ header.m-header
   .row
     .small-12.columns
       h1.m-header--title = data.settings.site.title
-      p.lead
-        'The most important starting points for any project is a set of guidelines.
+      p Help designer & developpers to build <em>fast</em>, <em>scalable</em>, and <em>responsive</em> website
       = link_to 'Installation →', 'https://github.com/flexbox/foundation-boilerplate#getting-started', class: 'button large'
 
-.row
-  .medium-12.columns
-    p.lead #{data.settings.site.title} helps designer & developpers to build <strong>fast</strong>, <strong>scalable</strong>, and <strong>responsive</strong> web sites.
+.layout-section.text-center
+  .row
+    .medium-10.medium-centered.columns
+      h2 The most important starting points for any project is a set of guidelines.
 
-    ul.small-block-grid-1.medium-block-grid-3
-      li
-        h2 Build with Foundation
-        p This project is not affiliated with zurb, but i love my job and i want help people to make awesome HTML and CSS.
-      li
-        h2 Open source
-        p Available for use under the GNU/GPL license and built with open source projects like SCSS, Middleman, and more.
-      li
-        h2 Build tools
-        p This project is for Ruby lovers build with Middleman to compile SCSS, Slim, CoffeeScript and Autoprefixer for vendor prefixes.
-    .text-center
-      hr
-      h2 I am ready to work
+.row
+  .small-12.medium-6.columns
+    .layout--feature-list
+      h2 Foundation
+      p This project is not affiliated with zurb, but i love my job and i want help people to make awesome HTML and CSS.
+  .small-12.medium-6.columns
+    .layout--feature-list
+      h2 Prototype faster
+      p Make a prototype is a way to get out an idea of your head to compare it with the outside world.
+.row
+  .small-12.medium-6.columns
+    .layout--feature-list
+      h2 Open source
+      p Available for use under the GNU/GPL license and built with open source projects like SCSS, Middleman, and more.
+  .small-12.medium-6.columns
+    .layout--feature-list
+      h2 Build tools
+      p This project is for Ruby lovers build with Middleman to compile SCSS, Slim, CoffeeScript and Autoprefixer for vendor prefixes.
+
+hr
+.layout-section.text-center
+  .row
+    .medium-10.medium-centered.columns
+      h2 Ready to work
       p I have install / download the sources files and i want to build an amazing website
       = link_to 'Explore →', 'grid.html', class: 'button large'
 

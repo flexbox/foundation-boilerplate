@@ -7,10 +7,19 @@
     color: $white;
     text-shadow: $text-shadow;
   }
+  .button {
+    border: 3px solid $white;
+    &:hover {
+      border-color: $button-bg-hover;
+    }
+  }
 }
 
 .m-header--title {
   color: $white;
   text-shadow: $text-shadow;
-  font-size: rem-calc(70);
+
+  @media #{$small} {
+    font-size: rem-calc(70);
+  }
 }
