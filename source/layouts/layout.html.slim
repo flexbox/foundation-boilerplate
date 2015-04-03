@@ -1,10 +1,10 @@
 doctype html
 html class="no-js" lang="en"
-  head
+  head prefix="og: http://ogp.me/ns# dc: http://purl.org/dc/terms/"
     meta charset="utf-8"
     meta name="viewport" content="width=device-width, initial-scale=1.0"
 
-    title #{current_page.data.title} | #{data.settings.site.title}
+    title = current_page.data.title ? current_page.data.title : data.settings.site.title
     meta name="description" content="#{current_page.data.description}"
     meta name="robots" content="index,follow"
 
@@ -13,4 +13,6 @@ html class="no-js" lang="en"
 
   body class="#{page_classes}"
     == yield
+
     = javascript_include_tag 'application'
+    = yield_content :javascripts

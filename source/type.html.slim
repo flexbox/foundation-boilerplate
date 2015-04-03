@@ -31,18 +31,10 @@ layout: boilerplate
 
       Paragraphs are groups of sentences, each with a lead (first sentence) and transition (last sentence). They are block level elements, meaning they stack vertically when repeated. Use them as such.
 
-      ### Editing the CSS
-
-      SCSS variables for typography can be found :
-
-      ~~~ scss
-      /foundation/scss/foundation/components/_type.scss
-      ~~~
-
 .layout-section--inverse
   .row
     .medium-10.medium-centered.columns
-      p You can customise this variables
+      p You can customise this variables available on type.scss
       h2 SCSS
       markdown:
         ~~~ scss
@@ -90,24 +82,20 @@ layout: boilerplate
 
 
     h3 Lists
-    ul.inline-list
-      li
-        = link_to 'Element one', '#'
-      li
-        = link_to 'Element two', '#'
-      li
-        = link_to 'Element three', '#'
-    ul
-      li Plutonium
-      ul
-        li Uranium
-        li Neptunium
-        li Américium
-      li Oxygen
-      li Carbon
-    ol
-      li Black Mesa
-      li Aperture Science
+    .row
+      .medium-6.columns
+        ul
+          li Plutonium
+          ul
+            li Uranium
+            li Neptunium
+            li Américium
+          li Oxygen
+          li Carbon
+      .medium-6.columns
+        ol
+          li Black Mesa
+          li Aperture Science
     hr
 
 .row
@@ -120,7 +108,7 @@ layout: boilerplate
 .layout-section--inverse
   .row
     .medium-10.medium-centered.columns
-      p @extend
+      p @extend directive is a dark side power of the force, use it carefully
       h2 THE STAR WARS STYLING
       markdown:
         ~~~ scss
@@ -146,9 +134,8 @@ layout: boilerplate
 .row
   .medium-10.medium-centered.columns
     p.emperor I am the emperor
-    p.vador I am dark vador
-    p.maul I am the dark maul
+    p.vador I am Darth Vador
+    p.maul I am Darth Maul
     p.sith I am a sith
     p.acolyte I am an acolyte
     p And i am a simple paragraph
-

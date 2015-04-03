@@ -1,11 +1,14 @@
 .emperor {
   @extend h1;
+  text-transform: uppercase;
 }
 .vador {
   @extend h2;
+  font-weight: $font-weight-bold;
 }
 .maul {
   @extend h3;
+  font-style: italic;
 }
 .sith {
   @extend h4;
