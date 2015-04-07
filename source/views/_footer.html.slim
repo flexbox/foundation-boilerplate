@@ -4,8 +4,8 @@ footer.layout--footer role="contentinfo"
       p
         => link_to data.settings.site.title, 'human.txt'
         'last update
-        time datetime="#{DateTime.now.strftime('%d-%m-%Y')} "
-          = DateTime.now.strftime('%d-%m-%Y')
+        time datetime="#{DateTime.now.strftime('%Y-%m-%d')} "
+          = DateTime.now.strftime('%Y-%m-%d')
           '.
         br
         'Licenced under GNU/GPL and available on
