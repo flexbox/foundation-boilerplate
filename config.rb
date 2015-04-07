@@ -8,6 +8,8 @@ activate :navtree do |options|
     'favicon_base.png',
     'CNAME',
     'index.html.slim',
+    'about.html.slim',
+    'start.html.slim',
     '404.html.slim'
   ]
   options.ignore_dir = ['assets', 'views'] # An array of directories we want to ignore when building our tree.

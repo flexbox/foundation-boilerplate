@@ -9,7 +9,7 @@ html class="no-js" lang="en"
     meta name="robots" content="index,follow"
 
     = stylesheet_link_tag 'application'
-    = javascript_include_tag 'modernizr'
+    = javascript_include_tag 'modernizr', defer: 'defer'
 
   body class="#{page_classes}"
     == yield

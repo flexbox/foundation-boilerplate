@@ -1,5 +1,4 @@
 ---
-about.html.slim: /about.html.slim
 buttons.html.slim: /buttons.html.slim
 colors.html.slim: /colors.html.slim
 forms.html.slim: /forms.html.slim
