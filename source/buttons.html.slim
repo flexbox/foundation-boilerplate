@@ -88,11 +88,11 @@ layout: boilerplate
           li
             - unless item.entry == "disabled"
               button class="button #{subitem.data}"
-                =' item.entry
+                => item.entry
                 = subitem.data
             - else
               button class="button #{subitem.data}" disabled=""
-                =' item.entry
+                => item.entry
                 = subitem.data
 
     markdown:
