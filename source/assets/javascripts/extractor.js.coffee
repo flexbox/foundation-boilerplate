@@ -27,6 +27,7 @@ extractColor = ->
     myColor = $(@).css('background-color')
     myHexa = Rgb2Hex(myColor)
     $(@).html(myHexa)
+    $(@).append('<p class="m-extrator--content no-margin">' + @className + '</p>')
 
 extractType = ->
   $('.js-type').each ->

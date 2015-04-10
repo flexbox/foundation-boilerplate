@@ -1,7 +1,7 @@
 $white-light: scale-color($white, $lightness: -40%);
 $aluminum-light: scale-color($aluminum, $lightness: 20%);
 
-$color-list-box-size: rem-calc(100);
+$color-list-box-size: rem-calc(150);
 
 @mixin color-list-box($bg) {
   background-color: $bg;
