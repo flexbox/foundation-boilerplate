@@ -2,7 +2,6 @@
 buttons.html.slim: /buttons.html.slim
 colors.html.slim: /colors.html.slim
 forms.html.slim: /forms.html.slim
-grid-uneven.html.slim: /grid-uneven.html.slim
 grid.html.slim: /grid.html.slim
 icons.html.slim: /icons.html.slim
 inputs.html.slim: /inputs.html.slim
