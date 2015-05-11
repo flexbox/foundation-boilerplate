@@ -18,8 +18,7 @@ activate :navtree do |options|
   options.ext_whitelist = [] # If you add extensions (like '.md') to this array, it builds a whitelist of filetypes for inclusion in the navtree.
 end
 
-activate :autoprefixer,
-  browsers: ['last 2 versions', 'ie 8', 'ie 9']
+activate :autoprefixer, browsers: ['last 2 versions', 'ie 8', 'ie 9']
 
 activate :livereload
 activate :gzip
