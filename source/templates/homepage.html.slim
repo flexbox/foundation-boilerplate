@@ -7,7 +7,7 @@ page_classes: m-homepage
 .m-homepage
   .row
     .small-4.columns
-      = image_tag 'http://placehold.it/200x100'
+      = image_tag lorem.image('200x100', text: 'Your logo')
 
     .small-8.columns
       ul.m-homepage--menu
@@ -19,17 +19,35 @@ page_classes: m-homepage
 
   .row
     .large-12.columns.text-center
-      - 10.times
+      - 5.times
         br
       h1 Your awesome HTML prototype
       p And a cool baseline
-      - 10.times
+      - 5.times
         br
 
+
   .row
-    - 3.times do
-      .large-4.columns
-        p Oh. What did your mother ever see in that kid? And Jack Benny is secretary of the Treasury. this has gotta be a dream. Yeah, it's in the back.
+    .medium-8.medium-centered.columns
+      .row.m-homepage--section
+        .small-12.medium-2.columns.text-center
+          = image_tag lorem.image('150x150', text: 'Product photography'), alt: 'Picture of your product'
+        .small-12.medium-10.columns
+          h3 A feature panel-proof your needs
+          p We integrated all the tools you might need to communicate effectively on your project. With a few clicks, organize, move and configure your modules: images, text, strong messages, videos, links ... And we add new modules regularly.
+      .row.m-homepage--section
+        .small-12.medium-2.columns.text-center
+          = image_tag lorem.image('150x150', text: 'Product photography'), alt: 'Picture of your product'
+        .small-12.medium-10.columns
+          h3 Fully customizable
+          p Some settings to completely customize your page and adapt precisely to your brand. Colors, fonts, images, backgrounds ... it's your page.
+      .row.m-homepage--section
+        .small-12.medium-2.columns.text-center
+          = image_tag lorem.image('150x150', text: 'Product photography'), alt: 'Picture of your product'
+        .small-12.medium-10.columns
+          h3 Simple pricing with students free discover plans
+          p Because we like to see our users happy, and because we want to leave you the opportunity to develop it according to your specific needs, we developed the Open Source… You hold particularly to pay us for our work? Dedicate us a tweet of thanks and we will be left!
+
 
   .row
     .large-12.columns
