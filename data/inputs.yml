@@ -1,20 +1,34 @@
-- type: color
-- type: date
-- type: datetime
-- type: datetime-local
-- type: email
-- type: file
-  accept:
-    - attribute: "audio/*"
-    - attribute: "video/*"
-    - attribute: "image/*"
-- type: month
-- type: number
-- type: password
-- type: range
-- type: search
-- type: tel
-- type: text
-- type: time
-- type: url
-- type: week
+inputs:
+  - type: text
+  - type: number
+  - type: tel
+  - type: email
+  - type: url
+  - type: search
+  - type: password
+  - type: datetime
+  - type: datetime-local
+  - type: date
+  - type: time
+  - type: month
+  - type: week
+  - type: file
+    accept:
+      - attribute: "audio/*"
+      - attribute: "video/*"
+      - attribute: "image/*"
+  - type: range
+  - type: color
+patterns:
+  - value: '[0-9]*'
+    title: 'Numbers only - [0-9]*'
+  - value: '(\d{5}?)'
+    title: 'Short Zip Code - (\d{5}?)'
+  - value: '(\d{5}([\-]\d{4})?)'
+    title: 'Extended Zip Code - (\d{5}([\-]\d{4})?)'
+  - value: '[0-9]{13,16}'
+    title: 'Credit/Bank Account - [0-9]{13,16}'
+  - value: '[a-zA-Z0-9]+'
+    title: 'Alphanumeric (No Spaces) - [a-zA-Z0-9]+'
+  - value: '[a-zA-Z0-9\s]+'
+    title: 'Alphanumeric (With Spaces) - [a-zA-Z0-9\s]+'

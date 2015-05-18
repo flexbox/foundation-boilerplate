@@ -1,6 +1,6 @@
 ---
 title: Inputs
-description:
+description: Input sandbox to test differents types and patterns
 page_title: Inputs
 page_baseline: Collect data from the user the smart way
 layout: boilerplate
@@ -18,8 +18,8 @@ layout: boilerplate
       ### Differents values
 
     form
-      ul.small-block-grid-2
-        - data.inputs.each do |input|
+      ul.small-block-grid-2.medium-block-grid-3
+        - data.inputs.inputs.each do |input|
           li
             label
               |&lt;input type="
@@ -33,8 +33,8 @@ layout: boilerplate
       You can specify the type of upload especially effective for smartphones usecases.
 
     form
-      ul.small-block-grid-2
-        - data.inputs.each do |input|
+      ul.small-block-grid-1
+        - data.inputs.inputs.each do |input|
           - if input.type == "file"
             - input['accept'].each do |subitem|
               li
@@ -43,3 +43,21 @@ layout: boilerplate
                   = input.type
                   |" attribute="#{subitem.attribute}"&gt;
                   input type="#{input.type}" attribute="#{subitem.attribute}"
+    .m-section
+      markdown:
+        - - -
+
+        ## Pattern validation
+
+        Here is a list of all input values with validation pattern.
+
+      - data.inputs.inputs.each do |input|
+        form action="#" data-abide=""
+          - data.inputs.patterns.each do |pattern|
+            label
+              |&lt;input type="
+              = input.type
+              |" pattern="#{pattern.value}"
+              |&gt;
+            input type="#{input.type}" pattern="#{pattern.value}" required=""
+          button type="submit" Save
