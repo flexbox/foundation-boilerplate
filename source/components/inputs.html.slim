@@ -1,22 +1,13 @@
 ---
 title: Inputs
 description: Input sandbox to test differents types and patterns
-page_title: Inputs
-page_baseline: Collect data from the user the smart way
-layout: boilerplate
+page_title: HTML5 input type styleguide
+page_emphasis: Collect data from the user the smart way
+layout: components
 ---
 
 .row
   .medium-8.medium-centered.columns
-    markdown:
-      ## A note on using input type styleguide
-
-      With HTML5 & smartphones `form` & `input type` are fun ! This page is a sandbox to quickly test behavior and style.
-
-      This page is built to test differents combination of input types, validation patterns and attributes across any device, OS or browser, to see how onscreen keyboards and HTML5 validation behaviors would react.
-
-      ### Differents values
-
     form
       ul.small-block-grid-2.medium-block-grid-3
         - data.inputs.inputs.each do |input|
@@ -28,6 +19,12 @@ layout: boilerplate
             input type="#{input.type}"
 
     markdown:
+      With HTML5 & smartphones `form` & `input type` are fun ! This page is a sandbox to quickly test behavior and style.
+
+      This page is built to test differents combination of input types, validation patterns and attributes across any device, OS or browser, to see how onscreen keyboards and HTML5 validation behaviors would react.
+
+      - - -
+
       ### Upload files
 
       You can specify the type of upload especially effective for smartphones usecases.

@@ -2,9 +2,64 @@
 title: Typography
 description: Content choregraphy with typography style guide
 page_title: Typography style guide
-page_baseline: 95% of content on the web is text
-layout: boilerplate
+page_emphasis: 95% of content on the web is text
+layout: components
 ---
+
+.row
+  .medium-10.medium-centered.columns
+    .row
+      .medium-6.columns
+        h1.js-type
+          'h1 Header one
+          small with a baseline
+        h2.js-type
+          'h2 Header two
+          small with a baseline
+        h3.js-type
+          'h3 Header three
+          small with a baseline
+        h4.js-type
+          'h4 Header four
+          small with a baseline
+        h5.js-type
+          'h5 Header five
+          small with a baseline
+        h6.js-type
+          'h6 Header six
+          small with a baseline
+
+      .medium-6.columns
+        p.js-type.lead Uh listen, do you know where Riverside Drive is? Yeah, sure, okay.
+
+        p.js-type What's going on? Where have you been all week? I'm sure that in 1985, plutonium is available at every corner drug store, but in 1955, it's a little hard to come by. Marty, I'm sorry, but I'm afraid you're stuck here. Because, you might regret it later in life.
+
+        .js-type
+          blockquote
+            'Don't worry. As long as you hit that wire with the connecting hook at precisely 88 miles per hour, the instance the lightning strikes the tower, everything will be fine.
+            cite Doc
+
+        .row
+          .medium-6.columns
+            ul
+              li Plutonium
+              ul
+                li Uranium
+                li Neptunium
+                li Américium
+              li Oxygen
+              li Carbon
+          .medium-6.columns
+            ol
+              li Plutonium
+              ol
+                li Uranium
+                li Neptunium
+                li Américium
+              li Oxygen
+              li Carbon
+    hr
+
 
 .row
   .medium-8.medium-centered.columns
@@ -50,53 +105,6 @@ layout: boilerplate
         $h4-font-size: rem-calc(23);
         $h5-font-size: rem-calc(18);
         ~~~
-.row
-  .medium-10.medium-centered.columns
-    h1.js-type
-      'h1 Header one
-      small with a baseline
-    h2.js-type
-      'h2 Header two
-      small with a baseline
-    h3.js-type
-      'h3 Header three
-      small with a baseline
-    h4.js-type
-      'h4 Header four
-      small with a baseline
-    h5.js-type
-      'h5 Header five
-      small with a baseline
-    h6.js-type
-      'h6 Header six
-      small with a baseline
-
-    p.js-type.lead Uh listen, do you know where Riverside Drive is? Yeah, sure, okay.
-
-    p.js-type What's going on? Where have you been all week? I'm sure that in 1985, plutonium is available at every corner drug store, but in 1955, it's a little hard to come by. Marty, I'm sorry, but I'm afraid you're stuck here. Because, you might regret it later in life.
-
-    .js-type
-      blockquote
-        'Don't worry. As long as you hit that wire with the connecting hook at precisely 88 miles per hour, the instance the lightning strikes the tower, everything will be fine.
-        cite Doc
-
-
-    h3 Lists
-    .row
-      .medium-6.columns
-        ul
-          li Plutonium
-          ul
-            li Uranium
-            li Neptunium
-            li Américium
-          li Oxygen
-          li Carbon
-      .medium-6.columns
-        ol
-          li Black Mesa
-          li Aperture Science
-    hr
 
 .row
   .medium-8.medium-centered.columns
@@ -104,6 +112,13 @@ layout: boilerplate
       ### Follow naming convention
 
       How can we split content and architecure for SEO ? Here is a solution, [adopt a good typography naming](http://stuffandnonsense.co.uk/blog/about/star-wars-styling).
+
+    p.emperor I am the emperor
+    p.vador I am Darth Vador
+    p.maul I am Darth Maul
+    p.sith I am a sith
+    p.acolyte I am an acolyte
+    p And i am a simple paragraph
 
 .layout-section--inverse
   .row
@@ -131,11 +146,3 @@ layout: boilerplate
           @extend h5;
         }
         ~~~
-.row
-  .medium-10.medium-centered.columns
-    p.emperor I am the emperor
-    p.vador I am Darth Vador
-    p.maul I am Darth Maul
-    p.sith I am a sith
-    p.acolyte I am an acolyte
-    p And i am a simple paragraph

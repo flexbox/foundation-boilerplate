@@ -11,6 +11,7 @@ $row-width: rem-calc(1480);
 // Global
 
 $white:    #FFFFFF;
+$smoke:    #EEEEEE;
 $aluminum: #999999;
 $snow:     #F9F9F9;
 $oil:      #333333;
@@ -62,6 +63,12 @@ $text-shadow: rgba($black,.4) 0px 2px 0px;
 
 $form-label-bottom-margin: rem-calc(5);
 $input-include-glowing-effect: false;
+
+
+
+// Buttons
+
+$button-function-factor: 20%;
 
 
 

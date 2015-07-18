@@ -1,0 +1,87 @@
+$topbar-height: rem-calc(45);
+$admin-layout-padding: rem-calc(10);
+
+// Hack JavaScript behavior
+.f-topbar-fixed {
+  padding-top: 0 !important;
+}
+
+.row-full-page {
+  width: 100%;
+  max-width: 100%;
+  .sticky.fixed {
+    @include grid-column($columns: 10, $offset: 2, $collapse: true);
+    float: right;
+  }
+
+  // Fix button size issue
+  .top-bar {
+    .button {
+      height: rem-calc(29);
+    }
+  }
+}
+
+.m-admin--sidebar {
+  position: fixed;
+  height: 100%;
+  @include side-nav;
+  background-color: $smoke;
+  @include grid-column($columns: 2);
+}
+
+.m-admin--content {
+  padding-top: $admin-layout-padding;
+  padding-left: $admin-layout-padding;
+}
+
+
+
+$sidebar-width: 114px;
+$nav-color: #333;
+
+.inner-wrap {
+  width: auto;
+}
+
+.move-right .inner-wrap {
+  transform: none;
+  margin-left: $sidebar-width;
+}
+
+.left-off-canvas-menu {
+  transform: none;
+  position: fixed;
+  width: 0;
+  height: 100%;
+}
+
+.move-right .left-off-canvas-menu {
+  width: $sidebar-width;
+}
+
+.move-right .exit-off-canvas {
+  display: none;
+}
+
+.left-off-canvas-toggle {
+  display: none;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  font-size: 3rem;
+  color: $nav-color;
+  transition: all .25s ease-in-out;
+
+  &:focus {
+    color: $nav-color;
+  }
+
+  &:hover {
+    color: lighten($nav-color, 35%);
+    transition: all .25s ease-in-out;
+  }
+}
+
+.ad-block {
+  margin-bottom: 2rem;
+}

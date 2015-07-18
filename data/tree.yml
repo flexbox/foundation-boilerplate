@@ -1,11 +1,12 @@
 ---
-buttons.html.slim: "/buttons.html.slim"
-colors.html.slim: "/colors.html.slim"
-forms.html.slim: "/forms.html.slim"
-grid.html.slim: "/grid.html.slim"
-icons.html.slim: "/icons.html.slim"
-inputs.html.slim: "/inputs.html.slim"
+components:
+  buttons.html.slim: "/components/buttons.html.slim"
+  colors.html.slim: "/components/colors.html.slim"
+  forms.html.slim: "/components/forms.html.slim"
+  grid.html.slim: "/components/grid.html.slim"
+  icons.html.slim: "/components/icons.html.slim"
+  inputs.html.slim: "/components/inputs.html.slim"
+  type.html.slim: "/components/type.html.slim"
 templates:
   admin.html.slim: "/templates/admin.html.slim"
   homepage.html.slim: "/templates/homepage.html.slim"
-type.html.slim: "/type.html.slim"

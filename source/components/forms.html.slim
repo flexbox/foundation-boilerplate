@@ -2,16 +2,54 @@
 title: Forms
 description: Help designer and developers to code a strong set of guideline for forms with the Foundation framework
 page_title: Forms
-page_baseline: Every application need a huge amount of forms
-layout: boilerplate
+page_emphasis: Every application need a huge amount of forms
+layout: components
 ---
 
 .row
   .medium-8.medium-centered.columns
-    markdown:
-      ## Forms
+    form
+      .row
+        .medium-6.columns
+          label Full name
+          input placeholder="Gordon Freeman" type="text"
+        .medium-6.columns
+          label Choose your location
+          select
+            option value="fixture" Aperture Fixtures
+            option value="inovator" Aperture Science Innovators
+            option value="aperture" Aperture
+            option value="labo" Aperture Laboratories
+            option value="science" Aperture Science
+      .row
+        .large-12.columns
+          label Explain the Hazardous Environment Suit workflow
+          textarea placeholder="The suit is designed to protect the user from…" rows="5"
+      .row
+        .large-6.columns
+          p Choose Your Favorite
+          ul.no-bullet
+            li
+              input#pokemonRed name="pokemon" type="radio" value="Red"
+              label for="pokemonRed" Aperture Science
+            li
+              input#pokemonBlue name="pokemon" type="radio" value="Blue"
+              label for="pokemonBlue" Black mesa
+        .large-6.columns
+          p Check these out
+          ul.no-bullet
+            li
+              input#checkbox1 type="checkbox"
+              label for="checkbox1" Erik Wolpaw
+            li
+              input#checkbox2 type="checkbox"
+              label for="checkbox2" Kim Swift
+            li
+              input#checkbox3 type="checkbox"
+              label for="checkbox3" GLaDOS
 
-      ### Elements of a Form
+    markdown:
+      ## Elements of a Form
 
       A form should be marked up using it's default HTML properties. The ones we make use of include (in hierarchical order)
 
@@ -22,50 +60,13 @@ layout: boilerplate
       - textarea
       - button
 
-      ### How to Use
+      ## How to Use
 
       Make forms great and easy to use with the following rules:
 
       - Wrap checkboxes and radio buttons within `label`s for larger hit areas, and be sure to set the `for`, `name`, and `id` attributes for all applicable elements.
       - Series of checkboxes and radio buttons below within a `ul`.
       - Before selecting any set of fields to use for a required `input`, explore other options (e.g., radio buttons over select lists).
-
-    form
-      .row
-        .large-12.columns
-          label
-            | Input Label
-            input placeholder=".large-12.columns" type="text"
-      .row
-        .large-12.columns
-          label
-            | Select Box
-            select
-              option value="husker" Husker
-              option value="starbuck" Starbuck
-              option value="hotdog" Hot Dog
-              option value="apollo" Apollo
-      .row
-        .large-6.columns
-          p Choose Your Favorite
-          input#pokemonRed name="pokemon" type="radio" value="Red"
-          label for="pokemonRed" Red
-          input#pokemonBlue name="pokemon" type="radio" value="Blue"
-          label for="pokemonBlue" Blue
-        .large-6.columns
-          p Check these out
-          ul.no-bullet
-            li
-              input#checkbox1 type="checkbox"
-              label for="checkbox1" Checkbox 1
-            li
-              input#checkbox2 type="checkbox"
-              label for="checkbox2"  Checkbox 2
-      .row
-        .large-12.columns
-          label
-            | Textarea Label
-            textarea placeholder="small-12.columns"
 
 .layout-section--inverse
   .row
@@ -173,17 +174,14 @@ hr
       p.lead Contact me
       form.row
         .large-4.small-12.columns
-          label
-            'Your name:
-            input type="text" placeholder="Albert Einstein"
-          label
-            'Your email:
-            input type="email" placeholder="einstein@science.org" autocapitalize="off"
+          label Your name:
+          input type="text" placeholder="Albert Einstein"
+          label Your email:
+          input type="email" placeholder="einstein@science.org" autocapitalize="off"
 
         .large-8.small-12.columns
-          label
-            'Your message:
-            textarea rows="5"
+          label Your message:
+          textarea rows="5"
           = link_to 'Send', '#', class: 'button right'
 
 hr
@@ -248,4 +246,4 @@ hr
               'Phone
           .small-8.columns
             input type="tel" pattern="integer"
-      button type="submit" class="button right success" Save
+      button type="submit" class="button right success icon save" Save

@@ -1,0 +1,18 @@
+---
+title: Templates
+description:
+page_title: Templates
+page_emphasis: 'Modular & responsive layout'
+layout: boilerplate
+---
+
+.row
+  .medium-8.medium-centered.columns
+    h2 Templates
+    .row
+      .medium-6.columns
+        = image_tag 'browser.png', alt: ''
+      .medium-6.columns
+        nav
+          ul.no-bullet
+            = tree_to_html(data.tree['templates'])

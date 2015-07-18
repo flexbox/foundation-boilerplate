@@ -2,43 +2,32 @@
 title: Buttons
 description: Buttons sandbox with sizes, colors and icons
 page_title: Buttons
-page_baseline: Want to launch a rocket in space ?
-layout: boilerplate
+page_emphasis: Want to launch a rocket in space ?
+layout: components
 ---
 
 .row
   .medium-8.medium-centered.columns
     markdown:
-      ## A note on using buttons style guide
-
-      ### When to Use
-
       Buttons are tied to an action of some kind, whether that button is on a cheese dispenser or launches the rocket that you're strapped to. On the Web, we follow similar conventions.
 
-      ### How to Use
+      ## How to Use
 
       This solution is perfect when the button needs to submit a form of some kind.
 
       __Note:__ Make sure to keep `type="submit"` on the button tag. That's what tells Internet Explorer to submit the form. This doesn't matter for anchor tags.
 
-      ### Using the Anchor Tag
-
-      When you need the button to take you somewhere (e.g. a sign up button), this is the perfect solution.
-
-      ### Editing the CSS
-
-      SCSS variables for buttons can be found in `_settings.scss` file, try to search variables `$button-*`
-
-    = link_to '.button .tiny', '#', class: 'button tiny'
-    ul.inline-list
+    ul.small-block-grid-2.medium-block-grid-4
       li
-        = link_to '.button .secondary', '#', class: 'button secondary'
+        button class="button expand primary" primary
       li
-        = link_to '.button .alert', '#', class: 'button alert'
+        button class="button expand secondary" secondary
       li
-        = link_to '.button .success', '#', class: 'button success'
+        button class="button expand info" info
+      li
+        button class="button expand success" success
 
-    = link_to '.button .expand', '#', class: 'button expand'
+    button class="button expand" button expand
 
 .layout-section--inverse
   .row

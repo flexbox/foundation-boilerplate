@@ -18,10 +18,19 @@
 
 .layout--feature-list {
   padding: $panel-padding;
+  i {
+    float: left;
+    margin: rem-calc(0 40 0 10);
+    line-height: 1;
+    color: $aluminum;
+  }
 }
 
 .layout--side-nav {
   padding: rem-calc(20);
+  background-color: $smoke;
+  box-shadow: 0 -15px 0px $smoke;
+
   ul li ul {
     margin: 0;
     list-style-type: none;
@@ -31,6 +40,13 @@
     padding-top: rem-calc(20);
     padding-bottom: rem-calc(20);
     @extend .acolyte;
+  }
+  a {
+    @include single-transition();
+  }
+  .active a {
+    font-weight: $font-weight-bold !important;
+    color: $secondary-color !important;
   }
 }
 

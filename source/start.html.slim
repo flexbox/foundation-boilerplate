@@ -1,25 +1,62 @@
 ---
 title: Getting started
 description:
-page_title: Getting started
-page_baseline: Download or install from one of these sources
+page_title: Sass architecture for stylesheets
+page_emphasis: Your CSS <i>never ever never</i> be a mess
 layout: boilerplate
 ---
 
 .row
   .medium-8.medium-centered.columns
-    p.lead Download or install from one of these sources
-    = link_to 'Download HTML & CSS', 'https://github.com/flexbox/foundation-boilerplate/archive/gh-pages.zip', class: 'button'
+    markdown:
+      ## Maintain a clever CSS architecture
+
+      Stylesheet maintenance can become overwhelming on large applications. Here are a few tips and tricks to keeping your sanity in a CSS heavy world.
+
+      ## A Few Rules for Clean CSS
+    ul
+      li
+        strong Good Commenting.
+        p
+          'A stylesheet with clear comments that delineate each main section of code makes it a lot easier to find by scanning the page or using <kbd>cmd/ctrl</kbd> + <kbd>F</kbd> to search.
+      li
+        strong Don't repeat yourself (DRY).
+        p Child element declarations should not repeat styles unless they override what is already there.
+      li
+        strong Group elements.
+        p Keep parent/child elements near each other in the CSS. This not only helps you identify areas which can be pruned or cleaned up but also makes it easier on other users of the stylesheet.
+    h2 Partial architecture
+    p If you are using Sass you could be face to this question: May I import Sass files before or after Foundation import?
+
 .layout-section--inverse
   .row
     .medium-10.medium-centered.columns
-      p Clone from GitHub
+      p Your application.scss is like a remote control for your stylesheets
+      h2 SCSS APPLICATION FILES
       markdown:
-        ~~~ shell
-        git clone git@github.com:flexbox/foundation-boilerplate.git
+        ~~~ scss
+        @import "foundation/functions";
+        @import "custom-settings";
+
+        @import "foundation/normalize";
+        @import "foundation/components/block-grid";
+        @import "foundation/components/buttons";
+        @import "foundation/components/forms";
+        @import "foundation/components/grid";
+
+        @import "components/my-typography";
+        @import "components/my-branding";
+        @import "components/my-buttons";
         ~~~
 
 .row
   .medium-8.medium-centered.columns
-      markdown:
-        Next: Learn how to [organise Sass stylesheets →](about.html)
+      p You can quickly add / modify variables in <code>_custom-settings.scss</code> and have all the updates if you have decided to use bower.
+
+hr
+.layout-section.text-center
+  .row
+    .medium-10.medium-centered.columns
+      h2 Need some help ?
+      p If you have problems, please create a GitHub Issue.
+      = link_to 'Readme →', data.settings.site.source_code, class: 'button large'

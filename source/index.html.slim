@@ -1,47 +1,49 @@
 ---
-title: Homepage
 description: Use this boilerplate for your next project with the help of Foundation framework
+page_title: foundation-boilerplate
+page_emphasis: Help designer & developers to build <strong>fast</strong>, <strong>scalable</strong>, <strong>responsive</strong> website
+layout: boilerplate
 ---
 
-header.m-header
-  .row
-    .small-12.columns
-      h1.m-header--title = data.settings.site.title
-      p Help designer & developers to build <em>fast</em>, <em>scalable</em>, and <em>responsive</em> website
-      ul.inline-list
-        li = link_to 'Installation', 'https://github.com/flexbox/foundation-boilerplate#getting-started', class: 'button large'
-        li = link_to 'Styleguide →', '/start.html', class: 'button large'
-
 .layout-section.text-center
-  .row
-    .medium-10.medium-centered.columns
-      h2 The most important starting points for any project is a set of guidelines.
+  h2
+    'The
+    strong> most important starting point
+    'for any project is
+    br
+    em a set of guidelines.
 
 .row
   .small-12.medium-6.columns
     .layout--feature-list
-      h2 Foundation
-      p This project is not affiliated with zurb, but i love my job and i want help people to make awesome HTML and CSS.
+      .panel
+        i.fi-foundation.large
+        h2 Foundation
+        p Not affiliated with zurb, but I love my job & <strong>I want help people</strong> to make awesome HTML & CSS.
   .small-12.medium-6.columns
     .layout--feature-list
-      h2 Prototype faster
-      p Make a prototype is a way to get out an idea of your head to compare it with the outside world.
+      .panel
+        i.fi-layout.large
+        h2 Prototype faster
+        p Make a prototype is a way to get out an idea of your head to compare it with the outside world.
 .row
   .small-12.medium-6.columns
     .layout--feature-list
-      h2 Open source
-      p Available for use under the GNU/GPL license and built with open source projects like SCSS, Middleman, and more.
+      .panel
+        i.fi-social-github.large
+        h2 Open source
+        p Available for use under the GNU/GPL license & built with open source projects.
   .small-12.medium-6.columns
     .layout--feature-list
-      h2 Build tools
-      p This project is for Ruby lovers build with Middleman to compile SCSS, Slim, CoffeeScript and Autoprefixer for vendor prefixes.
+      .panel
+        i.fi-wrench.large
+        h2 Build tools
+        p For Ruby lovers build with Middleman, SCSS, Slim, CoffeeScript & Autoprefixer for vendor prefixes.
 
 hr
 .layout-section.text-center
   .row
     .medium-10.medium-centered.columns
       h2 Ready to work
-      p I have install / download the sources files and i want to build an amazing website
-      = link_to 'Explore →', '/about.html', class: 'button large'
-
-= partial 'views/footer'
+      p I have install / download the sources files & i want to build an amazing website
+      = link_to 'Explore →', '/components/colors.html', class: 'button large'
