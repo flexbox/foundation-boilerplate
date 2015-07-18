@@ -1,3 +1,14 @@
+require 'slim'
+Slim::Engine.default_options[:pretty] = true # Avoid HTML minification for people who don't know slim
+
+set :js_dir,     'assets/javascripts'
+set :css_dir,    'assets/stylesheets'
+set :images_dir, 'assets/images'
+
+activate :autoprefixer, browsers: ['last 2 versions', 'ie 8', 'ie 9']
+activate :livereload
+activate :syntax
+
 activate :navtree do |options|
   options.data_file = 'tree.yml'
   options.source_dir = 'source' # The `source` directory we want to represent in our nav tree.
@@ -18,36 +29,21 @@ activate :navtree do |options|
   options.ext_whitelist = [] # If you add extensions (like '.md') to this array, it builds a whitelist of filetypes for inclusion in the navtree.
 end
 
-activate :autoprefixer, browsers: ['last 2 versions', 'ie 8', 'ie 9']
-
-activate :livereload
-activate :gzip
-activate :syntax
-
-###
-# Page options, layouts, aliases and proxies
-###
+activate :deploy do |deploy|
+  deploy.method       = :git
+  deploy.branch       = 'gh-pages'
+  deploy.build_before = true # always use --no-clean options
+end
 
 page "/sitemap.xml", layout: false
 
-require 'slim'
-# Avoid HTML minification for people who don't know slim
-Slim::Engine.default_options[:pretty] = true
-
-set :js_dir, 'assets/javascripts'
-set :css_dir, 'assets/stylesheets'
-set :images_dir, 'assets/images'
-
 # Add bower's directory to sprockets asset path
 after_configuration do
-
   @bower_config = JSON.parse(IO.read("#{root}/.bowerrc"))
   sprockets.append_path File.join "#{root}", @bower_config["directory"]
-
 end
 
 configure :build do
-
   activate :favicon_maker do |f|
     f.template_dir  = File.join(root, 'source')
     f.output_dir    = File.join(root, 'build')
@@ -68,10 +64,8 @@ configure :build do
 
   activate :minify_css
   activate :minify_javascript
+  activate :gzip
   activate :asset_hash
-
-  activate :relative_assets
-  set :relative_links, true
 
   activate :sitemap, hostname: data.settings.site.url
 
@@ -79,4 +73,7 @@ configure :build do
     rules: [{:user_agent => '*', :allow => %w(/)}],
     sitemap: data.settings.site.url+'sitemap.xml'
 
+  # Use this for gh-pages
+  activate :relative_assets
+  set :relative_links, true
 end
