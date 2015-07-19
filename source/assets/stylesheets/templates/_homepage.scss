@@ -1,25 +1,27 @@
-.m-homepage {
+.m-homepage,
+.templates_homepage,
+.templates_admin {
   @extend .fp-script;
 
   h1,h2,h3,h4,h5,h6 {
     @extend .fp;
   }
-
-  .m-grid--display {
-    min-height: rem-calc(50);
-  }
-}
-
-.m-homepage--menu {
-  @include inline-list;
-  float: right;
-  margin-bottom: 0;
-  a {
-    padding: rem-calc(30);
+  .top-bar-section a {
+    @extend .fp-script;
   }
 }
 
 .m-homepage--section {
   padding-top: rem-calc(20);
   padding-bottom: rem-calc(20);
+}
+
+.m-homepage--section-vertical {
+  @media #{$medium-up} {
+    display: flex;
+    align-items: center;
+    .l-content {
+      padding: rem-calc(0 40);
+    }
+  }
 }

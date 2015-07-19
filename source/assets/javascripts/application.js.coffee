@@ -5,6 +5,7 @@
 #= require "foundation/js/foundation/foundation.magellan"
 #= require "foundation/js/foundation/foundation.abide"
 #= require "foundation/js/foundation/foundation.topbar"
+#= require "initialize"
 
 #= require "extractor"
-#= require "initialize"
+#= require "admin-sidebar"

@@ -4,64 +4,88 @@ description: A simple layout for backoffice with sidebar and topbar. The fixed p
 layout: backoffice
 ---
 
-.row.row-full-page.collapse
-  .medium-2.columns
-    ul.m-admin--sidebar
-      li
-        = link_to data.settings.site.title, '#'
-      li.divider
-      - 5.times do |i|
+.contain-to-grid.sticky.fixed
+  nav.top-bar data-topbar="" role="navigation" data-options="sticky_on: large; is_hover: false"
+    ul.title-area
+      li.name
+        h1
+          = link_to data.settings.site.title, '#'
+      li class="toggle-topbar menu-icon"
+        = link_to '#' do
+          span Menu
+
+    section class="top-bar-section"
+      ul.left
+        li.has-form
+          div class="row collapse"
+            div class="large-8 small-9 columns"
+              input placeholder="Find Stuff" type="text"
+            div class="large-4 small-3 columns"
+              a href="#" class="button secondary expand" Search
+
+      ul.right
+        li.divider.hide-for-small
         li
-          = link_to "Link #{i + 1}", '#'
-
-  .medium-10.columns
-    .contain-to-grid.sticky
-      nav.top-bar data-topbar="" role="navigation" data-options="sticky_on: large; is_hover: false"
-        ul.title-area
-          li.name
-            h1
-              = link_to '#' do
-                i.fi-home
-          li class="toggle-topbar menu-icon"
-            = link_to '#' do
-              span Menu
-
-        section class="top-bar-section"
-          ul.left
-            li.has-form
-              div class="row collapse"
-                div class="large-8 small-9 columns"
-                  input placeholder="Find Stuff" type="text"
-                div class="large-4 small-3 columns"
-                  a href="#" class="button secondary expand" Search
-
-          ul.right
-            li.divider.hide-for-small
+          = link_to 'https://github.com/flexbox' do
+            i.fi-torso
+            'Flexbox
+        li.has-dropdown
+          = link_to '#', title: 'Create new...' do
+            i.fi-plus
+          ul.dropdown
             li
-              = link_to 'https://github.com/flexbox' do
-                i.fi-torso
-                'Flexbox
-            li.has-dropdown
               = link_to '#', title: 'Create new...' do
-                i.fi-plus
-              ul.dropdown
-                li
-                  = link_to '#', title: 'Create new...' do
-                    i.fi-page
-                    'New page
-                li
-                  = link_to '#', title: 'Create new...' do
-                    i.fi-address-book
-                    'New adress
+                i.fi-page
+                'New page
+            li
+              = link_to '#', title: 'Create new...' do
+                i.fi-address-book
+                'New adress
 
-            li
-              = link_to '#', title: 'Settings' do
-                i.fi-wrench
-            li
-              = link_to '#', title: 'Sign out' do
-                i.fi-power
+        li
+          = link_to '#', title: 'Settings' do
+            i.fi-wrench
+        li
+          = link_to '#', title: 'Sign out' do
+            i.fi-power
+
+div class="off-canvas-wrap move-right" data-offcanvas=""
+  div class="inner-wrap"
+    a class="left-off-canvas-toggle" href="#"
+      i class="fi-list"
+
+    aside class="left-off-canvas-menu"
+      div class="icon-bar vertical five-up"
+
+        <a class="item">
+          <i class="fi-home"></i>
+          <label>Home</label>
+        </a>
+
+        <a class="item">
+         <i class="fi-home"></i>
+          <label>Bookmark</label>
+        </a>
+
+        <a class="item">
+          <i class="fi-home"></i>
+          <label>Info</label>
+        </a>
+
+        <a class="item">
+          <i class="fi-home"></i>
+          <label>Mail</label>
+        </a>
+
+        <a class="item">
+          <i class="fi-home"></i>
+          <label>Like</label>
+        </a>
 
     .m-admin--content
+      header.row
+        .small-12.columns
+          h1 Off-canvas Sidebar
       table
         thead
           tr
@@ -78,3 +102,6 @@ layout: backoffice
               td This is longer content Donec id elit non mi porta gravida at eget metus.
               td Content Goes Here
               td Content Goes Here
+
+
+    a class="exit-off-canvas"

@@ -4,63 +4,86 @@ description: 3 columns based template homepage.
 page_classes: m-homepage
 ---
 
-.row
-  .small-4.columns
-    = image_tag lorem.image('200x100', text: 'Your logo')
+.contain-to-grid
+  nav.top-bar data-topbar="" role="navigation"
+    ul.title-area
+      li.name
+        h1
+          = link_to data.settings.site.title, '#'
+      li class="toggle-topbar menu-icon"
+        = link_to '#' do
+          span Menu
 
-  .small-8.columns
-    ul.m-homepage--menu
-      li = link_to 'Homepage', '#'
-      li = link_to 'Services', '#'
-      li = link_to 'Team', '#'
-      li = link_to 'News', '#'
-      li = link_to 'Contact', '#'
+    section class="top-bar-section"
+      ul.right
+        li.divider.hide-for-small
+        li = link_to 'Services', '#'
+        li = link_to 'Team', '#'
+        li = link_to 'News', '#'
+        li = link_to 'Contact', '#'
 
-.row
-  .large-12.columns.text-center
-    - 5.times
+
+.layout-section.text-center
+  .row
+    .small-12.columns
       br
-    h1 Your awesome HTML prototype
-    p with a cool baseline
-    - 5.times
       br
-
+      h1 Your awesome HTML prototype
+      p with a cool baseline
 
 .row
   .medium-8.medium-centered.columns
-    .row.m-homepage--section
+    section.row.m-homepage--section
       .small-12.medium-2.columns.text-center
-        = image_tag lorem.image('150x150', text: 'Product photography'), alt: 'Picture of your product'
+        = image_tag lorem.image('150x150'), alt: 'Picture of your product'
       .small-12.medium-10.columns
         h3 A feature panel-proof your needs
         p We integrated all the tools you might need to communicate effectively on your project. With a few clicks, organize, move and configure your modules: images, text, strong messages, videos, links ... And we add new modules regularly.
-    .row.m-homepage--section
+    section.row.m-homepage--section
       .small-12.medium-2.columns.text-center
-        = image_tag lorem.image('150x150', text: 'Product photography'), alt: 'Picture of your product'
+        = image_tag lorem.image('150x150'), alt: 'Picture of your product'
       .small-12.medium-10.columns
         h3 Fully customizable
         p Some settings to completely customize your page and adapt precisely to your brand. Colors, fonts, images, backgrounds…
-    .row.m-homepage--section
+    section.row.m-homepage--section
       .small-12.medium-2.columns.text-center
-        = image_tag lorem.image('150x150', text: 'Product photography'), alt: 'Picture of your product'
+        = image_tag lorem.image('150x150'), alt: 'Picture of your product'
       .small-12.medium-10.columns
         h3 Simple pricing with students free discover plans
         p Because we like to see our users happy, and because we want to leave you the opportunity to develop it according to your specific needs, we developed the Open Source… You hold particularly to pay us for our work? Dedicate us a tweet of thanks and we will be left!
 
-.row.m-homepage--section
-  .small-12.columns.text-center
-    - 5.times
+.layout-section.text-center
+  section.row.m-homepage--section
+    .small-12.columns
+      h2 Simple pricing with students free discover plans
       br
-    h2 Simple pricing with students free discover plans
-    br
-    = image_tag lorem.image('1200x200', text: 'Some illustration')
-    .row
-      .medium-8.medium-centered.columns
-        br
-        p Some settings to completely customize your page and adapt precisely to your brand. Colors, fonts, images, backgrounds…
-    - 5.times
+      = image_tag lorem.image('1200x200'), alt: 'Large placeholder'
       br
+      br
+      .row
+        .medium-8.medium-centered.columns
+          p Some settings to completely customize your page and adapt precisely to your brand. Colors, fonts, images, backgrounds…
+
 .row
-  .large-12.columns
+  .medium-8.medium-centered.columns
+    .layout-section.text-center
+      .row.collapse.m-homepage--section-vertical
+        .medium-6.medium-push-6.columns
+          = image_tag lorem.image('550x500'), alt: 'Medium plaeholder'
+        .medium-6.medium-pull-6.columns
+          .l-content
+            h2 Black Mesa
+            p The events of the Black Mesa incident are triggered during a routine experiment conducted by the team of abnormal material in the area C, tests chamber C-33 / a.
+            p “ Working to make a better tomorrow for all mankind ”
+      .row.collapse.m-homepage--section-vertical
+        .medium-6.columns
+          = image_tag lorem.image('550x500'), alt: 'Medium plaeholder'
+        .medium-6.columns
+          .l-content
+            h2 Aperture Science
+            p The Aperture Science Enrichment Center is an American research laboratory studying science and lunar rocks by performing various tests on human guinea pigs.
+
+.row
+  .small-12.columns
     hr
     p &copy; my aweome prototype page

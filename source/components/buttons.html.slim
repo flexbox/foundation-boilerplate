@@ -55,7 +55,7 @@ layout: components
   .medium-8.medium-centered.columns
     markdown:
       ## Basic
-      - - -
+
       Here is a list of all HTML buttons markup style, `<a href>`, `<input>` & `<button>`
     ul.inline-list
       li = link_to 'a href', '#', class: 'button'
@@ -67,7 +67,7 @@ layout: components
 
     markdown:
       ## Advanced
-      - - -
+
       There is a lot of options available to have custom buttons : sizes, colors & behavior.
 
     - data.buttons.each do |item|
@@ -86,7 +86,7 @@ layout: components
 
     markdown:
       ## Buttons with icons
-      - - -
+
       Buttons can be hispter too.
     ul.inline-list
       li
@@ -111,7 +111,7 @@ layout: components
       li
         = link_to 'a href', '#', class: 'button secondary icon favorite'
       li
-        button class="button secondary icon favorite" type="submit"
+        button type="submit" class="button secondary icon favorite"
           'button type submit
       li
         input type="submit" class="button secondary icon favorite" value="input type submit"

@@ -33,6 +33,7 @@ $admin-layout-padding: rem-calc(10);
 .m-admin--content {
   padding-top: $admin-layout-padding;
   padding-left: $admin-layout-padding;
+  margin-top: 40px;
 }
 
 
@@ -58,6 +59,8 @@ $nav-color: #333;
 
 .move-right .left-off-canvas-menu {
   width: $sidebar-width;
+  z-index: 50;
+  padding-top: 45px;
 }
 
 .move-right .exit-off-canvas {
@@ -80,8 +83,4 @@ $nav-color: #333;
     color: lighten($nav-color, 35%);
     transition: all .25s ease-in-out;
   }
-}
-
-.ad-block {
-  margin-bottom: 2rem;
 }
