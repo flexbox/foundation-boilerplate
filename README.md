@@ -49,12 +49,19 @@ Launch the server on your machine
 
 Deploy to Github Pages
 
-    rake publish
+    middleman deploy
 
 ## Architecture
 
 Stylesheets, fonts, images, and JavaScript files go in the `/source/assets/` directory.
 Vendor stylesheets and JavaScripts should go in each of their `/bower_components/` directories.
+
+    boilerplate/
+    ├── bower_components/
+    │    └── ...
+    ├── source/
+    │   ├── assets/
+    │   └── ...
 
 ## Demo
 
