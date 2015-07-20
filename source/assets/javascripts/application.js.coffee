@@ -8,4 +8,5 @@
 #= require "initialize"
 
 #= require "extractor"
-#= require "admin-sidebar"
+#= require "header"
+#= require "templates/admin-sidebar"

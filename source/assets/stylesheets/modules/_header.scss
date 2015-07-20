@@ -1,8 +1,11 @@
 .m-header {
   background-color: scale-color($primary-color, $lightness: -40%);
   color: $white;
-  padding: rem-calc(15 40 0);
   margin-bottom: rem-calc(15);
+  padding: rem-calc(15 20 15);
+  @media #{$medium-up} {
+    padding: rem-calc(15 40 0);
+  }
   p {
     color: $white;
     text-shadow: $text-shadow;
@@ -24,21 +27,42 @@
 .m-header--nav {
   display: flex;
   margin: auto;
-  flex-direction: row;
+  flex-direction: column;
+
+  &.is-away {
+    display: none;
+    text-align: left;
+    @media #{$medium}{
+      text-align: center;
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  &.is-on-viewport {
+    display: flex;
+  }
+
   a {
     display: block;
-    flex: 1;
     padding: rem-calc(20 0);
-    text-align: center;
-    &:nth-last-child(2) {
-      margin-left: rem-calc(300);
-    }
+    flex: 1;
   }
 }
 
 .index {
   .l-download {
-    // box-shadow: inset 0 0 1px $white;
     outline: 2px solid $white;
+  }
+}
+
+.m-header--menu {
+  padding: rem-calc(10 20);
+  margin-bottom: rem-calc(10);
+  display: block;
+  float: right;
+  border: 2px solid $white;
+  @media #{$medium-up} {
+    display: none;
   }
 }
