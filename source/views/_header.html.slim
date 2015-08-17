@@ -1,6 +1,6 @@
-header.m-header role="banner"
+header#header-top.m-header role="banner"
 
-  = link_to '#', id: 'js-menu--button', class: 'm-header--menu' do
+  = link_to '#header-top', id: 'js-menu--button', class: 'm-header--menu' do
     span Menu
 
   h1.m-header--title
@@ -9,10 +9,10 @@ header.m-header role="banner"
     = current_page.data.page_emphasis
 
   nav.m-header--nav.js-header--list.is-away
-    = link_to 'Getting started', '/start.html'
-    = link_to 'About', '/index.html'
-    = link_to 'Components', '/components/colors.html'
-    = link_to 'Templates', '/templates/index.html'
+    = link_to 'Getting started', '/start.html',             nav_active('/start.html')
+    = link_to 'About',           '/index.html',             nav_active('/index.html')
+    = link_to 'Components',      '/components/colors.html', nav_active('/components/colors.html')
+    = link_to 'Templates',       '/templates/index.html',   nav_active('/templates/index.html')
     = link_to data.settings.site.source_code do
       i.fi-social-github
       'GitHub

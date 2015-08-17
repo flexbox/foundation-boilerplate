@@ -1,5 +1,7 @@
+$header-bg: scale-color($primary-color, $lightness: -40%);
+
 .m-header {
-  background-color: scale-color($primary-color, $lightness: -40%);
+  background-color: $header-bg;
   color: $white;
   margin-bottom: rem-calc(15);
   padding: rem-calc(15 20 15);
@@ -13,8 +15,13 @@
 
   a {
     color: rgba($white, 0.6);
+    border-bottom: 4px solid $header-bg;
     &:hover {
       color: $white;
+    }
+
+    &.is-active {
+      border-color: $white;
     }
   }
 }
@@ -56,12 +63,16 @@
   }
 }
 
-.m-header--menu {
+a.m-header--menu {
   padding: rem-calc(10 20);
   margin-bottom: rem-calc(10);
   display: block;
   float: right;
   border: 2px solid $white;
+  z-index: 1000;
+  position: fixed;
+  bottom: rem-calc(10);
+  background-color: $header-bg;
   @media #{$medium-up} {
     display: none;
   }
