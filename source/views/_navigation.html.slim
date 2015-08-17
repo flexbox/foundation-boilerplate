@@ -1,5 +1,9 @@
 .layout--side-nav
-  p.acolyte Components
+  p.acolyte Scale
+  nav
+    ul.side-nav
+      = tree_to_html(data.tree['scale'])
+  p.acolyte Style
   nav
     ul.side-nav
       = tree_to_html(data.tree['components'])

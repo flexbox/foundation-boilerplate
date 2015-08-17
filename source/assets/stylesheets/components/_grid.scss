@@ -1,15 +1,9 @@
 .m-grid--display {
-  background-color: #EEE;
+  background-color: $smoke;
   font-size: rem-calc(12);
-  margin-bottom: 10px;
-  line-height: 2rem;
-  border: 1px solid #C6C6C6;
-  margin-left: 0px !important;
-  margin-right: 0px !important;
-  margin-bottom: rem-calc(20) !important;
-}
-
-.m-grid--avatar {
-  border-radius: 100%;
-  margin-bottom: rem-calc(40);
+  text-align: center;
+  margin-bottom: rem-calc(10);
+  min-height: rem-calc(60);
+  padding: rem-calc(30 0);
+  margin-bottom: rem-calc(20);
 }
