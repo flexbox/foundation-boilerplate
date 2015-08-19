@@ -19,20 +19,16 @@ $color-list-box-size: rem-calc(150);
   }
 }
 
+
 .color-list {
-  @include inline-list;
 
-
-  li {
+  div {
     width: $color-list-box-size;
     height: $color-list-box-size;
     border: 5px solid $white;
     text-align: center;
     padding: rem-calc(10);
     padding-top: rem-calc(15);
-    &:first-child {
-      margin-left: 0;
-    }
 
     &.primary {
       @include color-list-box($primary-color);
@@ -63,6 +59,9 @@ $color-list-box-size: rem-calc(150);
     }
     &.subheader-font {
       @include color-list-box($subheader-font-color);
+    }
+    &.blockquote-font {
+      @include color-list-box($blockquote-font-color);
     }
   }
 }

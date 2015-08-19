@@ -23,7 +23,7 @@ Rgb2Hex = (rgb) ->
   "#" + hex(rgb[1]) + hex(rgb[2]) + hex(rgb[3])
 
 extractColor = ->
-  $('.color-list li').each ->
+  $('.js-color-list li div').each ->
     myColor = $(@).css('background-color')
     myHexa = Rgb2Hex(myColor)
     $(@).html(myHexa)
