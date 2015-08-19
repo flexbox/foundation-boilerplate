@@ -9,10 +9,10 @@ header#header-top.m-header role="banner"
     = current_page.data.page_emphasis
 
   nav.m-header--nav.js-header--list.is-away
-    = link_to 'Getting started', '/start.html',             nav_active('/start.html')
-    = link_to 'About',           '/index.html',             nav_active('/index.html')
-    = link_to 'Components',      '/components/colors.html', nav_active('/components/colors.html')
-    = link_to 'Templates',       '/templates/index.html',   nav_active('/templates/index.html')
+    = link_to 'Getting started', '/start/',      nav_active('/start/')
+    = link_to 'About',           '/',            nav_active('/')
+    = link_to 'Components',      '/scale/grid/', nav_active('/scale/grid/')
+    = link_to 'Templates',       '/templates/',  nav_active('/templates/')
     = link_to data.settings.site.source_code do
       i.fi-social-github
       'GitHub

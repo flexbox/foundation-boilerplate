@@ -8,6 +8,7 @@ set :images_dir, 'assets/images'
 activate :autoprefixer, browsers: ['last 2 versions', 'ie 8', 'ie 9']
 activate :livereload
 activate :syntax
+activate :directory_indexes
 
 activate :navtree do |options|
   options.data_file = 'tree.yml'

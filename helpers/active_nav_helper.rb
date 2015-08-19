@@ -7,7 +7,7 @@ module ActiveNavHelper
   #
   # == Usage
   #
-  #   {nav_active("page.html")}
+  #   nav_active('page.html')
 
 
   def active_navigation_item_class

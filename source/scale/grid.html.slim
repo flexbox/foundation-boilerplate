@@ -1,6 +1,6 @@
 ---
 title: Grid
-description: Help designer and developers to code a strong set of guideline for forms with the Foundation framework
+description: Place items on the page with the grid system
 page_title: Responsive grid
 page_emphasis: Grid system by example
 layout: components
@@ -9,7 +9,7 @@ layout: components
 .row
   - 12.times do |i|
     div class="small-1 columns"
-      .m-grid--display
+      .grid-display
         - 10.times do
           br
 
@@ -25,23 +25,23 @@ layout: components
       .medium-8.medium-centered.columns
         .row
           .small-3.columns
-            .m-grid--display
+            .grid-display
               '.small-3.columns
           .small-3.columns
-            .m-grid--display
+            .grid-display
               '.small-3.columns
           .small-3.columns
-            .m-grid--display
+            .grid-display
               '.small-3.columns
           .small-3.columns
-            .m-grid--display
+            .grid-display
               '.small-3.columns
         .row
           .large-6.columns
-            .m-grid--display
+            .grid-display
               '.large-6.columns
           .large-6.columns
-            .m-grid--display
+            .grid-display
               '.large-6.columns
 
     markdown:
@@ -52,7 +52,7 @@ layout: components
         1. `rows` create a max-width and contain the columns;
         2. `columns` create the final structure.
 
-      _Everything on your page_ that you don’t give a specific structural style to should live in a `row.
+      _Everything on your page_ that you don’t give a specific structural style to should live in a `row`.
 
       ## How to Use
 
@@ -61,9 +61,8 @@ layout: components
 .layout-section--inverse
   .row
     .medium-10.medium-centered.columns
-
-      h4 HTML
       markdown:
+        ### HTML
         ~~~ html
         <div class="row">
           <div class="small-4 columns">...</div>
@@ -76,47 +75,49 @@ layout: components
         </div>
         ~~~
 
+        ### SCSS
+        ~~~ scss
+        $row-width: rem-calc(1000);
+        $total-columns: 12;
+        $column-gutter: rem-calc(30);
+        ~~~
 .row
   .medium-8.medium-centered.columns
     markdown:
-      ## Nesting Support
-
-      In the Grid you can nest columns down as far as you’d like. Just embed rows inside columns and go from there. Each embedded row can contain up to number `$total-columns` defined in `_custom-settings.scss`.
-
       ## Grid uneven
 
       Here’s how to center an uneven number of items with the grid system.
 
 .row
-  .small-6.small-centered.columns
+  .medium-6.medium-centered.columns
     div
       .small-4.columns
-        .m-grid--display
+        .grid-display
           '.small-4.columns
       .small-4.columns
-        .m-grid--display
+        .grid-display
           '.small-4.columns
       .small-4.columns
-        .m-grid--display
+        .grid-display
           '.small-4.columns
 
     div
       .small-4.columns
-        .m-grid--display
+        .grid-display
           '.small-4.columns
       .small-4.columns
-        .m-grid--display
+        .grid-display
           '.small-4.columns
       .small-4.columns
-        .m-grid--display
+        .grid-display
           '.small-4.columns
 
     div
       .small-4.small-push-2.columns
-        .m-grid--display
+        .grid-display
           '.small-4.small-push-2.columns
       .small-4.small-pull-2.columns
-        .m-grid--display
+        .grid-display
           '.small-4.small-pull-2.columns
 
 .layout-section--inverse
@@ -163,4 +164,5 @@ layout: components
 
 .row
   .medium-8.medium-centered.columns
-    p The push/pull are why we needed a base-12 grid: While the layout appears to have three columns, it really needs to nudge the last two a little ways in. The result is a symmetrical layout that doesn't seem to have left anyone out.
+    markdown:
+      The `push-`/`pull-` are why we needed a base-12 grid: While the layout appears to have three columns, it really needs to nudge the last two a little ways in. The result is a symmetrical layout that doesn’t seem to have left anyone out.

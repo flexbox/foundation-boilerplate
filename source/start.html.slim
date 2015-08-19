@@ -9,11 +9,9 @@ layout: boilerplate
 .row
   .medium-8.medium-centered.columns
     markdown:
-      ## Maintain a clever CSS architecture
-
       Stylesheet maintenance can become overwhelming on large applications. Here are a few tips and tricks to keeping your sanity in a CSS heavy world.
 
-      ## A Few Rules for Clean CSS
+      ## Rules for clean CSS
     ul
       li
         strong Good Commenting.
@@ -26,13 +24,13 @@ layout: boilerplate
         strong Group elements.
         p Keep parent/child elements near each other in the CSS. This not only helps you identify areas which can be pruned or cleaned up but also makes it easier on other users of the stylesheet.
     h2 Partial architecture
-    p If you are using Sass you could be face to this question: May I import Sass files before or after Foundation import?
+    p If you are using Sass you could be face to this question:
+    blockquote May I import Sass files before or after Foundation import?
 
 .layout-section--inverse
   .row
     .medium-10.medium-centered.columns
-      p Your application.scss is like a remote control for your stylesheets
-      h2 SCSS APPLICATION FILES
+      h3 application.scss is a remote control for your stylesheets
       markdown:
         ~~~ scss
         @import "foundation/functions";
