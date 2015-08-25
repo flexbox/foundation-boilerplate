@@ -5,6 +5,7 @@ components:
   forms.html.slim: "/components/forms.html.slim"
   icons.html.slim: "/components/icons.html.slim"
   inputs.html.slim: "/components/inputs.html.slim"
+  logo.html.slim: "/components/logo.html.slim"
   type.html.slim: "/components/type.html.slim"
 scale:
   breakpoints.html.slim: "/scale/breakpoints.html.slim"

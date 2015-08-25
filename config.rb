@@ -45,7 +45,7 @@ end
 
 configure :build do
   activate :favicon_maker do |f|
-    f.template_dir  = File.join(root, 'source')
+    f.template_dir  = File.join(root, 'source/assets/images/logos/')
     f.output_dir    = File.join(root, 'build')
     f.icons = {
       "favicon_base.png" => [
