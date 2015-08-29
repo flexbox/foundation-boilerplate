@@ -34,7 +34,8 @@ $text-shadow: rgba($black,.4) 0px 2px 0px;
 
 $form-label-bottom-margin: rem-calc(5);
 $input-include-glowing-effect: false;
-
+// Avoid the zoom effect on mobile devices use 16px for input
+$input-font-size: rem-calc(16);
 
 
 // Buttons
