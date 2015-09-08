@@ -15,14 +15,6 @@ layout: backoffice
           span Menu
 
     section class="top-bar-section"
-      ul.left
-        li.has-form
-          div class="row collapse"
-            div class="large-8 small-9 columns"
-              input placeholder="Find Stuff" type="text"
-            div class="large-4 small-3 columns"
-              a href="#" class="button secondary expand" Search
-
       ul.right
         li.divider.hide-for-small
         li
@@ -56,31 +48,14 @@ div class="off-canvas-wrap move-right" data-offcanvas=""
 
     aside class="left-off-canvas-menu"
       div class="icon-bar vertical five-up"
+        = link_to '#', class: 'item' do
+          i.fi-home
+          label Home
 
-        <a class="item">
-          <i class="fi-home"></i>
-          <label>Home</label>
-        </a>
-
-        <a class="item">
-         <i class="fi-home"></i>
-          <label>Bookmark</label>
-        </a>
-
-        <a class="item">
-          <i class="fi-home"></i>
-          <label>Info</label>
-        </a>
-
-        <a class="item">
-          <i class="fi-home"></i>
-          <label>Mail</label>
-        </a>
-
-        <a class="item">
-          <i class="fi-home"></i>
-          <label>Like</label>
-        </a>
+        - 4.times do
+          = link_to '#', class: 'item' do
+            i.fi-home
+            label Home
 
     .m-admin--content
       header.row

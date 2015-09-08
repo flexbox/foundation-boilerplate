@@ -1,6 +1,7 @@
 .m-homepage,
 .templates_homepage,
-.templates_admin {
+.templates_admin,
+.templates_webapp {
   @extend .fp-script;
 
   h1,h2,h3,h4,h5,h6 {

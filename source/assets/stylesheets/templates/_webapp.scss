@@ -1,0 +1,33 @@
+.templates_webapp {
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+
+  flex-direction: column;
+  @media #{$medium-up} {
+    flex-direction: row;
+  }
+
+  &--sidebar {
+    flex-shrink: 0;
+    order: 2;
+    label {
+      display: none;
+    }
+
+    @media #{$medium-up} {
+      order: 1;
+      label {
+        display: block;
+      }
+    }
+  }
+  &--content {
+    flex-grow: 1;
+    overflow: auto;
+    order: 1;
+    @media #{$medium-up} {
+      order: 2;
+    }
+  }
+}

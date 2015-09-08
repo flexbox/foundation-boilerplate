@@ -33,10 +33,13 @@ layout: components
             = image_tag lorem.image('250x250'), class: 'picture-avatar'
             br
             br
-            ul.inline-list
-              li.acolyth SKILLED
-              li.acolyth TIMID
-              li.acolyth PASSIONATE
+            ul.small-block-grid-3.text-center
+              li
+                em Skilled
+              li
+                em Timid
+              li
+                em Passionate
 
         hr
         .row
@@ -57,3 +60,6 @@ layout: components
               li Training
               li Profile
               li GitHub
+      p
+        'Looking for more ? you can check
+        = link_to 'UX Personas by Mozilla', 'http://personas.webmakerprototypes.org/'

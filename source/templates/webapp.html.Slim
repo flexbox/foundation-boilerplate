@@ -1,0 +1,46 @@
+---
+title: Web application layout with icons
+description:
+layout: backoffice
+---
+
+.templates_webapp--content
+  .row
+    .small-12.columns
+      h1
+        = data.settings.site.title
+      ul.breadcrumbs
+        - 4.times do
+          li
+            = link_to 'entry', '#'
+      .row
+        - 3.times do |i|
+          .medium-4.columns
+            .panel
+              h2 item #{i}
+              p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, quasi reiciendis quo?
+              = link_to 'Read more', '#'
+      table
+        thead
+          tr
+            th width="200" Table Header
+            th Table Header
+            th width="150" Table Header
+            th width="150" Table Header
+        tbody
+          - 50.times do |i|
+            tr
+              td
+                'Content
+                = i + 1
+              td This is longer content Donec id elit non mi porta gravida at eget metus.
+              td Content Goes Here
+              td Content Goes Here
+
+.templates_webapp--sidebar
+  div class="icon-bar medium-vertical five-up" role="navigation"
+    - data.webapp.each do |item|
+      = link_to '#', class: 'item', aria: {labelledby: "#itemlabel#{item.title}"} do
+        i class="fi-#{item.title}"
+        label id="itemlabel#{item.title}"
+          = item.title
