@@ -11,6 +11,11 @@
   &--sidebar {
     flex-shrink: 0;
     order: 2;
+    // Hack to avoid bottom space on mobile
+    line-height: 0;
+    background-color: $icon-bar-bg;
+
+
     label {
       display: none;
     }

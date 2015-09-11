@@ -2,7 +2,16 @@ $cursor-disabled-value: not-allowed;
 $button-disabled-cursor: $cursor-disabled-value;
 
 
-// Typography
+
+// b. Grid
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$include-xl-html-grid-classes: true;
+
+
+
+// e. Typography
+// - - - - - - - - - - - - - - - - - - - - - - - - -
 
 $font-family-sans-serif: 'Lato', Helvetica, Roboto, Arial, sans-serif;
 $font-family-monospace: 'Droid Sans Mono', 'Monaco', monospace;

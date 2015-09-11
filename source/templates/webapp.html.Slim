@@ -5,7 +5,7 @@ layout: backoffice
 ---
 
 .templates_webapp--content
-  .row
+  .row.row-full-width
     .small-12.columns
       h1
         = data.settings.site.title
@@ -13,6 +13,9 @@ layout: backoffice
         - 4.times do
           li
             = link_to 'entry', '#'
+
+  .row.row-full-width
+    .small-12.xlarge-8.columns
       .row
         - 3.times do |i|
           .medium-4.columns
@@ -23,19 +26,25 @@ layout: backoffice
       table
         thead
           tr
-            th width="200" Table Header
             th Table Header
-            th width="150" Table Header
-            th width="150" Table Header
+            th Description
+            th Nom
+            th Email
         tbody
           - 50.times do |i|
             tr
               td
                 'Content
                 = i + 1
-              td This is longer content Donec id elit non mi porta gravida at eget metus.
-              td Content Goes Here
-              td Content Goes Here
+              td = lorem.sentence
+              td = lorem.name
+              td = lorem.email
+    .xlarge-4.columns
+      .panel.callout
+        h4 Ola
+        ul
+          - 4.times do
+            li = lorem.name
 
 .templates_webapp--sidebar
   div class="icon-bar medium-vertical five-up" role="navigation"
