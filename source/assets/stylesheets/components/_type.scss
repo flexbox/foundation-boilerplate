@@ -16,3 +16,45 @@
 .acolyte {
   @extend h5;
 }
+
+
+
+@mixin link-style($color: $primary-color) {
+  $color-hover: scale-color($color, $lightness: 20%);
+
+  color: $color;
+  background-color: transparent;
+
+  &:hover {
+    color: $color-hover;
+  }
+  &:focus {
+    color: $color-hover;
+    background-color: scale-color($body-bg, $lightness: -5%);
+    // outline-: 1px dashed $color-hover;
+  }
+}
+
+.link-primary {
+  @include link-style($primary-color);
+}
+
+.link-secondary {
+  @include link-style($secondary-color);
+}
+
+.link-alert {
+  @include link-style($alert-color);
+}
+
+.link-success {
+  @include link-style($success-color);
+}
+
+.link-warning {
+  @include link-style($warning-color);
+}
+
+.link-info {
+  @include link-style($info-color);
+}
