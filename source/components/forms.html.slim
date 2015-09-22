@@ -22,6 +22,8 @@ layout: components
         label for="small-12" small-12
         input type="text" id="small-12"
 
+
+
     .layout-section
       .row
         .small-12.columns
@@ -65,6 +67,28 @@ layout: components
               li
                 input#checkbox3 type="checkbox"
                 label for="checkbox3" GLaDOS
+
+
+
+    .layout-section
+      .row
+        .small-12.columns
+          h2 Field disabled
+      form
+        .row
+          .medium-6.columns
+            label for="field_input_disabled" Full name
+            input id="field_input_disabled" name="field_input_disabled" disabled="disabled" class="disabled" type="text" placeholder="Gordon Freeman"
+          .medium-6.columns
+            label for="field_select_disabled" Choose your location
+            select name="field_select_disabled" id="field_select_disabled" disabled="disabled" class="disabled"
+              option value="fixture" Aperture Fixtures
+              option value="inovator" Aperture Science Innovators
+              option value="aperture" Aperture
+              option value="labo" Aperture Laboratories
+              option value="science" Aperture Science
+
+
 
     markdown:
       ## Elements of a Form
@@ -153,64 +177,55 @@ layout: components
 
 .layout-section
   .row
-    .small-12.medium-8.medium-centered.columns
+    .small-12.medium-10.medium-centered.columns
       h2 Dashboard
-      form.panel.clearfix data-abide="" action="#"
-        fieldset
-          legend About you
-          .row
-            .small-4.columns
-              label.right.inline
-                'Name
-            .small-8.columns
+      form data-abide="" action="#"
+        .row
+          .medium-6.columns
+            fieldset.panel
+              legend About you
+
+              label
+                'Full name
               input type="text" placeholder="Albert Einstein"
-          .row
-            .small-4.columns
-              label.right.inline for="about-email"
+
+              label for="about-email"
                 'Email
                 small required
-            .small-8.columns
               input type="email" id="about-email" placeholder="einstein@science.org" pattern="email" required=""
               small class="error" A valid email address is required
-          .row
-            .small-4.columns
-              label.right.inline for="about-email-confirm"
+
+              label for="about-email-confirm"
                 'Confirm email
                 small required
-            .small-8.columns
+
               input type="email" id="about-email-confirm" data-equalto="about-email" required=""
               small class="error" Email confirmation not match
-          .row
-            .small-4.columns
-              label.right.inline for="about-password"
+
+              label for="about-password"
                 'Password
-            .small-8.columns
+
               input type="password" id="about-password" placeholder="il0v3sc13nc3" required=""
               small class="error" You must have a password
-        fieldset
-          legend Informations
-          .row
-            .small-4.columns
-              label.right.inline
+
+          .medium-6.columns
+            fieldset.panel
+              legend Informations
+
+              label
                 'Adress
-            .small-8.columns
               input type="text"
-          .row
-            .small-4.columns
-              label.right.inline
+
+              label
                 'City
-            .small-8.columns
               input type="text"
-          .row
-            .small-4.columns
-              label.right.inline
+
+              label
                 'Postcode
-            .small-8.columns
               input type="text" pattern="integer"
-          .row
-            .small-4.columns
-              label.right.inline
+
+              label
                 'Phone
-            .small-8.columns
               input type="tel" pattern="integer"
-        button type="submit" class="button right success icon save" Save
+              small.error
+            button type="submit" class="button right success icon save" Save
