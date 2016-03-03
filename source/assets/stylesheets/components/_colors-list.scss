@@ -22,8 +22,8 @@ $color-list-box-size: rem-calc(150);
 
 .color-list {
 
-  div {
-    width: $color-list-box-size;
+  .column {
+    // width: $color-list-box-size;
     height: $color-list-box-size;
     border: 5px solid $white;
     text-align: center;

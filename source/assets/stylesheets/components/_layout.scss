@@ -5,7 +5,7 @@
 
 
 .layout-section--inverse {
-  background-color: $medium-gray;
+  background-color: $pre-bg;
   color: $white;
   margin: rem-calc(40 0);
   padding: rem-calc(40 0);
@@ -32,8 +32,8 @@
 
 .layout--side-nav {
   padding: rem-calc(20);
-  background-color: $light-gray;
-  box-shadow: 0 -15px 0px $light-gray;
+  background-color: scale-color($light-gray, $lightness: 50%);
+  box-shadow: 0 -15px 0px scale-color($light-gray, $lightness: 50%);
 
   ul li ul {
     margin: 0;
@@ -47,7 +47,8 @@
   }
   .active a {
     font-weight: $font-weight-bold !important;
-    color: $secondary-color !important;
+    color: $black !important;
+    background-color: transparent;
   }
 }
 
