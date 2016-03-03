@@ -1,0 +1,37 @@
+.templates_webapp {
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+
+  flex-direction: column;
+  @breakpoint #{$medium-up} {
+    flex-direction: row;
+  }
+
+  &--sidebar {
+    flex-shrink: 0;
+    order: 2;
+    // Hack to avoid bottom space on mobile
+    line-height: 0;
+    background-color: $black;
+
+    label {
+      display: none;
+    }
+
+    @breakpoint #{$medium-up} {
+      order: 1;
+      label {
+        display: block;
+      }
+    }
+  }
+  &--content {
+    flex-grow: 1;
+    overflow: auto;
+    order: 1;
+    @breakpoint #{$medium-up} {
+      order: 2;
+    }
+  }
+}

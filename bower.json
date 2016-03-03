@@ -3,7 +3,7 @@
   "version": "0.0.2",
   "homepage": "https://github.com/flexbox/foundation-boilerplate",
   "authors": [
-    "flexbox <dleuliette@gmail.com>"
+    "David Leuliette <dleuliette@gmail.com>"
   ],
   "description": "A starter front-end template for building responsive web apps or sites with Foundation",
   "license": "MIT",
@@ -16,6 +16,7 @@
     "tests"
   ],
   "dependencies": {
-    "foundation": "~5.5.2"
+    "foundation-sites": "^6.2.0",
+    "motion-ui": "^1.2.2"
   }
 }

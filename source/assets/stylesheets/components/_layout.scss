@@ -5,7 +5,7 @@
 
 
 .layout-section--inverse {
-  background-color: $oil;
+  background-color: $pre-bg;
   color: $white;
   margin: rem-calc(40 0);
   padding: rem-calc(40 0);
@@ -21,19 +21,19 @@
 }
 
 .layout--feature-list {
-  padding: $panel-padding;
+  padding: $callout-padding;
   i {
     float: left;
     margin: rem-calc(0 40 0 10);
     line-height: 1;
-    color: $aluminum;
+    color: $dark-gray;
   }
 }
 
 .layout--side-nav {
   padding: rem-calc(20);
-  background-color: $smoke;
-  box-shadow: 0 -15px 0px $smoke;
+  background-color: scale-color($light-gray, $lightness: 50%);
+  box-shadow: 0 -15px 0px scale-color($light-gray, $lightness: 50%);
 
   ul li ul {
     margin: 0;
@@ -45,21 +45,19 @@
     padding-bottom: rem-calc(20);
     @extend .acolyte;
   }
-  a {
-    @include single-transition();
-  }
   .active a {
     font-weight: $font-weight-bold !important;
-    color: $secondary-color !important;
+    color: $black !important;
+    background-color: transparent;
   }
 }
 
 
 
 .layout--footer {
-  border-top: 1px solid $hr-border-color;
+  border-top: 1px solid $light-gray;
   padding: rem-calc(40);
   margin-top: rem-calc(40);
-  color: $aluminum;
+  color: $dark-gray;
   font-size: rem-calc(14);
 }

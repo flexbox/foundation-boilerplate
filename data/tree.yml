@@ -8,10 +8,10 @@ components:
   logo.html.slim: "/components/logo.html.slim"
   type.html.slim: "/components/type.html.slim"
 scale:
-  breakpoints.html.slim: "/scale/breakpoints.html.slim"
   content-size.html.slim: "/scale/content-size.html.slim"
   grid.html.slim: "/scale/grid.html.slim"
   manifesto.html.slim: "/scale/manifesto.html.slim"
 templates:
   admin.html.slim: "/templates/admin.html.slim"
   homepage.html.slim: "/templates/homepage.html.slim"
+  webapp.html.Slim: "/templates/webapp.html.Slim"

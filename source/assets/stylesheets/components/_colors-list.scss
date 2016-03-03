@@ -1,5 +1,5 @@
 $white-light: scale-color($white, $lightness: -40%);
-$aluminum-light: scale-color($aluminum, $lightness: 20%);
+$dark-gray-light: scale-color($dark-gray, $lightness: 20%);
 
 $color-list-box-size: rem-calc(150);
 
@@ -10,20 +10,20 @@ $color-list-box-size: rem-calc(150);
   $bg-lightness: lightness($bg);
 
   @if $bg-lightness > 70% {
-    color: $oil;
+    color: $medium-gray;
     text-shadow: 0px 2px rgba($white,0.4);
   }
   @else {
     color: $white;
-    text-shadow: 0px 2px rgba($oil,0.4);
+    text-shadow: 0px 2px rgba($medium-gray,0.4);
   }
 }
 
 
 .color-list {
 
-  div {
-    width: $color-list-box-size;
+  .column {
+    // width: $color-list-box-size;
     height: $color-list-box-size;
     border: 5px solid $white;
     text-align: center;
@@ -45,11 +45,8 @@ $color-list-box-size: rem-calc(150);
     &.warning {
       @include color-list-box($warning-color);
     }
-    &.info {
-      @include color-list-box($info-color);
-    }
     &.body-bg {
-      @include color-list-box($body-bg);
+      @include color-list-box($body-background);
     }
     &.body-font {
       @include color-list-box($body-font-color);
@@ -61,7 +58,7 @@ $color-list-box-size: rem-calc(150);
       @include color-list-box($subheader-font-color);
     }
     &.blockquote-font {
-      @include color-list-box($blockquote-font-color);
+      // @include color-list-box($blockquote-font-color);
     }
   }
 }

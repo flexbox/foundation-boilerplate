@@ -1,0 +1,55 @@
+---
+title: Web application layout with icons
+description:
+layout: backoffice
+---
+
+.templates_webapp--content
+  .row.row-full-width
+    .small-12.columns
+      h1
+        = data.settings.site.title
+      ul.breadcrumbs
+        - 4.times do
+          li
+            = link_to 'entry', '#'
+
+  .row.row-full-width
+    .small-12.xlarge-8.columns
+      .row
+        - 3.times do |i|
+          .medium-4.columns
+            .panel
+              h2 item #{i}
+              p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, quasi reiciendis quo?
+              = link_to 'Read more', '#'
+      table
+        thead
+          tr
+            th Table Header
+            th Description
+            th Nom
+            th Email
+        tbody
+          - 50.times do |i|
+            tr
+              td
+                'Content
+                = i + 1
+              td = lorem.sentence
+              td = lorem.name
+              td = lorem.email
+    .xlarge-4.columns
+      .panel.callout
+        h4 Ola
+        ul
+          - 4.times do
+            li = lorem.name
+
+.templates_webapp--sidebar
+  div class="icon-bar medium-vertical five-up" role="navigation"
+    - data.webapp.each do |item|
+      = link_to '#', class: 'item', aria: {labelledby: "#itemlabel#{item.title}"} do
+        i class="fi-#{item.title}"
+        label id="itemlabel#{item.title}"
+          = item.title

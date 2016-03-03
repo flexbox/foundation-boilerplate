@@ -8,45 +8,87 @@ layout: components
 
 .row
   .medium-8.medium-centered.columns
-    form
+    .row
+      .small-4.columns
+        h2 Field sizes
+        label for="small-4" small-4
+        input type="text" id="small-4"
+    .row
+      .small-8.columns
+        label for="small-8" small-8
+        input type="text" id="small-8"
+    .row
+      .small-12.columns
+        label for="small-12" small-12
+        input type="text" id="small-12"
+
+
+
+    .layout-section
       .row
-        .medium-6.columns
-          label Full name
-          input placeholder="Gordon Freeman" type="text"
-        .medium-6.columns
-          label Choose your location
-          select
-            option value="fixture" Aperture Fixtures
-            option value="inovator" Aperture Science Innovators
-            option value="aperture" Aperture
-            option value="labo" Aperture Laboratories
-            option value="science" Aperture Science
+        .small-12.columns
+          h2 Field style
+      form
+        .row
+          .medium-6.columns
+            label Full name
+            input placeholder="Gordon Freeman" type="text"
+          .medium-6.columns
+            label Choose your location
+            select
+              option value="fixture" Aperture Fixtures
+              option value="inovator" Aperture Science Innovators
+              option value="aperture" Aperture
+              option value="labo" Aperture Laboratories
+              option value="science" Aperture Science
+        .row
+          .large-12.columns
+            label Explain the Hazardous Environment Suit workflow
+            textarea placeholder="The suit is designed to protect the user from…" rows="5"
+        .row
+          .large-6.columns
+            p Choose Your Favorite
+            ul.no-bullet
+              li
+                input#pokemonRed name="pokemon" type="radio" value="Red"
+                label for="pokemonRed" Aperture Science
+              li
+                input#pokemonBlue name="pokemon" type="radio" value="Blue"
+                label for="pokemonBlue" Black mesa
+          .large-6.columns
+            p Check these out
+            ul.no-bullet
+              li
+                input#checkbox1 type="checkbox"
+                label for="checkbox1" Erik Wolpaw
+              li
+                input#checkbox2 type="checkbox"
+                label for="checkbox2" Kim Swift
+              li
+                input#checkbox3 type="checkbox"
+                label for="checkbox3" GLaDOS
+
+
+
+    .layout-section
       .row
-        .large-12.columns
-          label Explain the Hazardous Environment Suit workflow
-          textarea placeholder="The suit is designed to protect the user from…" rows="5"
-      .row
-        .large-6.columns
-          p Choose Your Favorite
-          ul.no-bullet
-            li
-              input#pokemonRed name="pokemon" type="radio" value="Red"
-              label for="pokemonRed" Aperture Science
-            li
-              input#pokemonBlue name="pokemon" type="radio" value="Blue"
-              label for="pokemonBlue" Black mesa
-        .large-6.columns
-          p Check these out
-          ul.no-bullet
-            li
-              input#checkbox1 type="checkbox"
-              label for="checkbox1" Erik Wolpaw
-            li
-              input#checkbox2 type="checkbox"
-              label for="checkbox2" Kim Swift
-            li
-              input#checkbox3 type="checkbox"
-              label for="checkbox3" GLaDOS
+        .small-12.columns
+          h2 Field disabled
+      form
+        .row
+          .medium-6.columns
+            label for="field_input_disabled" Full name
+            input id="field_input_disabled" name="field_input_disabled" disabled="disabled" class="disabled" type="text" placeholder="Gordon Freeman"
+          .medium-6.columns
+            label for="field_select_disabled" Choose your location
+            select name="field_select_disabled" id="field_select_disabled" disabled="disabled" class="disabled"
+              option value="fixture" Aperture Fixtures
+              option value="inovator" Aperture Science Innovators
+              option value="aperture" Aperture
+              option value="labo" Aperture Laboratories
+              option value="science" Aperture Science
+
+
 
     markdown:
       ## Elements of a Form
@@ -60,7 +102,7 @@ layout: components
       - textarea
       - button
 
-      ## How to Use
+      ### How to Use
 
       Make forms great and easy to use with the following rules:
 
@@ -83,167 +125,107 @@ layout: components
         </form>
         ~~~
 
-hr
-.row
-  .small-12.medium-8.medium-centered.columns
-    h2 Simple signup form
+.layout-section
+  .row
+    .small-12.medium-8.medium-centered.columns
+      h2 Mobile first search form
 
-    .panel.panel-signup.radius
-      p.lead
-        'Welcome to this awesome app!
-      form data-abide=""
-        .row.collapse
-          .small-2.columns
-            span class="prefix"
-              i class="fi-torso-female"
-          .small-10.columns
-            input type="text" placeholder="username"
-        .row.collapse
-          .small-2.columns
-            span class="prefix"
-              i class="fi-mail"
-          .small-10.columns
-            input type="email" placeholder="email" required="" autocapitalize="off"
-            small class="error" A valid email address is required
-        .row.collapse
-          .small-2.columns
-            span class="prefix"
-              i class="fi-lock"
-          .small-10.columns
-            input type="password" placeholder="password" required="" autocapitalize="off"
-            small class="error" Enter your password
-        input type="submit" value="Sign Up!" class="button"
-      p
-        'Already have an account?
-        = link_to 'Login here &rarr;', '#'
-hr
-.row
-  .small-12.medium-8.medium-centered.columns
-    h2 Mobile first search form
+      .callout.callout-signup
+        p.lead Find a Cool Restaurant!
+        form.row data-abide=""
+          div class="large-3 small-12 columns"
+            label Food Type:
+            select
+              option value="All" All
+              option value="Asian" Asian
+              option value="Mediterranean" Mediterranean
+              option value="French" French
+              option value="Vegetarian" Vegetarian
 
-    .panel.panel-signup.radius
-      p.lead Find a Cool Restaurant!
-      form.row data-abide=""
-        div class="large-3 small-12 columns"
-          label Food Type:
-          select
-            option value="All" All
-            option value="Asian" Asian
-            option value="Mediterranean" Mediterranean
-            option value="French" French
-            option value="Vegetarian" Vegetarian
+          .large-3.small-6.columns
+            label Price Range:
+            select
+              option value="0-5"
+                '&#36;0-&#36;5
+              option value="5-10"
+                '&#36;5-&#36;10
+              option value="10-15"
+                '&#36;10-&#36;15
+              option value="15-20"
+                '&#36;15-&#36;20
+              option value="20-25"
+                '&#36;20-&#36;25
+              option value="25-30"
+                '&#36;25-&#36;30
+              option value="more"
+                'more than &#36;30
 
-        .large-3.small-6.columns
-          label Price Range:
-          select
-            option value="0-5"
-              '&#36;0-&#36;5
-            option value="5-10"
-              '&#36;5-&#36;10
-            option value="10-15"
-              '&#36;10-&#36;15
-            option value="15-20"
-              '&#36;15-&#36;20
-            option value="20-25"
-              '&#36;20-&#36;25
-            option value="25-30"
-              '&#36;25-&#36;30
-            option value="more"
-              'more than &#36;30
+          .large-3.small-6.columns
+            label
+              'Location:
+            select required=""
+              option value="mile" Near me
+              option value="2-mile" 2 miles
+              option value="5-mile" 5 miles
+              option value="25-mile" 25 miles
+              option value="more-mile" More
 
-        .large-3.small-6.columns
-          label
-            'Location:
-          select required=""
-            option value="mile" Near me
-            option value="2-mile" 2 miles
-            option value="5-mile" 5 miles
-            option value="25-mile" 25 miles
-            option value="more-mile" More
+          .large-3.small-12.columns
+            label
+              '&nbsp;
+            input type="submit" value="Search" class="button tiny expand"
 
-        .large-3.small-12.columns
-          label
-            '&nbsp;
-          input type="submit" value="Search" class="button tiny expand"
+.layout-section
+  .row
+    .small-12.medium-10.medium-centered.columns
+      h2 Dashboard
+      form data-abide="" action="#"
+        .row
+          .medium-6.columns
+            fieldset.panel
+              legend About you
 
-hr
-.row
-  .small-12.medium-8.medium-centered.columns
-    h2 Simple contact form
-    .panel.radius
-      p.lead Contact me
-      form.row
-        .large-4.small-12.columns
-          label Your name:
-          input type="text" placeholder="Albert Einstein"
-          label Your email:
-          input type="email" placeholder="einstein@science.org" autocapitalize="off"
+              label
+                'Full name
+              input type="text" placeholder="Albert Einstein"
 
-        .large-8.small-12.columns
-          label Your message:
-          textarea rows="5"
-          = link_to 'Send', '#', class: 'button right'
+              label for="about-email"
+                'Email
+                small required
+              input type="email" id="about-email" placeholder="einstein@science.org" pattern="email" required=""
+              small class="error" A valid email address is required
 
-hr
-.row
-  .small-12.medium-8.medium-centered.columns
-    h2 Dashboard
-    form.panel.clearfix data-abide="" action="#"
-      fieldset
-        legend About you
-        .row
-          .small-4.columns
-            label.right.inline
-              'Name
-          .small-8.columns
-            input type="text" placeholder="Albert Einstein"
-        .row
-          .small-4.columns
-            label.right.inline for="about-email"
-              'Email
-              small required
-          .small-8.columns
-            input type="email" id="about-email" placeholder="einstein@science.org" pattern="email" required=""
-            small class="error" A valid email address is required
-        .row
-          .small-4.columns
-            label.right.inline for="about-email-confirm"
-              'Confirm email
-              small required
-          .small-8.columns
-            input type="email" id="about-email-confirm" data-equalto="about-email" required=""
-            small class="error" Email confirmation not match
-        .row
-          .small-4.columns
-            label.right.inline for="about-password"
-              'Password
-          .small-8.columns
-            input type="password" id="about-password" placeholder="il0v3sc13nc3" required=""
-            small class="error" You must have a password
-      fieldset
-        legend Informations
-        .row
-          .small-4.columns
-            label.right.inline
-              'Adress
-          .small-8.columns
-            input type="text"
-        .row
-          .small-4.columns
-            label.right.inline
-              'City
-          .small-8.columns
-            input type="text"
-        .row
-          .small-4.columns
-            label.right.inline
-              'Postcode
-          .small-8.columns
-            input type="text" pattern="integer"
-        .row
-          .small-4.columns
-            label.right.inline
-              'Phone
-          .small-8.columns
-            input type="tel" pattern="integer"
-      button type="submit" class="button right success icon save" Save
+              label for="about-email-confirm"
+                'Confirm email
+                small required
+
+              input type="email" id="about-email-confirm" data-equalto="about-email" required=""
+              small class="error" Email confirmation not match
+
+              label for="about-password"
+                'Password
+
+              input type="password" id="about-password" placeholder="il0v3sc13nc3" required=""
+              small class="error" You must have a password
+
+          .medium-6.columns
+            fieldset.panel
+              legend Informations
+
+              label
+                'Adress
+              input type="text"
+
+              label
+                'City
+              input type="text"
+
+              label
+                'Postcode
+              input type="text" pattern="integer"
+
+              label
+                'Phone
+              input type="tel" pattern="integer"
+              small.error
+            button type="submit" class="button right success icon save" Save

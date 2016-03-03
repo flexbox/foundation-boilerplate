@@ -1,0 +1,19 @@
+// Just a simple idea to deal with z-index
+// https://css-tricks.com/handling-z-index/
+
+$zindex: (
+  reveal    : 9000,
+  overlay   : 8000,
+  dropdown  : 7000,
+  joyride   : 6000,
+  header    : 5000,
+  footer    : 4000
+);
+
+.m-header {
+  z-index: map-get($zindex, header);
+}
+
+.m-footer {
+  z-index: map-get($zindex, header);
+}
