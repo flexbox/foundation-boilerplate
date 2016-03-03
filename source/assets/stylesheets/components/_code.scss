@@ -1,4 +1,4 @@
-$pre-bg: $oil;
+$pre-bg: $medium-gray;
 
 pre {
   background-color: $pre-bg;
@@ -6,11 +6,15 @@ pre {
   line-height: rem-calc(20);
   margin-bottom: rem-calc(20);
   &:hover {
-    cursor: $cursor-text-value;
+    cursor: text;
   }
   code {
     font-weight: $font-weight-normal;
   }
+}
+code {
+  background-color: transparent;
+  border: none;
 }
 
 code.highlight {

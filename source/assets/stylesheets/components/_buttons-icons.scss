@@ -15,13 +15,13 @@ $button-icon-size: rem-calc(24);
 .button {
   &.icon {
     position: relative;
-    padding-left: $button-med * 2 + $button-icon-size;
+    // padding-left: $button-sizes-default * 2 + $button-icon-size;
 
     &:before {
       @extend .fi;
       position: absolute;
       font-size: $button-icon-size;
-      left: $button-med;
+      // left: $button-med;
       top: 25%;
     }
   }

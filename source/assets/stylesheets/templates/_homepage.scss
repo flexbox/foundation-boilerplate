@@ -18,7 +18,7 @@
 }
 
 .m-homepage--section-vertical {
-  @media #{$medium-up} {
+  @breakpoint #{$medium-up} {
     display: flex;
     align-items: center;
     .l-content {

@@ -5,7 +5,7 @@ $header-bg: scale-color($primary-color, $lightness: -40%);
   color: $white;
   margin-bottom: rem-calc(15);
   padding: rem-calc(15 20 15);
-  @media #{$medium-up} {
+  @breakpoint #{$medium-up} {
     padding: rem-calc(15 40 0);
   }
   p {
@@ -39,7 +39,7 @@ $header-bg: scale-color($primary-color, $lightness: -40%);
   &.is-away {
     display: none;
     text-align: left;
-    @media #{$medium}{
+    @breakpoint #{$medium-up}{
       text-align: center;
       display: flex;
       flex-direction: row;
@@ -73,7 +73,7 @@ a.m-header--menu {
   position: fixed;
   bottom: rem-calc(10);
   background-color: $header-bg;
-  @media #{$medium-up} {
+  @breakpoint #{$medium-up} {
     display: none;
   }
 }

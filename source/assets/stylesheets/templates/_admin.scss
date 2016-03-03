@@ -25,8 +25,9 @@ $admin-layout-padding: rem-calc(10);
 .m-admin--sidebar {
   position: fixed;
   height: 100%;
-  @include side-nav;
-  background-color: $smoke;
+  @include menu;
+  @include menu-direction(vertical);
+  background-color: $light-gray;
   @include grid-column($columns: 2);
 }
 
