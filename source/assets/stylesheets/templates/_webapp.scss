@@ -4,7 +4,7 @@
   overflow: hidden;
 
   flex-direction: column;
-  @media #{$medium-up} {
+  @breakpoint #{$medium-up} {
     flex-direction: row;
   }
 
@@ -13,14 +13,13 @@
     order: 2;
     // Hack to avoid bottom space on mobile
     line-height: 0;
-    background-color: $icon-bar-bg;
-
+    background-color: $black;
 
     label {
       display: none;
     }
 
-    @media #{$medium-up} {
+    @breakpoint #{$medium-up} {
       order: 1;
       label {
         display: block;
@@ -31,7 +30,7 @@
     flex-grow: 1;
     overflow: auto;
     order: 1;
-    @media #{$medium-up} {
+    @breakpoint #{$medium-up} {
       order: 2;
     }
   }

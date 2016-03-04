@@ -12,7 +12,7 @@ layout: components
       ## Basic
 
       Here is a list of all HTML buttons markup style, `<a href>`, `<input>` & `<button>`
-    ul.inline-list
+    ul.menu.simple
       li = link_to 'a href', '#', class: 'button'
       li
         input type="submit" class="button" value="input type submit"
@@ -27,7 +27,7 @@ layout: components
 
     - data.buttons.each do |item|
       h3 = item.entry
-      ul.inline-list
+      ul.menu.simple
         - item['custom_class'].each do |subitem|
           li
             - unless item.entry == "disabled"
@@ -43,7 +43,7 @@ layout: components
       ## Buttons with icons
 
       Buttons can be hispter too.
-    ul.inline-list
+    ul.menu.simple
       li
         button class="button icon update"
           'button icon update
@@ -62,7 +62,7 @@ layout: components
 
     markdown:
       __Warning__: icons only works with `<a href>` or `<button>` tags. Never _ever never_ use with `<input>`
-    ul.inline-list
+    ul.menu.simple
       li
         = link_to 'a href', '#', class: 'button secondary icon favorite'
       li
@@ -83,36 +83,14 @@ layout: components
 
       __Note:__ Make sure to keep `type="submit"` on the button tag. That's what tells Internet Explorer to submit the form. This doesn't matter for anchor tags.
 
-    ul.small-block-grid-2.medium-block-grid-4
-      li
-        button class="button expand primary" primary
-      li
-        button class="button expand secondary" secondary
-      li
-        button class="button expand info" info
-      li
-        button class="button expand success" success
+    .row.small-up-2.medium-up-4
+      .column
+        button class="button expanded primary" primary
+      .column
+        button class="button expanded secondary" secondary
+      .column
+        button class="button expanded info" info
+      .column
+        button class="button expanded success" success
 
-    button class="button expand" button expand
-
-.layout-section--inverse
-  .row
-    .medium-10.medium-centered.columns
-      p HTML
-      markdown:
-        ~~~ html
-        <!-- Size Classes -->
-        <a href="#" class="button [tiny small large]">Default Button</a>
-
-        <!-- Color Classes -->
-        <a href="#" class="button [secondary success alert]">Color Button</a>
-
-        <!-- Radius Classes -->
-        <a href="#" class="button [radius round]">Radius Button</a>
-
-        <!-- Disabled Class -->
-        <a href="#" class="button disabled">Disabled Button</a>
-
-        <!-- Expand Class -->
-        <a href="#" class="button expand">Expanded Button</a>
-        ~~~
+    button class="button expanded" button expanded

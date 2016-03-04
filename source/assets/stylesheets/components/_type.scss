@@ -30,7 +30,7 @@
   }
   &:focus {
     color: $color-hover;
-    background-color: scale-color($body-bg, $lightness: -5%);
+    background-color: scale-color($body-background, $lightness: -5%);
     // outline-: 1px dashed $color-hover;
   }
 }
@@ -53,8 +53,4 @@
 
 .link-warning {
   @include link-style($warning-color);
-}
-
-.link-info {
-  @include link-style($info-color);
 }

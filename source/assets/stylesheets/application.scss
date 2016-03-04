@@ -1,62 +1,76 @@
-@charset "UTF-8";
+@charset 'utf-8';
 
-@import "redacted-font";
-@import "icons";
-@import "foundation/scss/foundation/functions";
-@import "colors";
-@import "custom-settings";
+@import 'redacted-font';
+@import 'icons';
+@import 'colors';
 
-@import "foundation/scss/normalize";
-@import "foundation/scss/foundation/components/grid";
-@import "foundation/scss/foundation/components/accordion";
-@import "foundation/scss/foundation/components/alert-boxes";
-@import "foundation/scss/foundation/components/block-grid";
-@import "foundation/scss/foundation/components/breadcrumbs";
-@import "foundation/scss/foundation/components/button-groups";
-@import "foundation/scss/foundation/components/buttons";
-@import "foundation/scss/foundation/components/clearing";
-@import "foundation/scss/foundation/components/dropdown";
-@import "foundation/scss/foundation/components/dropdown-buttons";
-@import "foundation/scss/foundation/components/flex-video";
-@import "foundation/scss/foundation/components/forms";
-@import "foundation/scss/foundation/components/icon-bar";
-@import "foundation/scss/foundation/components/inline-lists";
-@import "foundation/scss/foundation/components/joyride";
-@import "foundation/scss/foundation/components/keystrokes";
-@import "foundation/scss/foundation/components/labels";
-@import "foundation/scss/foundation/components/magellan";
-@import "foundation/scss/foundation/components/orbit";
-@import "foundation/scss/foundation/components/pagination";
-@import "foundation/scss/foundation/components/panels";
-@import "foundation/scss/foundation/components/pricing-tables";
-@import "foundation/scss/foundation/components/progress-bars";
-@import "foundation/scss/foundation/components/range-slider";
-@import "foundation/scss/foundation/components/reveal";
-@import "foundation/scss/foundation/components/side-nav";
-@import "foundation/scss/foundation/components/split-buttons";
-@import "foundation/scss/foundation/components/sub-nav";
-@import "foundation/scss/foundation/components/switches";
-@import "foundation/scss/foundation/components/tables";
-@import "foundation/scss/foundation/components/tabs";
-@import "foundation/scss/foundation/components/thumbs";
-@import "foundation/scss/foundation/components/tooltips";
-@import "foundation/scss/foundation/components/top-bar";
-@import "foundation/scss/foundation/components/type";
-@import "foundation/scss/foundation/components/offcanvas";
-@import "foundation/scss/foundation/components/visibility";
+// @import 'foundation-sites/scss/settings/settings';
+@import 'custom-settings';
+@import 'foundation-sites/scss/util/util';
 
-@import "components/colors-list";
-@import "components/global";
-@import "components/code";
-@import "components/buttons-icons";
-@import "components/icons";
-@import "components/type";
-@import "components/layout";
-@import "components/forms";
-@import "components/grid";
+@import 'foundation-sites/scss/foundation';
+@import 'motion-ui/src/motion-ui';
 
-@import "modules/header";
 
-@import "templates/admin";
-@import "templates/homepage";
-@import "templates/webapp";
+
+@include foundation-global-styles;
+@include foundation-grid;
+// @include foundation-flex-grid;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+// @include foundation-range-input;
+@include foundation-accordion;
+@include foundation-accordion-menu;
+@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-button-group;
+@include foundation-callout;
+@include foundation-close-button;
+@include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-flex-video;
+@include foundation-label;
+@include foundation-media-object;
+@include foundation-menu;
+@include foundation-off-canvas;
+@include foundation-orbit;
+@include foundation-pagination;
+@include foundation-progress-bar;
+// @include foundation-progress-element;
+// @include foundation-meter-element;
+@include foundation-slider;
+@include foundation-sticky;
+@include foundation-reveal;
+@include foundation-switch;
+@include foundation-table;
+@include foundation-tabs;
+@include foundation-thumbnail;
+@include foundation-title-bar;
+@include foundation-tooltip;
+@include foundation-top-bar;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+// @include foundation-flex-classes;
+
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+
+
+@import 'components/colors-list';
+@import 'components/global';
+@import 'components/code';
+@import 'components/buttons-icons';
+@import 'components/icons';
+@import 'components/type';
+@import 'components/layout';
+@import 'components/forms';
+@import 'components/grid';
+
+@import 'modules/header';
+
+// @import 'templates/admin';
+@import 'templates/homepage';
+@import 'templates/webapp';

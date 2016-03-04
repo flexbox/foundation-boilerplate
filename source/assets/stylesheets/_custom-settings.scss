@@ -1,8 +1,3 @@
-$cursor-disabled-value: not-allowed;
-$button-disabled-cursor: $cursor-disabled-value;
-
-
-
 // b. Grid
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -22,7 +17,7 @@ $font-weight-bold:   700;
 
 $body-font-family: $font-family-sans-serif;
 
-$header-font-color: $jet;
+$header-font-color: $medium-gray;
 $header-font-weight: $font-weight-light;
 $subheader-font-color: scale-color($header-font-color, $lightness: 54%);
 
@@ -36,36 +31,3 @@ $code-border-color: scale-color($code-background-color, $lightness: -10%);
 $code-padding: 0;
 
 $text-shadow: rgba($black,.4) 0px 2px 0px;
-
-
-
-// Forms
-
-$form-label-bottom-margin: rem-calc(5);
-$input-include-glowing-effect: false;
-// Avoid the zoom effect on mobile devices use 16px for input
-$input-font-size: rem-calc(16);
-
-
-
-// Breadcrumbs
-
-$crumb-bg: transparent;
-
-
-
-// Buttons
-
-$button-function-factor: 20%;
-
-
-
-// Magellan
-
-$magellan-bg: $body-bg;
-
-
-
-// Panels
-
-$panel-bg: $white;

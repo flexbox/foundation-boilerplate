@@ -1,6 +1,6 @@
 doctype html
 html class="no-js" lang="en"
-  head prefix="og: http://ogp.me/ns# dc: http://purl.org/dc/terms/"
+  head
     meta charset="utf-8"
     meta name="viewport" content="width=device-width, initial-scale=1.0"
 
@@ -11,7 +11,6 @@ html class="no-js" lang="en"
 
     = stylesheet_link_tag 'application'
     = stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Droid+Sans+Mono:400|Lato:300,400,700'
-    = javascript_include_tag 'modernizr', defer: 'defer'
 
   body class="#{page_classes}"
     == yield
