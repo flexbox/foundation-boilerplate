@@ -1,5 +1,5 @@
 require 'slim'
-Slim::Engine.default_options[:pretty] = true # Avoid HTML minification for people who don't know slim
+Slim::Engine.options[:pretty] = true # Avoid HTML minification for people who don't know slim
 
 set :js_dir,     'assets/javascripts'
 set :css_dir,    'assets/stylesheets'
