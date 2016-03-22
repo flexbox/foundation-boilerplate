@@ -1,0 +1,1 @@
+(function(){var a;a=function(){$(window).width()<769?($(".off-canvas-wrap").removeClass("move-right"),$(".left-off-canvas-toggle").show()):($(".off-canvas-wrap").addClass("move-right"),$(".left-off-canvas-toggle").hide())},$(window).resize(function(){a()})}).call(this);

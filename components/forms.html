@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head prefix="og: http://ogp.me/ns# dc: http://purl.org/dc/terms/">
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Forms</title>
+    <meta content="Help designer and developers to code a strong set of guideline for forms with the Foundation framework" name="description" />
+    <meta content="index,follow" name="robots" />
+    <meta content="yes" name="mobile-web-app-capable" />
+    <meta content="foundation-boilerplate" name="application-name" />
+    <link href="http://flexbox.github.io/foundation-boilerplate/chrome-touch-icon-192x192.png" rel="icon" sizes="192x192" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="foundation-boilerplate" name="apple-mobile-web-app-title" />
+    <link href="http://flexbox.github.io/foundation-boilerplate/apple-touch-icon.png" rel="apple-touch-icon" />
+    <meta content="http://flexbox.github.io/foundation-boilerplate/ms-touch-icon-144x144-precomposed.png" name="msapplication-TileImage" />
+    <meta content="#607D8B" name="msapplication-TileColor" />
+    <meta content="#607D8B" name="theme-color" />
+    <link href="http://flexbox.github.io/foundation-boilerplate/favicon-196x196.png" rel="icon" sizes="196x196" type="image/png" />
+    <link href="http://flexbox.github.io/foundation-boilerplate/favicon-160x160.png" rel="icon" sizes="160x160" type="image/png" />
+    <link href="http://flexbox.github.io/foundation-boilerplate/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png" />
+    <link href="http://flexbox.github.io/foundation-boilerplate/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" />
+    <link href="http://flexbox.github.io/foundation-boilerplate/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" /><link href="../assets/stylesheets/application-18f82f74.css" rel="stylesheet" type="text/css" /><link href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono:400|Lato:300,400,700" rel="stylesheet" type="text/css" /><script src="../assets/javascripts/modernizr-16cc519e.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body class="components components_forms"><header class="m-header" id="header-top" role="banner"><a id="js-menu--button" class="m-header--menu" href="#header-top">
+    <span>Menu</span></a>
+  <h1 class="m-header--title">
+    Forms
+  </h1>
+  <p>
+    Every application need a huge amount of forms
+  </p>
+  <nav class="m-header--nav js-header--list is-away">
+    <a href="../start.html">Getting started</a><a href="../">About</a><a href="../scale/manifesto.html">Components</a><a href="../templates/">Templates</a><a href="https://github.com/flexbox/foundation-boilerplate/"><i class="fi-social-github"></i>GitHub </a><a class="l-download" href="https://github.com/flexbox/foundation-boilerplate//archive/gh-pages.zip"><i class="fi-download"></i>Download </a>
+  </nav>
+</header>
+<div class="row row-full-width collapse">
+  <div class="medium-2 columns">
+    <div class="layout--side-nav">
+      <p class="acolyte">
+        Scale
+      </p>
+      <nav>
+        <ul class="side-nav">
+          <li class='child '><a href="../scale/breakpoints.html">Breakpoints</a></li><li class='child '><a href="../scale/content-size.html">Content</a></li><li class='child '><a href="../scale/grid.html">Grid</a></li><li class='child '><a href="../scale/manifesto.html">Manifesto</a></li>
+        </ul>
+      </nav>
+      <p class="acolyte">
+        Style
+      </p>
+      <nav>
+        <ul class="side-nav">
+          <li class='child '><a href="buttons.html">Buttons</a></li><li class='child '><a href="colors.html">Colors</a></li><li class='child active'><a href="forms.html">Forms</a></li><li class='child '><a href="icons.html">Icons</a></li><li class='child '><a href="inputs.html">Inputs</a></li><li class='child '><a href="logo.html">Logo</a></li><li class='child '><a href="type.html">Typography</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="medium-10 columns"><div class="row">
+  <div class="medium-8 medium-centered columns">
+    <div class="row">
+      <div class="small-4 columns">
+        <h2>
+          Field sizes
+        </h2>
+        <label for="small-4">small-4</label><input id="small-4" type="text" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-8 columns">
+        <label for="small-8">small-8</label><input id="small-8" type="text" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-12 columns">
+        <label for="small-12">small-12</label><input id="small-12" type="text" />
+      </div>
+    </div>
+    <div class="layout-section">
+      <div class="row">
+        <div class="small-12 columns">
+          <h2>
+            Field style
+          </h2>
+        </div>
+      </div>
+      <form>
+        <div class="row">
+          <div class="medium-6 columns">
+            <label>Full name</label><input placeholder="Gordon Freeman" type="text" />
+          </div>
+          <div class="medium-6 columns">
+            <label>Choose your location</label><select>
+              <option value="fixture">
+                Aperture Fixtures
+              </option>
+              <option value="inovator">
+                Aperture Science Innovators
+              </option>
+              <option value="aperture">
+                Aperture
+              </option>
+              <option value="labo">
+                Aperture Laboratories
+              </option>
+              <option value="science">
+                Aperture Science
+              </option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-12 columns">
+            <label>Explain the Hazardous Environment Suit workflow</label><textarea placeholder="The suit is designed to protect the user from…" rows="5"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-6 columns">
+            <p>
+              Choose Your Favorite
+            </p>
+            <ul class="no-bullet">
+              <li>
+                <input id="pokemonRed" name="pokemon" type="radio" value="Red" /><label for="pokemonRed">Aperture Science</label>
+              </li>
+              <li>
+                <input id="pokemonBlue" name="pokemon" type="radio" value="Blue" /><label for="pokemonBlue">Black mesa</label>
+              </li>
+            </ul>
+          </div>
+          <div class="large-6 columns">
+            <p>
+              Check these out
+            </p>
+            <ul class="no-bullet">
+              <li>
+                <input id="checkbox1" type="checkbox" /><label for="checkbox1">Erik Wolpaw</label>
+              </li>
+              <li>
+                <input id="checkbox2" type="checkbox" /><label for="checkbox2">Kim Swift</label>
+              </li>
+              <li>
+                <input id="checkbox3" type="checkbox" /><label for="checkbox3">GLaDOS</label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="layout-section">
+      <div class="row">
+        <div class="small-12 columns">
+          <h2>
+            Field disabled
+          </h2>
+        </div>
+      </div>
+      <form>
+        <div class="row">
+          <div class="medium-6 columns">
+            <label for="field_input_disabled">Full name</label><input class="disabled" disabled="disabled" id="field_input_disabled" name="field_input_disabled" placeholder="Gordon Freeman" type="text" />
+          </div>
+          <div class="medium-6 columns">
+            <label for="field_select_disabled">Choose your location</label><select class="disabled" disabled="disabled" id="field_select_disabled" name="field_select_disabled">
+              <option value="fixture">
+                Aperture Fixtures
+              </option>
+              <option value="inovator">
+                Aperture Science Innovators
+              </option>
+              <option value="aperture">
+                Aperture
+              </option>
+              <option value="labo">
+                Aperture Laboratories
+              </option>
+              <option value="science">
+                Aperture Science
+              </option>
+            </select>
+          </div>
+        </div>
+      </form>
+    </div><h2 id="elements-of-a-form">Elements of a Form</h2>
+
+<p>A form should be marked up using it's default HTML properties. The ones we make use of include (in hierarchical order)</p>
+
+<ul>
+  <li>form</li>
+  <li>label</li>
+  <li>input</li>
+  <li>select</li>
+  <li>textarea</li>
+  <li>button</li>
+</ul>
+
+<h3 id="how-to-use">How to Use</h3>
+
+<p>Make forms great and easy to use with the following rules:</p>
+
+<ul>
+  <li>Wrap checkboxes and radio buttons within <code>label</code>s for larger hit areas, and be sure to set the <code>for</code>, <code>name</code>, and <code>id</code> attributes for all applicable elements.</li>
+  <li>Series of checkboxes and radio buttons below within a <code>ul</code>.</li>
+  <li>Before selecting any set of fields to use for a required <code>input</code>, explore other options (e.g., radio buttons over select lists).</li>
+</ul>
+
+  </div>
+</div>
+<div class="layout-section--inverse">
+  <div class="row">
+    <div class="medium-10 medium-centered columns"><pre class="highlight html"><code><span class="nt">&lt;form&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"large-12 columns"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"awesome-input"</span><span class="nt">&gt;</span>
+      Input Label
+    <span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"awesome-input"</span> <span class="na">name=</span><span class="s">"awesome-input"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+</code></pre>
+
+    </div>
+  </div>
+</div>
+<div class="layout-section">
+  <div class="row">
+    <div class="small-12 medium-8 medium-centered columns">
+      <h2>
+        Mobile first search form
+      </h2>
+      <div class="panel panel-signup radius">
+        <p class="lead">
+          Find a Cool Restaurant!
+        </p>
+        <form class="row" data-abide="">
+          <div class="large-3 small-12 columns">
+            <label>Food Type:</label><select>
+              <option value="All">
+                All
+              </option>
+              <option value="Asian">
+                Asian
+              </option>
+              <option value="Mediterranean">
+                Mediterranean
+              </option>
+              <option value="French">
+                French
+              </option>
+              <option value="Vegetarian">
+                Vegetarian
+              </option>
+            </select>
+          </div>
+          <div class="large-3 small-6 columns">
+            <label>Price Range:</label><select>
+              <option value="0-5">
+                &#36;0-&#36;5 
+              </option>
+              <option value="5-10">
+                &#36;5-&#36;10 
+              </option>
+              <option value="10-15">
+                &#36;10-&#36;15 
+              </option>
+              <option value="15-20">
+                &#36;15-&#36;20 
+              </option>
+              <option value="20-25">
+                &#36;20-&#36;25 
+              </option>
+              <option value="25-30">
+                &#36;25-&#36;30 
+              </option>
+              <option value="more">
+                more than &#36;30 
+              </option>
+            </select>
+          </div>
+          <div class="large-3 small-6 columns">
+            <label>Location: </label><select required="">
+              <option value="mile">
+                Near me
+              </option>
+              <option value="2-mile">
+                2 miles
+              </option>
+              <option value="5-mile">
+                5 miles
+              </option>
+              <option value="25-mile">
+                25 miles
+              </option>
+              <option value="more-mile">
+                More
+              </option>
+            </select>
+          </div>
+          <div class="large-3 small-12 columns">
+            <label>&nbsp; </label><input class="button tiny expand" type="submit" value="Search" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="layout-section">
+  <div class="row">
+    <div class="small-12 medium-10 medium-centered columns">
+      <h2>
+        Dashboard
+      </h2>
+      <form action="#" data-abide="">
+        <div class="row">
+          <div class="medium-6 columns">
+            <fieldset class="panel">
+              <legend>About you</legend><label>Full name </label><input placeholder="Albert Einstein" type="text" /><label for="about-email">Email <small>required</small></label><input id="about-email" pattern="email" placeholder="einstein@science.org" required="" type="email" /><small class="error">A valid email address is required</small><label for="about-email-confirm">Confirm email <small>required</small></label><input data-equalto="about-email" id="about-email-confirm" required="" type="email" /><small class="error">Email confirmation not match</small><label for="about-password">Password </label><input id="about-password" placeholder="il0v3sc13nc3" required="" type="password" /><small class="error">You must have a password</small>
+            </fieldset>
+          </div>
+          <div class="medium-6 columns">
+            <fieldset class="panel">
+              <legend>Informations</legend><label>Adress </label><input type="text" /><label>City </label><input type="text" /><label>Postcode </label><input pattern="integer" type="text" /><label>Phone </label><input pattern="integer" type="tel" /><small class="error"></small>
+            </fieldset>
+            <button class="button right success icon save" type="submit">Save</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+<footer class="layout--footer" role="contentinfo">
+  <div class="row">
+    <div class="medium-6 columns">
+      <p>
+        <a href="human.txt">foundation-boilerplate</a> last update <time datetime="2016-03-22 ">2016-03-22. </time><br />Licenced under GNU/GPL and available on <a href="https://github.com/flexbox/foundation-boilerplate/">GitHub</a>. 
+      </p>
+    </div>
+    <div class="medium-6 columns text-right">
+      <p>David Leuliette designed this site and is <a href="http://davidl.fr/work.html">available for hire</a>.</p>
+      
+    </div>
+  </div>
+</footer><script src="../assets/javascripts/application-616930dc.js" type="text/javascript"></script>
+  </body>
+</html>

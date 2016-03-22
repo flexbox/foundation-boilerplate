@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head prefix="og: http://ogp.me/ns# dc: http://purl.org/dc/terms/">
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Getting started</title>
+    <meta content="" name="description" />
+    <meta content="index,follow" name="robots" />
+    <meta content="yes" name="mobile-web-app-capable" />
+    <meta content="foundation-boilerplate" name="application-name" />
+    <link href="http://flexbox.github.io/foundation-boilerplate/chrome-touch-icon-192x192.png" rel="icon" sizes="192x192" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="foundation-boilerplate" name="apple-mobile-web-app-title" />
+    <link href="http://flexbox.github.io/foundation-boilerplate/apple-touch-icon.png" rel="apple-touch-icon" />
+    <meta content="http://flexbox.github.io/foundation-boilerplate/ms-touch-icon-144x144-precomposed.png" name="msapplication-TileImage" />
+    <meta content="#607D8B" name="msapplication-TileColor" />
+    <meta content="#607D8B" name="theme-color" />
+    <link href="http://flexbox.github.io/foundation-boilerplate/favicon-196x196.png" rel="icon" sizes="196x196" type="image/png" />
+    <link href="http://flexbox.github.io/foundation-boilerplate/favicon-160x160.png" rel="icon" sizes="160x160" type="image/png" />
+    <link href="http://flexbox.github.io/foundation-boilerplate/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png" />
+    <link href="http://flexbox.github.io/foundation-boilerplate/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" />
+    <link href="http://flexbox.github.io/foundation-boilerplate/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" /><link href="assets/stylesheets/application-18f82f74.css" rel="stylesheet" type="text/css" /><link href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono:400|Lato:300,400,700" rel="stylesheet" type="text/css" /><script src="assets/javascripts/modernizr-16cc519e.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body class="start"><header class="m-header" id="header-top" role="banner"><a id="js-menu--button" class="m-header--menu" href="#header-top">
+    <span>Menu</span></a>
+  <h1 class="m-header--title">
+    Sass architecture for stylesheets
+  </h1>
+  <p>
+    Your CSS <i>never ever never</i> be a mess
+  </p>
+  <nav class="m-header--nav js-header--list is-away">
+    <a href="start.html">Getting started</a><a href="./">About</a><a href="scale/manifesto.html">Components</a><a href="templates/">Templates</a><a href="https://github.com/flexbox/foundation-boilerplate/"><i class="fi-social-github"></i>GitHub </a><a class="l-download" href="https://github.com/flexbox/foundation-boilerplate//archive/gh-pages.zip"><i class="fi-download"></i>Download </a>
+  </nav>
+</header>
+<div class="row">
+  <div class="medium-12 columns"><div class="row">
+  <div class="medium-8 medium-centered columns">
+    <p>Stylesheet maintenance can become overwhelming on large applications. Here are a few tips and tricks to keeping your sanity in a CSS heavy world.</p>
+    
+    <h2 id="rules-for-clean-css">Rules for clean CSS</h2>
+    
+    <ul>
+      <li>
+        <strong>Good Commenting.</strong>
+        <p>
+          A stylesheet with clear comments that delineate each main section of code makes it a lot easier to find by scanning the page or using <kbd>cmd/ctrl</kbd> + <kbd>F</kbd> to search. 
+        </p>
+      </li>
+      <li>
+        <strong>Don't repeat yourself (DRY).</strong>
+        <p>
+          Child element declarations should not repeat styles unless they override what is already there.
+        </p>
+      </li>
+      <li>
+        <strong>Group elements.</strong>
+        <p>
+          Keep parent/child elements near each other in the CSS. This not only helps you identify areas which can be pruned or cleaned up but also makes it easier on other users of the stylesheet.
+        </p>
+      </li>
+    </ul>
+    <h2>
+      Partial architecture
+    </h2>
+    <p>
+      If you are using Sass you could be face to this question:
+    </p>
+    <blockquote>May I import Sass files before or after Foundation import?</blockquote>
+  </div>
+</div>
+<div class="layout-section--inverse">
+  <div class="row">
+    <div class="medium-10 medium-centered columns">
+      <h3>
+        application.scss is a remote control for your stylesheets
+      </h3><pre class="highlight scss"><code><span class="k">@import</span> <span class="s2">"foundation/functions"</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s2">"custom-settings"</span><span class="p">;</span>
+
+<span class="k">@import</span> <span class="s2">"foundation/normalize"</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s2">"foundation/components/block-grid"</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s2">"foundation/components/buttons"</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s2">"foundation/components/forms"</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s2">"foundation/components/grid"</span><span class="p">;</span>
+
+<span class="k">@import</span> <span class="s2">"components/my-typography"</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s2">"components/my-branding"</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s2">"components/my-buttons"</span><span class="p">;</span>
+</code></pre>
+
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="medium-8 medium-centered columns">
+    <p>You can quickly add / modify variables in <code>_custom-settings.scss</code> and have all the updates if you have decided to use bower.
+    </p>
+  </div>
+</div>
+<hr />
+<div class="layout-section text-center">
+  <div class="row">
+    <div class="medium-10 medium-centered columns">
+      <h2>
+        Need some help ?
+      </h2>
+      <p>
+        If you have problems, please create a GitHub Issue.
+      </p>
+      <a class="button large" href="https://github.com/flexbox/foundation-boilerplate/">Readme →</a>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+<footer class="layout--footer" role="contentinfo">
+  <div class="row">
+    <div class="medium-6 columns">
+      <p>
+        <a href="human.txt">foundation-boilerplate</a> last update <time datetime="2016-03-22 ">2016-03-22. </time><br />Licenced under GNU/GPL and available on <a href="https://github.com/flexbox/foundation-boilerplate/">GitHub</a>. 
+      </p>
+    </div>
+    <div class="medium-6 columns text-right">
+      <p>David Leuliette designed this site and is <a href="http://davidl.fr/work.html">available for hire</a>.</p>
+      
+    </div>
+  </div>
+</footer><script src="assets/javascripts/application-616930dc.js" type="text/javascript"></script>
+  </body>
+</html>
